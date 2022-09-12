@@ -1,18 +1,23 @@
-:root {
+body {
   --color-primary: #20A647;
   --color-white: #fff;
+  --color-gray: #ddd;
 }
 
 .btn {
   border-radius: 12px;
   font-size: 15px;
 }
-.btn--border {
-  border-color: var(--color-primary);
-  background-color: var(--color-white);
+
+.btn--square {
   width: 44px;
   height: 44px;
   padding: 0;
+}
+
+.btn--border {
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +29,33 @@
 }
 
 .fixed-bottom-wrapper {
+  display: none;
   padding: 13px 20px;
 }
-.fixed-bottom-wrapper--cart {
-  display: none;
+
+.fixed-bottom-wrapper.active {
+  display: flex;
+}
+
+.counter {
+  display: flex;
+}
+
+.counter input[type=text].counter_input {
+  width: 44px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-style: normal;
+  text-align: center;
+}
+
+.counter_btn {
+  background-color: var(--color-gray);
+}
+
+.counter_btn.disable {
+  pointer-events: none;
 }
 
 .w-full {
