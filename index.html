@@ -647,23 +647,8 @@ Selengkapnya
 </div>
 <hr style="border : solid 10px #F7F7F7; margin-top: 30px;">
 <style>
-                    .city-new{
-                        margin-top: 20px;
-                        width: 50%;
-                    }
-                    .mar{
-                        margin-left: 5px;
-                    }
-                    @media (max-width: 795px){
-                        .city-new{
-                            margin-top: 20px;
-                            width: 100%;
-                        }
-                        .mar{
-                            margin-left: -5px;
-                        }
-                    }
-                </style>
+    .city-new{ margin-top: 20px;width: 50%;}.mar{ margin-left: 5px;}@media (max-width: 795px){.city-new{ margin-top: 20px;width: 100%;}.mar{ margin-left: -5px;} }
+</style>
 <div class="container" style="padding: 0 20px !important;">
 <div class="row">
 <div class="col-12" style="margin-bottom: 22px;">
@@ -970,9 +955,9 @@ Rp. 30.000
     <!-- cart -->
     <div class="fixed-bottom-wrapper fixed-bottom-wrapper--cart flex justify-between row grid text-center" style="justify-content: center;">
         <div class="col-6 counter">
-            <button class="counter_btn decrease btn btn--square disable">-</button>
+            <button class="counter_btn btn btn--square decrease" disabled="disabled">-</button>
             <input type="text" value="1" class="counter_input" />
-            <button value="+" class="counter_btn increase btn btn--square">+</button>
+            <button value="+" class="counter_btn btn btn--square increase">+</button>
         </div>
         <div class="col-6">
             <button id="btn_modal_detail" data-target="#modal_interstitial_post" data-toggle="modal" rel="nofollow" target="_blank" class="btn btn-success btn_cta_for_gtm w-full h-full" style="font-weight: 600;letter-spacing: 0.01em;">
@@ -1568,58 +1553,8 @@ more</a>
 <p class="text_not_found">Makanan yang anda cari belum tersedia</p>
 </div>
 <style>
-        .popup-pesan {
-            position: absolute;
-            right: -35rem;
-            top: 3rem;
-        }
-
-        .popup-seller {
-            position: absolute;
-            right: -54rem;
-            top: 3rem;
-        }
-
-        .pop-svg {
-            margin-left: 1rem;
-        }
-
-        @media(max-width: 767px) {
-            .popup-pesan {
-                position: absolute;
-                justify-content: center;
-                top: 3rem;
-                display: flex;
-                right: -4rem;
-                padding: 10px;
-                left: 0rem;
-            }
-
-            .popup-seller {
-                position: absolute;
-                justify-content: center;
-                top: 3rem;
-                display: flex;
-                right: -4rem;
-                padding: 10px;
-                left: 0rem;
-            }
-
-            .popup-menu {
-                position: absolute;
-                justify-content: center;
-                top: 16rem;
-                display: flex;
-                right: 0rem;
-                padding: 10px;
-                left: 0rem;
-            }
-
-            .pop-svg {
-                margin-left: 16rem;
-            }
-        }
-    </style>
+    .popup-pesan { position: absolute;right: -35rem;top: 3rem;}.popup-seller { position: absolute;right: -54rem;top: 3rem;}.pop-svg { margin-left: 1rem;}@media(max-width: 767px) {.popup-pesan { position: absolute;justify-content: center;top: 3rem;display: flex;right: -4rem;padding: 10px;left: 0rem;}.popup-seller { position: absolute;justify-content: center;top: 3rem;display: flex;right: -4rem;padding: 10px;left: 0rem;}.popup-menu { position: absolute;justify-content: center;top: 16rem;display: flex;right: 0rem;padding: 10px;left: 0rem;}.pop-svg { margin-left: 16rem;}}
+</style>
 
 
 
@@ -2552,26 +2487,51 @@ const nav_logo = document.querySelectorAll('.logo_for_gtm');
             $(this).removeClass('active')
             $('.fixed-bottom-wrapper--cart').addClass('active')
         });
-        var buttonPlus = $(".counter_btn.increase");
-        var buttonMinus = $(".counter_btn.decrease");
 
-        var incrementPlus = buttonPlus.click(function () {
-            var $n = $(this).parent(".counter").find(".counter_input");
-            $n.val(Number($n.val()) + 1);
-        });
+        let $counterinput = $(".counter_input")
+            $counterinput.val(1)
+            let intialvalue = $counterinput.val()
 
-        var incrementMinus = buttonMinus.click(function () {
-            var $n = $(this).parent(".counter").find(".counter_input");
-            var amount = Number($n.val());
-            if (amount > 1) {
-                $n.val(amount - 1);
-                if (amount = 1) {
-                    $(this).addClass('disable')
-                } else{
-                    $(this).removeClass('disable')
-                }
+        $counterinput.on('change', function () {
+            if (Number($counterinput.val()) <= Number(intialvalue)) {
+            var minus = $(this).parent(".counter").find(".counter_btn.decrease");
+            console.log(minus.prop);
+                $(".counter_btn.decrease").prop("disabled", true)
+            } else {
+                $(".counter_btn.decrease").prop("disabled", false)
             }
-        });
+        })
+
+        $(".counter_btn").click(function () {
+            if ($(this).hasClass("increase")) {
+                $counterinput.val(Number($counterinput.val()) + 1).trigger("change")
+            }
+
+            if ($(this).hasClass("decrease")) {
+                $counterinput.val(Number($counterinput.val()) - 1).trigger("change")
+            }
+        })
+        // var buttonPlus = $(".counter_btn.increase");
+        // var buttonMinus = $(".counter_btn.decrease");
+
+        // var incrementPlus = buttonPlus.click(function () {
+        //     var $n = $(this).parent(".counter").find(".counter_input");
+        //     $n.val(Number($n.val()) + 1);
+        // });
+
+        // var incrementMinus = buttonMinus.click(function () {
+        //     var $n = $(this).parent(".counter").find(".counter_input");
+        //     var amount = Number($n.val());
+        //     if (amount > 1) {
+        //         $n.val(amount - 1);
+        //         $(this).removeClass('disable')
+        //     }
+        //     // if (amount = 1) {
+        //     //     $(this).addClass('disable')
+        //     // } else{
+        //     //     $(this).removeClass('disable')
+        //     // }
+        // });
     </script>
 <script>
 
