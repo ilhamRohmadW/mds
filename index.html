@@ -877,8 +877,7 @@ Rp. 30.000
 
 <!-- add to cart -->
 <div id="btn_whats_up" class="fixed-bottom wa-order">
-  <div class="container">
-    <div class="fixed-bottom-wrapper fixed-bottom-wrapper--add active flex justify-between row grid text-center" style="justify-content: center;">
+    <div class="fixed-bottom-wrapper fixed-bottom-wrapper--add active flex justify-between  text-center" style="justify-content: center;">
       <div class="col-2">
         <button id="btn_chat_seller" rel="nofollow" target="_blank" class="btn btn--border btn--square">
           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -911,24 +910,18 @@ Rp. 30.000
       </div>
     </div>
     <!-- cart -->
-    <div class="fixed-bottom-wrapper fixed-bottom-wrapper--cart flex justify-between row grid text-center" style="justify-content: center;">
+    <div class="fixed-bottom-wrapper fixed-bottom-wrapper--cart flex justify-between text-center" style="justify-content: center;">
         <div class="col-6 counter">
-            <button class="counter_btn btn btn--square decrease" disabled="disabled">-</button>
+            <button class="counter_btn btn btn--square decrease" >-</button>
             <input type="text" value="1" class="counter_input" />
             <button value="+" class="counter_btn btn btn--square increase">+</button>
         </div>
-        <!-- <div class="col-6 counter">
-            <button class="counter_btn btn btn--square decrease" disabled="disabled">-</button>
-            <input type="text" value="1" class="counter_input" />
-            <button value="+" class="counter_btn btn btn--square increase">+</button>
-        </div> -->
-        <!-- <div class="col-6">
+        <div class="col-6">
             <button id="btn_modal_detail" data-target="#modal_interstitial_post" data-toggle="modal" rel="nofollow" target="_blank" class="btn btn-success btn_cta_for_gtm w-full h-full" style="font-weight: 600;letter-spacing: 0.01em;">
             View Cart( <span>1</span> )
             </button>
-        </div> -->
+        </div>
     </div>
-  </div>
 </div>
 <!-- end add to cart -->
 </div>
@@ -964,38 +957,105 @@ Rp. 30.000
 </div>
 </div> 
 <div class="modal modal-bottom fade " id="modal_interstitial_post" tabindex="-1" role="dialog" aria-labelledby="modal_interstitial_post" aria-hidden="true">
-<div class="modal-dialog " style="align-items: flex-end;" role="document">
-<div class="modal-content" style="border-radius: 18px 18px 0px 0px; ">
-<div class="modal-header">
-<h2 class="modal-title" style="color:#22B44C" size="20px">Konfirmasi Open Order</h2>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-</div>
-<form action="https://staging.manisdansedap.com/chat" method="get" enctype="multipart/form-data" onsubmit="return submitUserForm();">
-<div class="modal-body">
-<input type="hidden" name="val_photos" value="https://cdn.manisdansedap.com/assets/images/logo_300x300.png">
-<input type="hidden" id="prdk" name="id_prod" value="13054">
-<input type="hidden" class="form-control" name="price_prod" value="                                                                                                        Rp. 18.000
-                                                                                                    ">
-<input type="hidden" class="form-control" id="seller_name" name="seller_name" readonly value="dimsumliciousid">
-<input type="hidden" class="form-control" id="product_name" name="product_name" readonly value="Bento Kids">
-<input type="hidden" class="form-control" name="id_seller" value="">
-<p id="tgl_pesan"></p>
-<p>Pemesanan ini adalah Open Order ke penjual, bukan pemesanan untuk dikirim langsung.</p>
-<br>
-<p>Konfirmasi harga, stok dan jadwal pengiriman perlu dikomunikasikan dengan penjual.</p>
-<br>
-<div class="g-recaptcha" data-sitekey="6Ldch8gbAAAAAKFYoFI4T5q8gyGNY3LRQ6zxqU3Y" data-callback="verifyCaptcha"></div>
-<div id="html_element" required>
-</div>
-</div>
-<div class="modal-footer justify-content-center background-color:#f50f03;">
-<a href="https://staging.manisdansedap.com/signin" rel="nofollow" target="" class="col-12 btn btn-success" style="font-weight: 600;letter-spacing: 0.01em;white-space: inherit;">
-Silahkan login untuk memesan
-</a>
-</div>
-</form>
-</div>
-</div>
+    <div class="modal-dialog " style="align-items: flex-end;" role="document">
+        <div class="modal-content" style="border-radius: 18px 18px 0px 0px; ">
+            <div class="modal-header">
+                <h2 class="modal-title">Your Cart</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <form action="https://staging.manisdansedap.com/chat" method="get" enctype="multipart/form-data" onsubmit="return submitUserForm();">
+                <div class="modal-body">
+                    <!-- <input type="hidden" name="val_photos" value="https://cdn.manisdansedap.com/assets/images/logo_300x300.png">
+                    <input type="hidden" id="prdk" name="id_prod" value="13054">
+                    <input type="hidden" class="form-control" name="price_prod" value="Rp. 18.000">
+                    <input type="hidden" class="form-control" id="seller_name" name="seller_name" readonly value="dimsumliciousid">
+                    <input type="hidden" class="form-control" id="product_name" name="product_name" readonly value="Bento Kids">
+                    <input type="hidden" class="form-control" name="id_seller" value=""> -->
+                    <div class="cart">
+                        <h3 class="cart_title">3 items</h3>
+                        <ul class="cart_list">
+                            <li class="cart_list_item">
+                                <figure class="cart_img">
+                                    <img src="https://place-hold.it/60x60" width="60" height="60" alt="">
+                                </figure>
+                                <div class="cart_detail">
+                                    <p class="cart_detail_title">Bebek Peking Madu Boneless</p>
+                                    <div class="cart_detail_bottom">
+                                        <span class="cart_price">Rp. 100.000</span>
+                                        <div class="counter">
+                                            <button class="counter_delete btn btn--delete">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.4 1.39995H13.2L12 0.199951H6L4.8 1.39995H0.599998V3.79995H17.4V1.39995ZM1.8 19.4C1.8 20.0365 2.05285 20.6469 2.50294 21.097C2.95303 21.5471 3.56348 21.8 4.2 21.8H13.8C14.4365 21.8 15.047 21.5471 15.4971 21.097C15.9471 20.6469 16.2 20.0365 16.2 19.4V4.99995H1.8V19.4Z" fill="#F43719"/>
+                                                </svg>
+                                            </button>
+                                            <button class="counter_btn btn btn--square decrease" >-</button>
+                                            <input type="text" value="1" class="counter_input" />
+                                            <button value="+" class="counter_btn btn btn--square increase">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart_list_item">
+                                <figure class="cart_img">
+                                    <img src="https://place-hold.it/60x60" width="60" height="60" alt="">
+                                </figure>
+                                <div class="cart_detail">
+                                    <p class="cart_detail_title">Bebek Peking Madu Boneless</p>
+                                    <div class="cart_detail_bottom">
+                                        <span class="cart_price">Rp. 100.000</span>
+                                        <div class="counter">
+                                            <button class="counter_delete btn btn--delete">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.4 1.39995H13.2L12 0.199951H6L4.8 1.39995H0.599998V3.79995H17.4V1.39995ZM1.8 19.4C1.8 20.0365 2.05285 20.6469 2.50294 21.097C2.95303 21.5471 3.56348 21.8 4.2 21.8H13.8C14.4365 21.8 15.047 21.5471 15.4971 21.097C15.9471 20.6469 16.2 20.0365 16.2 19.4V4.99995H1.8V19.4Z" fill="#F43719"/>
+                                                </svg>
+                                            </button>
+                                            <button class="counter_btn btn btn--square decrease" >-</button>
+                                            <input type="text" value="2" class="counter_input" />
+                                            <button value="+" class="counter_btn btn btn--square increase">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart_list_item">
+                                <figure class="cart_img">
+                                    <img src="https://place-hold.it/60x60" width="60" height="60" alt="">
+                                </figure>
+                                <div class="cart_detail">
+                                    <p class="cart_detail_title">Bebek Peking Madu Boneless</p>
+                                    <div class="cart_detail_bottom">
+                                        <span class="cart_price">Rp. 100.000</span>
+                                        <div class="counter">
+                                            <button class="counter_delete btn btn--delete">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.4 1.39995H13.2L12 0.199951H6L4.8 1.39995H0.599998V3.79995H17.4V1.39995ZM1.8 19.4C1.8 20.0365 2.05285 20.6469 2.50294 21.097C2.95303 21.5471 3.56348 21.8 4.2 21.8H13.8C14.4365 21.8 15.047 21.5471 15.4971 21.097C15.9471 20.6469 16.2 20.0365 16.2 19.4V4.99995H1.8V19.4Z" fill="#F43719"/>
+                                                </svg>
+                                            </button>
+                                            <button class="counter_btn btn btn--square decrease" >-</button>
+                                            <input type="text" value="1" class="counter_input" />
+                                            <button value="+" class="counter_btn btn btn--square increase">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart_list_item">
+                                <a href="#" class="btn btn--border">Tambah Makanan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center background-color:#f50f03;">
+                    <a href="https://staging.manisdansedap.com/signin" rel="nofollow" target="" class="col-12 btn btn-success" style="font-weight: 600;letter-spacing: 0.01em;white-space: inherit;">
+                    Send to Seller
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
@@ -2453,29 +2513,48 @@ const nav_logo = document.querySelectorAll('.logo_for_gtm');
             $('.fixed-bottom-wrapper--cart').addClass('active')
         });
 
-        let $counterinput = $(".counter_input")
-            $counterinput.val(1)
-            let intialvalue = $counterinput.val()
+        var buttonPlus = $(".counter_btn.increase");
+        var buttonMinus = $(".counter_btn.decrease");
 
-        $counterinput.on('change', function () {
-            var minus = $(this).parent(".counter").find(".counter_btn.decrease");
-            console.log($counterinput.val());
-            if (Number($counterinput.val()) <= Number(intialvalue)) {
-                $(".counter_btn.decrease").prop("disabled", true)
-            } else {
-                $(".counter_btn.decrease").prop("disabled", false)
-            }
-        })
+        var incrementPlus = buttonPlus.click(function () {
+            var $n = $(this).parent(".counter").find(".counter_input");
+            $n.val(Number($n.val()) + 1);
+        });
 
-        $(".counter_btn").click(function () {
-            if ($(this).hasClass("increase")) {
-                $counterinput.val(Number($counterinput.val()) + 1).trigger("change")
+        var incrementMinus = buttonMinus.click(function () {
+            var $n = $(this).parent(".counter").find(".counter_input");
+            var amount = Number($n.val());
+            if (amount > 1) {
+                $n.val(amount - 1);
             }
+        });
 
-            if ($(this).hasClass("decrease")) {
-                $counterinput.val(Number($counterinput.val()) - 1).trigger("change")
-            }
-        })
+        //// disable decrease
+        // let $counterinput = $(".counter_input")
+        //     $counterinput.val(1)
+        //     let intialvalue = $counterinput.val()
+
+        // $counterinput.on('change', function () {
+        //     var minus = $(this).parent(".counter").find(".counter_btn.decrease");
+        //     console.log($counterinput.val());
+        //     if (Number($counterinput.val()) <= Number(intialvalue)) {
+        //         $(".counter_btn.decrease").prop("disabled", true)
+        //     } else {
+        //         $(".counter_btn.decrease").prop("disabled", false)
+        //     }
+        // })
+
+        // $(".counter_btn").click(function () {
+        //     if ($(this).hasClass("increase")) {
+        //         $counterinput.val(Number($counterinput.val()) + 1).trigger("change")
+        //     }
+
+        //     if ($(this).hasClass("decrease")) {
+        //         $counterinput.val(Number($counterinput.val()) - 1).trigger("change")
+        //     }
+        // })
+        //// end disable decrease
+
         // var buttonPlus = $(".counter_btn.increase");
         // var buttonMinus = $(".counter_btn.decrease");
 
