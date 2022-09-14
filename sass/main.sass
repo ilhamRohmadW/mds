@@ -10,7 +10,7 @@ body
         background-color: var(--color-white)
         padding: 0
         margin-right: 17px
-        height: 44px
+        height: 30px
         display: flex
         align-items: center
     &--square
@@ -25,7 +25,7 @@ body
         align-items: center
         color: var(--color-primary)
         font-size: 15px
-        font-weight: 600
+        font-weight: 500
     &.disabled, 
     &:disabled
         opacity: 1
@@ -39,6 +39,10 @@ body
 
 .fixed-bottom
     padding: 13px 20px
+    margin-right: auto !important
+    margin-left: auto !important
+    bottom: 0
+    border-radius: 12px 12px 0 0
     &-wrapper
         display: none
         &.active
@@ -72,13 +76,10 @@ body
     &-header
         margin-left: 15px
         margin-right: 15px
+        padding: 1rem 0
         .close
             padding: 0
             margin: 0
-    &-content
-        max-width: 500px
-        margin-right: auto
-        margin-left: auto
     &-title
         text-align: center
         font-size: 20px
@@ -93,8 +94,20 @@ body
         width: 60px
         height: 60px
         margin-bottom: 0
+    &_btn
+        padding: 8px 19px
+    .counter
+        &_input
+            height: 30px
+        &_btn
+            width: 30px
+            height: 30px
+            font-size: 20px
     &_list
         margin: -10px 0
+        overflow-y: auto
+        max-height: 400px
+        padding-bottom: 70px
         &_item
             display: flex
             column-gap: 1rem
@@ -117,10 +130,40 @@ body
             line-height: 20px
             font-size: 15px
             font-weight: 600
+            width: 75%
         &_bottom
             display: flex
             align-items: center
             justify-content: space-between
+    &_footer
+        flex-direction: column
+        > :not(:last-child),
+        > :not(:first-child)
+            margin-left: 0
+            margin-right: 0
+        &_btn
+            padding: 10px 0
+        &_info
+            font-size: 9px
+            color: #949494
+            margin-bottom: 12px
+            margin-top: 5px
+        &_estimated
+            width: 100%
+            display: flex
+            justify-content: space-between
+            p
+                color: var(--color-black)
+                font-size: 16px
+                font-weight: 600
+    &.modal.modal-bottom
+        .modal-dialog
+            max-width: 500px
+            right: 0
+            left: 0
+.mx-auto
+    margin-left: auto
+    margin-right: auto
 .w
     &-full
         width: 100%
