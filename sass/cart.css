@@ -215,8 +215,8 @@ body {
 }
 
 .chat-wrap {
-  min-height: 58vh;
-  max-height: unset;
+  min-height: unset;
+  max-height: 370px;
 }
 
 #scoll_auto {
@@ -227,6 +227,7 @@ body {
   padding: 0 11px;
   font-size: 12px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .content_cart {
@@ -236,7 +237,17 @@ body {
   margin-right: 12px;
   border-radius: 20px;
 }
+.content_cart h5 {
+  margin-bottom: 0;
+}
+.content_cart p {
+  margin-top: 0;
+}
 
+.chat.penerima {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .chat.pengirim {
   position: relative;
   display: flex;
@@ -251,10 +262,17 @@ body {
 .chat .body .content, .widget-chat .body .content {
   border-radius: 20px;
   box-shadow: 0px 3.2126px 16.063px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 100%;
+  margin-left: 0;
 }
 
 .chat-list li .chat, .widget-chat-list li .chat, .chat-list li .widget-chat, .widget-chat-list li .widget-chat {
   margin-bottom: 0;
+}
+
+.chat-list li {
+  margin-bottom: 25px;
 }
 
 .bg-me-chat {
