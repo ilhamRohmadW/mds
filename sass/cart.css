@@ -12,7 +12,7 @@ body {
 .btn--delete {
   background-color: var(--color-white);
   padding: 0;
-  margin-right: 17px;
+  margin-right: 15px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -118,6 +118,7 @@ body {
   width: 30px;
   height: 30px;
   font-size: 20px;
+  border-radius: 8px;
 }
 .cart_list {
   margin: -10px 0;
@@ -145,6 +146,10 @@ body {
 }
 .cart_detail {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 60px;
 }
 .cart_detail_title {
   margin-bottom: 0;
@@ -152,7 +157,11 @@ body {
   line-height: 20px;
   font-size: 15px;
   font-weight: 600;
-  width: 75%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 5px;
 }
 .cart_detail_bottom {
   display: flex;

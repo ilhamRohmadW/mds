@@ -9,7 +9,7 @@ body
     &--delete
         background-color: var(--color-white)
         padding: 0
-        margin-right: 17px
+        margin-right: 15px
         height: 30px
         display: flex
         align-items: center
@@ -59,6 +59,24 @@ body
             font-size: 15px
             font-weight: 500
             color: var(--color-black)
+
+    // .counter_input
+    //     -moz-appearance: textfield
+    //     // min-width: 44px
+    //     width: 44px
+    //     // max-width: calc( 100% - 88px )
+    //     border: 0
+    //     outline: 0
+    //     padding: 0
+    //     font-style: normal
+    //     text-align: center
+    //     font-size: 15px
+    //     font-weight: 500
+    //     color: var(--color-black)
+    //     &::-webkit-outer-spin-button,
+    //     &::-webkit-inner-spin-button 
+    //         -webkit-appearance: none
+    //         margin: 0
     &_btn
         background-color: var(--color-gray)
         font-size: 29px
@@ -100,6 +118,7 @@ body
             width: 30px
             height: 30px
             font-size: 20px
+            border-radius: 8px
     &_list
         margin: -10px 0
         overflow-y: auto
@@ -121,13 +140,21 @@ body
         margin-bottom: 1.5rem
     &_detail
         flex: 1
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: 60px
         &_title
             margin-bottom: 0
             color: var(--color-black)
             line-height: 20px
             font-size: 15px
             font-weight: 600
-            width: 75%
+            overflow: hidden
+            display: -webkit-box
+            -webkit-box-orient: vertical
+            -webkit-line-clamp: 2
+            margin-bottom: 5px
         &_bottom
             display: flex
             align-items: center
