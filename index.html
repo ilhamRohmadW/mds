@@ -912,7 +912,7 @@ Rp. 30.000
     <!-- cart -->
     <div class="fixed-bottom-wrapper fixed-bottom-wrapper--cart flex justify-between text-center" style="justify-content: center;">
         <div class="col-6 px-0 counter">
-            <button class="counter_btn btn btn--square decrease" disabled="disabled">-</button>
+            <button class="counter_btn btn btn--square decrease">-</button>
             <input type="text" value="1"  class="counter_input" />
             <button value="+" class="counter_btn btn btn--square increase">+</button>
         </div>
@@ -2597,109 +2597,22 @@ const nav_logo = document.querySelectorAll('.logo_for_gtm');
         // });
         // end multiple increase
 
-
-        // document.querySelectorAll(".counter_input").forEach(function (input) {
-        //     console.log(input)
-        //     input.on('change', function (e) {
-        //         // input.val(1)
-        //         // let intialvalue = input.val()
-
-        //         // // var minus = $(this).parent(".counter").find(".counter_btn.decrease");
-        //         // // console.log(input.val());
-        //         // if (Number(input.val()) <= Number(intialvalue)) {
-        //         //     $(".counter_btn.decrease").prop("disabled", true)
-        //         // } else {
-        //         //     $(".counter_btn.decrease").prop("disabled", false)
-        //         // }
-        //         e.preventDefault()
-        //     });
-        //     $(".counter_btn").click(function () {
-        //         if ($(this).hasClass("increase")) {
-        //             input.val(Number(input.val()) + 1).trigger("change")
-        //         }
-    
-        //         if ($(this).hasClass("decrease")) {
-        //             input.val(Number(input.val()) - 1).trigger("change")
-        //         }
-        //     })
-        // });
-        // const inputs = $('.counter_input');
-
-        // for (i = 0; i < inputs.length; i++) {
-        //     inputs[i].parentNode.classList.add('counter-'+i);
-        //     let count = $('.counter-'+i+ '')
-        //     let minus = count.find('.counter_btn.decrease')
-        //     // let parent = count.parent('.counter')
-        //     console.log(inputs[i]);
-        //     console.log(minus);
-        //     // inputs[i].on('change', function () {
-        //     //     // console.log('test');
-        //     // })
-        // }
-        // $(".counter_input").each(function () {
-        //     // let input = $(this).data('counter')
-        //     // let inval = input.val()
-        //     $(this).on('change', function () {
-        //         console.log(
-        //             $(this).parent().find('.decrease')
-        //             );
-        //     })
-        // })
+        // multiple disable increase
+        $(".counter_input").each(function () {
+            if($(this).val() <= 1){
+                let minus = $(this).parent().find($('.counter_btn.decrease'))
+                $(minus).prop("disabled", true)
+            }
+        })
         
-        // document.querySelectorAll(".counter_input").forEach(function (input) {
-        //     console.log(input.value);
-        //     // var subscription = input ? input.value : null;
-        //     // console.log(subscription);
-        //     // let parent = input.parentElement
-        //     // console.log(parent);
-        // })
-
-        //// disable decrease
-        // let $counterinput = $(".counter_input")
-        // $counterinput.val(1)
-        // let intialvalue = $counterinput.val()
-        // let parent = $counterinput.parent()
-        // // console.log(parent);
-
-        // $counterinput.on('change', function () {
-        //     var minus = $(this).parent(".counter").find(".counter_btn.decrease");
-        //     // console.log(minus);
-        //     if (Number($counterinput.val()) <= Number(intialvalue)) {
-        //         $(".counter_btn.decrease").prop("disabled", true)
-        //     } else {
-        //         $(".counter_btn.decrease").prop("disabled", false)
-        //     }
-        // })
-
-        // $(".counter_btn")
-        // $counterinput.parent().find('.counter_btn').click(function () {
-        //     if ($(this).hasClass("increase")) {
-        //         $counterinput.val(Number($counterinput.val()) + 1).trigger("change")
-        //     }
-
-        //     if ($(this).hasClass("decrease")) {
-        //         $counterinput.val(Number($counterinput.val()) - 1).trigger("change")
-        //     }
-        // })
-        if($('.counter_input').val() <= 1){
-            console.log('true');
-            let minus = $(this).parent().find($('.counter_btn.decrease'))
-            $(minus).prop("disabled", true)
-        }
         $('.counter_btn').click(function () {
             let input = $(this).parent().find($('.counter_input'))
             let minus = $(this).parent().find($('.counter_btn.decrease'))
-            // input.val(1)
-            // let inputval = $(input).val()
 
             $(input).on('change', function () {
                 console.log(
                     input.val()
                 );
-                // console.log(
-                //     inputval
-                // );
-                // if (Number($(input).val()) <= Number(inputval)) {
                 if (Number($(input).val()) <= 1) {
                     $(minus).prop("disabled", true)
                 } else {
@@ -2714,29 +2627,8 @@ const nav_logo = document.querySelectorAll('.logo_for_gtm');
                 $(input).val(Number($(input).val()) - 1).trigger("change")
             }
         })
-        //// end disable decrease
+        // end multiple disable increase
 
-        // var buttonPlus = $(".counter_btn.increase");
-        // var buttonMinus = $(".counter_btn.decrease");
-
-        // var incrementPlus = buttonPlus.click(function () {
-        //     var $n = $(this).parent(".counter").find(".counter_input");
-        //     $n.val(Number($n.val()) + 1);
-        // });
-
-        // var incrementMinus = buttonMinus.click(function () {
-        //     var $n = $(this).parent(".counter").find(".counter_input");
-        //     var amount = Number($n.val());
-        //     if (amount > 1) {
-        //         $n.val(amount - 1);
-        //         $(this).removeClass('disable')
-        //     }
-        //     // if (amount = 1) {
-        //     //     $(this).addClass('disable')
-        //     // } else{
-        //     //     $(this).removeClass('disable')
-        //     // }
-        // });
     </script>
 <script>
 
