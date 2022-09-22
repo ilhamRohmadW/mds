@@ -241,7 +241,8 @@ body
     border-radius: 20px 0 20px 20px !important
 #form_submit_message
     margin-bottom: 0
-    
+.side-header
+    z-index: 1000
 $border: #E2E2EF
 .modal
     z-index: 2000
@@ -263,15 +264,16 @@ $border: #E2E2EF
     &--quotation
         .modal
             &-dialog
-                max-height: 80vh
+                max-height: 100vh
                 height: 100%
                 margin: 0 auto
             &-content
-                height: 100vh
+                height: 100%
             &-title
                 font-size: 18px
                 font-weight: 600
             &-body
+                overflow: hidden
                 h2
                     font-size: 16px
                     font-weight: 600
@@ -287,6 +289,21 @@ $border: #E2E2EF
             &-content
                 box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.3)
                 border-radius: 12px 12px 0px 0px
+        
+        .accept
+            margin-bottom: 25px
+            p
+                margin-bottom: 8px
+                font-size: 12px
+            span
+                margin-top: 8px
+                display: block
+                font-size: 10px
+                color: #4E4E4E
+        .reject
+            margin-bottom: 35px
+            &_list
+                padding: 10px 0
 .list-unstyled
     list-style: none
     padding-left: 0
@@ -311,10 +328,11 @@ $border: #E2E2EF
         transition: opacity 0.3s linear,bottom 0.3s ease-out
     &.show .modal-dialog
         bottom: 0
+        max-height: 100vh
 .quotation
     font-size: 14px
     overflow-y: auto
-    max-height: calc(100vh - 180px)
+    max-height: calc(100% - 90px)
     &_list
         border-bottom: 1px solid $border
         padding-left: 0
@@ -365,20 +383,6 @@ $border: #E2E2EF
             padding: 10px 0
             font-size: 14px
             font-weight: 600
-.accept
-    margin-bottom: 25px
-    p
-        margin-bottom: 8px
-        font-size: 12px
-    span
-        margin-top: 8px
-        display: block
-        font-size: 10px
-        color: #4E4E4E
-.reject
-    margin-bottom: 35px
-    &_list
-        padding: 10px 0
 .input
     position: relative
     &.--type
@@ -433,14 +437,20 @@ $border: #E2E2EF
         padding: 10px 0
         background-color: var(--color-primary)
         color: white
-@media only screen and (max-width: 767px)
-    .chat-app-wrap .chat-wrap
-        max-height: 360px
-        min-height: 50vh
-@media only screen and (max-width: 479px)
+@media(max-width:479px)
     .header-notification-area > li a .user .avatar
         height: 34px
         overflow: hidden
         img
             object-fit: cover
             width: 100%
+@media(max-width:767px)
+    .chat-app-wrap .chat-wrap
+        max-height: 360px
+        min-height: 50vh
+@media(min-width:767px)
+    .modal--quotation 
+        .modal-dialog
+            max-height: 80vh
+            margin-top: 10vh
+            margin-bottom: 10vh

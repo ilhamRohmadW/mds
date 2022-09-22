@@ -318,6 +318,10 @@ body.overflow-hidden {
   margin-bottom: 0;
 }
 
+.side-header {
+  z-index: 1000;
+}
+
 .modal {
   z-index: 2000;
 }
@@ -342,18 +346,22 @@ body.overflow-hidden {
 }
 
 .modal--quotation .modal-dialog {
-  max-height: 80vh;
+  max-height: 100vh;
   height: 100%;
   margin: 0 auto;
 }
 
 .modal--quotation .modal-content {
-  height: 100vh;
+  height: 100%;
 }
 
 .modal--quotation .modal-title {
   font-size: 18px;
   font-weight: 600;
+}
+
+.modal--quotation .modal-body {
+  overflow: hidden;
 }
 
 .modal--quotation .modal-body h2 {
@@ -375,6 +383,30 @@ body.overflow-hidden {
 .modal--confirm .modal-content {
   box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.3);
   border-radius: 12px 12px 0px 0px;
+}
+
+.modal--confirm .accept {
+  margin-bottom: 25px;
+}
+
+.modal--confirm .accept p {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.modal--confirm .accept span {
+  margin-top: 8px;
+  display: block;
+  font-size: 10px;
+  color: #4E4E4E;
+}
+
+.modal--confirm .reject {
+  margin-bottom: 35px;
+}
+
+.modal--confirm .reject_list {
+  padding: 10px 0;
 }
 
 .list-unstyled {
@@ -404,12 +436,13 @@ body.overflow-hidden {
 
 .modal.modal-bottom.show .modal-dialog {
   bottom: 0;
+  max-height: 100vh;
 }
 
 .quotation {
   font-size: 14px;
   overflow-y: auto;
-  max-height: calc(100vh - 180px);
+  max-height: calc(100% - 90px);
 }
 
 .quotation_list {
@@ -482,30 +515,6 @@ body.overflow-hidden {
   font-weight: 600;
 }
 
-.accept {
-  margin-bottom: 25px;
-}
-
-.accept p {
-  margin-bottom: 8px;
-  font-size: 12px;
-}
-
-.accept span {
-  margin-top: 8px;
-  display: block;
-  font-size: 10px;
-  color: #4E4E4E;
-}
-
-.reject {
-  margin-bottom: 35px;
-}
-
-.reject_list {
-  padding: 10px 0;
-}
-
 .input {
   position: relative;
 }
@@ -571,14 +580,7 @@ body.overflow-hidden {
   color: white;
 }
 
-@media only screen and (max-width: 767px) {
-  .chat-app-wrap .chat-wrap {
-    max-height: 360px;
-    min-height: 50vh;
-  }
-}
-
-@media only screen and (max-width: 479px) {
+@media (max-width: 479px) {
   .header-notification-area > li a .user .avatar {
     height: 34px;
     overflow: hidden;
@@ -586,5 +588,20 @@ body.overflow-hidden {
   .header-notification-area > li a .user .avatar img {
     object-fit: cover;
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .chat-app-wrap .chat-wrap {
+    max-height: 360px;
+    min-height: 50vh;
+  }
+}
+
+@media (min-width: 767px) {
+  .modal--quotation .modal-dialog {
+    max-height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 }
