@@ -1,0 +1,652 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Manis dan Sedap Chat</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="https://cdn-staging.manisdansedap.com/assets/new-asset/Favicon_manisdansedap.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/themify-icons.css">
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/cryptocurrency-icons.css ">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/plugins/plugins.css">
+
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/helper.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/style.css">
+
+    <!-- Custom Style CSS Only For Demo Purpose -->
+    <link id="cus-style" rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/style-primary.css">
+
+    <link rel="stylesheet" type="text/css" href="https://staging.manisdansedap.com/assets/cssJadi1/lineAw-fontAw.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn-staging.manisdansedap.com/assets/css/newcss.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn-staging.manisdansedap.com/assets/cssFull1/full-css1-detail.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/assets/css/frontend.css?id=6576fb0f8dacc308b00f"/>
+
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//staging.manisdansedap.com/_debugbar/assets/stylesheets?v=1657531602&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'><script src='//staging.manisdansedap.com/_debugbar/assets/javascript?v=1657531602' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval="false">jQuery.noConflict(true);</script>
+<script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; refStyle.innerHTML = '.phpdebugbar pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }'; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); refStyle = doc.createElement('style'); (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } else if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = '.phpdebugbar pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump span { display: inline; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { display: inline-block; overflow: visible; text-overflow: ellipsis; max-width: 5em; white-space: nowrap; overflow: hidden; vertical-align: top; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis+.sf-dump-ellipsis { max-width: none; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}</style>
+</head>
+
+<body id="ini_all_body">
+
+<style>
+    .scroll-new{
+        margin-top:-90px;
+    }
+    .side-mobile{
+        display: none;
+    }
+    @media (max-width: 767px){
+        .scroll-new{
+            margin-top: 0px;
+        }
+        .side-mobile{
+            display: block;
+            margin-left: 25px;
+        }
+    }
+    .back-to-listchat{
+        margin-top: -29px; 
+        margin-left: 20px;
+        color: #AAAAAA;
+        background: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        display: block;
+        position: fixed;
+        left: 0;
+        z-index: 9;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+        
+</style>
+    
+    <div class="main-wrapper">
+        <!-- Header Section Start -->
+        
+        <!-- Header Section End -->
+        <!-- Side Header Start -->
+        <div class="side-header show" style="background: #F9FAFC;display:none !important;">
+           
+            <button class="side-header-close"><i class="zmdi zmdi-close"></i></button>
+            <!-- Side Header Inner Start -->
+            <div class="side-header-inner custom-scroll">
+
+                <nav class="side-header-menu" id="side-header-menu">
+                    <ul class="text-center">
+                        <li><img src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" 
+                            alt="" style="border-radius: 50%; width: 100px; height: auto;margin-left:5px;"></li>
+                        <li><h3>Nama Warung</h3></li>
+                        <li><p style="margin-left: 10px;">
+                                                                mamaskoken
+                                
+                            </p>
+                        </li>
+                        <br>
+                        <li><hr style="width: 80%;"></li>
+                        
+                    </ul>
+                    <ul>
+                        <!-- <li><a href="#"><i class="ti-comment-alt"></i> <span>Dashboard</span></a></li> -->
+                        <li class="active"><a href="#"><i class="zmdi zmdi-email"></i><span style="font-weight: 700;font-size: 14px;">Chat</span></a></li>
+                    </ul>
+                </nav>
+
+            </div><!-- Side Header Inner End -->
+        </div><!-- Side Header End -->
+
+        <!-- Content Body Start -->
+        <div class="content-body">
+
+            <!-- Page Headings Start -->
+            <div class="row justify-content-between align-items-center mb-10">
+
+                <!-- Page Heading Start -->
+                <div class="col-12 col-lg-auto mb-20">
+                 
+                </div><!-- Page Heading End -->
+
+            </div><!-- Page Headings End -->
+            <input type="hidden" name="" id="id_pengirim" value="64">
+            <div class="row">
+                <!-- Chat App Start -->
+                <div class="col-12">
+                    <div class="contact-search-form">
+                        <div style="padding: 10px 25px;margin-left:20px;margin-bottom:20px;margin-top:-50px;">
+                        <img class="login-mobile-new" src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" alt="Sidemenu" width="32px">
+                            <h3 style="margin-left: 40px;margin-top: -28px;font-size:16px;font-weight:600">warpunk666bangun</h3>
+                            <button class="back-to-listchat" style="margin-left:0px;">
+                                <a href="https://staging.manisdansedap.com/chat" type="button" style="color:#AAAAAA;">
+                                    <i class="fa fa-arrow-left fa-lg" style="width:11px;height:20px;"></i>
+                                </a>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="chat-app-wrap" style="border: none;backgroud-color:#f5f5f5f0">
+
+                        
+                            <input type="hidden" name="" id="id_penerima" value="2433">
+                            <div class="chat-contacts">
+                            
+
+                            <style>
+                                .logo{
+                                    display: none;
+                                }
+                                @media (max-width: 767px){
+                                    .logo{
+                                        display: block;
+                                    }   
+                                }
+                            </style>
+                            <div class="logo"  style="margin-top: -40px; margin-left: 15px;">     
+                                <ul >
+                                    <a href="https://staging.manisdansedap.com">
+                                    <img class="img-logo" src="https://staging.manisdansedap.com/assets/LeandingPage/images/mnd2.png" alt="pic" style="height: 40px">
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <h5 class="side-mobile">Chat</h5>
+                                <ul class="chat-contact-list custom-scroll scroll-new" >
+                                                                                                                                                        <li>
+                                            <a href="https://staging.manisdansedap.com/chat?receiver_id=2433">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""><span class="status online"></span></div>
+                                                <div class="content">
+                                                    <h5 class="name">warpunk666bangun</h5>
+                                                    <p class="last-message">test</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                                                                                                    <li>
+                                            <a href="https://staging.manisdansedap.com/chat?receiver_id=115">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""><span class="status online"></span></div>
+                                                <div class="content">
+                                                    <h5 class="name">mbahngun84</h5>
+                                                    <p class="last-message">Kak saya mau order Pork Siomai ini bisa ya ?</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                            <!--Chat Contacts End-->
+
+                        <!--Chat Active Contact Start-->
+                                                            
+                            
+                            <style>
+                                .pengirim .chat .head h5 {
+                                text-align: right;
+                                }
+
+                                .pengirim .chat .head span {
+                                margin-left: 15px;
+                                margin-right: 0;
+                                } 
+
+                                .pengirim .body, .pengirim .head {
+                                    -webkit-box-orient: horizontal;
+                                    -webkit-box-direction: reverse;
+                                    -webkit-flex-direction: row-reverse;
+                                        -ms-flex-direction: row-reverse;
+                                            flex-direction: row-reverse;
+                                }
+                                .div_border{
+                                    box-sizing: border-box;
+                                    -moz-box-sizing: border-box;
+                                    -webkit-box-sizing: border-box;
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+                                    border-radius: 20px;
+                                    margin: 10px;
+                                }
+                            </style>
+                            <div class="chat-wrap custom-scroll mr-0" style="min-height:75vh;padding:5px;" id="scroll_mobile">
+                                <ul class="chat-list">
+                                    <!--  -->
+                                     
+                                                                        <li>
+                                                                                <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat penerima" id="penerima_id_reload">
+                                            <div class="body">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""></div>
+                                                <div class="content" >
+                                                                                                            <div style="margin-bottom: 75px;width: 350px;">
+                                                            <img src="https://cdn-staging.manisdansedap.com/assets/images/logo_300x300.png" alt="" style="border-radius: 20px;width:97px;height:97px;">
+                                                            <div style="maring-top:-100px;">
+                                                                <h5 style="margin-left:110px;margin-top:-100px;font-size: 16px;">Pork Siomai</h5>                                                       
+                                                                                                                                <p class="col-12" style="margin-left: 95px;margin-top:10px;">
+                                                                                                                                            Price by DM
+                                                                                                                                    </p>
+                                                                <div class="buttons text-right col-12" style="margin-bottom: -45px;">
+                                                                    <a href="https://staging.manisdansedap.com/mamaskoken/Pork-Siomai-12229" 
+                                                                    target="_blank"
+                                                                    class="submit button button-round bg-me-send text-white" 
+                                                                    style="border-radius: 8px !important;">Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                                                                        <p style="max-width: 350px;">
+                                                        Kak saya mau order Pork Siomai ini bisa ya ?
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="head">
+                                                <span class="mt-2">
+                                                    <!-- 2022-08-30 16:07:43 -->
+                                                    30 August 2022 16:07
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                                         
+                                                                        <li>
+                                                                                <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat penerima" id="penerima_id_reload">
+                                            <div class="body">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""></div>
+                                                <div class="content" >
+                                                                                                            <div style="margin-bottom: 75px;width: 350px;">
+                                                            <img src="https://cdn-staging.manisdansedap.com/assets/images/logo_300x300.png" alt="" style="border-radius: 20px;width:97px;height:97px;">
+                                                            <div style="maring-top:-100px;">
+                                                                <h5 style="margin-left:110px;margin-top:-100px;font-size: 16px;">Pork Siomai</h5>                                                       
+                                                                                                                                <p class="col-12" style="margin-left: 95px;margin-top:10px;">
+                                                                                                                                            Price by DM
+                                                                                                                                    </p>
+                                                                <div class="buttons text-right col-12" style="margin-bottom: -45px;">
+                                                                    <a href="https://staging.manisdansedap.com/mamaskoken/Pork-Siomai-12229" 
+                                                                    target="_blank"
+                                                                    class="submit button button-round bg-me-send text-white" 
+                                                                    style="border-radius: 8px !important;">Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                                                                        <p style="max-width: 350px;">
+                                                        Kak saya mau order Pork Siomai ini bisa ya ?
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="head">
+                                                <span class="mt-2">
+                                                    <!-- 2022-08-31 11:09:49 -->
+                                                    31 August 2022 11:09
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                                         
+                                                                        <li>
+                                                                                <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat penerima" id="penerima_id_reload">
+                                            <div class="body">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""></div>
+                                                <div class="content" >
+                                                                                                            <div style="margin-bottom: 75px;width: 350px;">
+                                                            <img src="https://cdn-staging.manisdansedap.com/assets/images/logo_300x300.png" alt="" style="border-radius: 20px;width:97px;height:97px;">
+                                                            <div style="maring-top:-100px;">
+                                                                <h5 style="margin-left:110px;margin-top:-100px;font-size: 16px;">Pork Siomai</h5>                                                       
+                                                                                                                                <p class="col-12" style="margin-left: 95px;margin-top:10px;">
+                                                                                                                                            Price by DM
+                                                                                                                                    </p>
+                                                                <div class="buttons text-right col-12" style="margin-bottom: -45px;">
+                                                                    <a href="https://staging.manisdansedap.com/mamaskoken/Pork-Siomai-12229" 
+                                                                    target="_blank"
+                                                                    class="submit button button-round bg-me-send text-white" 
+                                                                    style="border-radius: 8px !important;">Detail</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                                                                        <p style="max-width: 350px;">
+                                                        Kak saya mau order Pork Siomai ini bisa ya ?
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="head">
+                                                <span class="mt-2">
+                                                    <!-- 2022-08-31 03:06:29 -->
+                                                    31 August 2022 03:06
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                                         
+                                                                        <li>
+                                                                                <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat penerima" id="penerima_id_reload">
+                                            <div class="body">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""></div>
+                                                <div class="content" >
+                                                                                                        <p style="max-width: 350px;">
+                                                        Halo
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="head">
+                                                <span class="mt-2">
+                                                    <!-- 2022-08-31 15:06:47 -->
+                                                    31 August 2022 15:06
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                                         
+                                                                        <li>
+                                                                                <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat penerima" id="penerima_id_reload">
+                                            <div class="body">
+                                                <div class="image"><img src="https://staging.manisdansedap.com/assets/assets_chat/images/comment/comment-1.jpg" alt=""></div>
+                                                <div class="content" >
+                                                                                                        <p style="max-width: 350px;">
+                                                        Halo
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="head">
+                                                <span class="mt-2">
+                                                    <!-- 2022-08-31 15:06:48 -->
+                                                    31 August 2022 15:06
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                                         
+                                                                        <li>
+                                    <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat pengirim">
+                                            <div class="body">
+                                                                                                <div class="row" style="justify-content: end; margin-right: 5px;">
+                                                    <div class="col-12">
+                                                        &nbsp;
+                                                    </div>
+
+
+                                                        <!-- wildicoba -->
+                                                        
+                                                        <!-- wildicoba -->
+
+                                                    <div class="content bg-me-chat">
+                                                        <p style="color:#fff;" id="isi_pesan_sender">
+                                                        test
+                                                        </p>
+                                                    </div>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="head">
+                                                <span class="mt-2" id="jam_pesan_sender">
+                                                    15 September 2022 08:32
+                                                
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                        
+                                                                         
+                                                                        <li>
+                                    <input type="hidden" name="" id="id_produk" value="12229">
+                                        <div class="chat pengirim">
+                                            <div class="body">
+                                                                                                <div class="row" style="justify-content: end; margin-right: 5px;">
+                                                    <div class="col-12">
+                                                        &nbsp;
+                                                    </div>
+
+
+                                                        <!-- wildicoba -->
+                                                        
+                                                        <!-- wildicoba -->
+
+                                                    <div class="content bg-me-chat">
+                                                        <p style="color:#fff;" id="isi_pesan_sender">
+                                                        test
+                                                        </p>
+                                                    </div>
+                                                                                                    </div>
+                                            </div>
+                                            <div class="head">
+                                                <span class="mt-2" id="jam_pesan_sender">
+                                                    15 September 2022 08:32
+                                                
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                        
+                                                                                                        </ul>
+                            </div>
+
+                            <style>
+                                div.edit {
+                                        padding: 10px;
+                                        min-height: 40px;
+                                        background: white;
+                                        border-radius: 15px;
+                                        height: initial;
+                                        overflow-wrap: anywhere;
+                                        flex: 1;
+                                        max-height: 100px;
+                                        overflow: scroll;
+                                    }
+
+                            </style>
+                            <div class="chat-submission">
+                                <form action="#" method="" id="form_submit_message" style="padding: 15px;position:relative;overflow">
+                                
+                                    <a href="#" style="margin-left:-15px;margin-top:15px;margin-right:3px">
+                                        <i class="ti-face-smile" style="font-size: 20px;color:black"></i>
+                                    </a>
+                                    
+                                    
+                                    <div contenteditable="true" class="edit"></div>
+                                   
+                                    <div class="buttons" style="position: relative;top: initial;transform: none;right: initial;" id="btn_send" onclick="send_message()">
+                                        <button class="submit button button-box button-round bg-me-send text-white" style="margin-right:-15px;margin-top:7px;"><i class="zmdi zmdi-mail-send"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        
+                     
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <!-- JS
+============================================ -->
+
+    <!-- Global Vendor, plugins & Activation JS -->
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/popper.min.js"></script>
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/bootstrap.min.js"></script>
+    <!--Plugins JS-->
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/plugins/tippy4.min.js.js"></script>
+    <!--Main JS-->
+    <script src="https://staging.manisdansedap.com/assets/assets_chat/js/main.js"></script>
+
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addIndicator("php_version", new PhpDebugBar.DebugBar.Indicator({"icon":"code","tooltip":"PHP Version"}), "right");
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.setDataMap({
+"php_version": ["php.version", ],
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"https:\/\/staging.manisdansedap.com\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"X36589a4012eea842441db829a0bf1476","datetime":"2022-09-26 20:18:44","utime":1664198324.740722,"method":"GET","uri":"\/chat_mobile?receiver_id=2433&header_chat_isbuyer=1","ip":"34.124.209.212"},"php":{"version":"7.4.30","interface":"apache2handler"},"messages":{"count":0,"messages":[]},"time":{"start":1664198324.652717,"end":1664198324.740743,"duration":0.08802580833435059,"duration_str":"88.03ms","measures":[{"label":"Booting","start":1664198324.652717,"relative_start":0,"end":1664198324.673156,"relative_end":1664198324.673156,"duration":0.02043890953063965,"duration_str":"20.44ms","params":[],"collector":null},{"label":"Application","start":1664198324.673301,"relative_start":0.0205838680267334,"end":1664198324.740746,"relative_end":3.0994415283203125e-6,"duration":0.06744503974914551,"duration_str":"67.45ms","params":[],"collector":null}]},"memory":{"peak_usage":6589880,"peak_usage_str":"6MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":1,"templates":[{"name":"frontend.dashboard_seller.chat.detail-chat-mobile (resources\/views\/frontend\/dashboard_seller\/chat\/detail-chat-mobile.blade.php)","param_count":11,"params":["user_from","pesan_jadi1","from_wa","receiver_id","ale_cek_alldata","new_conversation","id_prod","prod_photo","price","seller_avatar","sidebar"],"type":"blade"}]},"route":{"uri":"GET chat_mobile","middleware":"web","controller":"App\\Http\\Controllers\\Frontend\\UserController@OpenChatMobile","namespace":"App\\Http\\Controllers","prefix":"","where":[],"as":"chat_mobile","file":"<a href=\"phpstorm:\/\/open?file=\/var\/www\/mds\/mds-core\/app\/Http\/Controllers\/Frontend\/UserController.php&line=1555\">app\/Http\/Controllers\/Frontend\/UserController.php:1555-1675<\/a>"},"queries":{"nb_statements":43,"nb_failed_statements":0,"accumulated_duration":0.018120000000000004,"accumulated_duration_str":"18.12ms","statements":[{"sql":"select * from information_schema.tables where table_schema = 'mds_dev' and table_name = 'languages' and table_type = 'BASE TABLE'","type":"query","params":[],"bindings":["mds_dev","languages"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":10,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":23},{"index":11,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":12,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":13,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":14,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00369,"duration_str":"3.69ms","stmt_id":"\/app\/Http\/Middleware\/Locale.php:23","connection":"mds_dev"},{"sql":"select * from `languages` where `is_active` = 1","type":"query","params":[],"bindings":["1"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":26},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":16,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":18,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00045,"duration_str":"450\u03bcs","stmt_id":"\/app\/Http\/Middleware\/Locale.php:26","connection":"mds_dev"},{"sql":"select `code` from `languages` where `is_default` = 1 limit 1","type":"query","params":[],"bindings":["1"],"hints":["<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":30},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":17,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":19,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00033,"duration_str":"330\u03bcs","stmt_id":"\/app\/Http\/Middleware\/Locale.php:30","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = 64 limit 1","type":"query","params":[],"bindings":["64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php","line":53},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/SessionGuard.php","line":148},{"index":17,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1557},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45}],"duration":0.0004,"duration_str":"400\u03bcs","stmt_id":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php:53","connection":"mds_dev"},{"sql":"select * from `po_seller` where `insta_username` = 'mamaskoken' limit 1","type":"query","params":[],"bindings":["mamaskoken"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1558},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00053,"duration_str":"530\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1558","connection":"mds_dev"},{"sql":"select * from `po_chat` where `receivher_id` = 64 and `sender_id` = '2433'","type":"query","params":[],"bindings":["64","2433"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1589},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00038,"duration_str":"380\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1589","connection":"mds_dev"},{"sql":"select * from `po_conversation` where (`receiver_id` = 64)","type":"query","params":[],"bindings":["64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1604},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00033,"duration_str":"330\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1604","connection":"mds_dev"},{"sql":"select * from `po_conversation` where (`sender_id` = 64 and `receiver_id` = '2433') or (`sender_id` = '2433' and `receiver_id` = 64) limit 1","type":"query","params":[],"bindings":["64","2433","2433","64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1620},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00035999999999999997,"duration_str":"360\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1620","connection":"mds_dev"},{"sql":"select * from `po_chat` where `id_conversation` = 80 order by `id` asc","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1626},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00035,"duration_str":"350\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1626","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `sender_id` = 64 and `receiver_id` is null limit 1","type":"query","params":[],"bindings":["64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1650},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00026000000000000003,"duration_str":"260\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1650","connection":"mds_dev"},{"sql":"select * from `po_chat` where `receivher_id` = 64 order by `id` desc limit 1","type":"query","params":[],"bindings":["64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1660},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.00033,"duration_str":"330\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1660","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = 64 limit 1","type":"query","params":[],"bindings":["64"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00031,"duration_str":"310\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_dev"},{"sql":"select * from `po_seller` where `insta_username` = 'mamaskoken' limit 1","type":"query","params":[],"bindings":["mamaskoken"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":736},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:736","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = '2433' limit 1","type":"query","params":[],"bindings":["2433"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00031,"duration_str":"310\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_dev"},{"sql":"select * from `po_chat` where `id_conversation` = 80 order by `id` desc limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":746},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00028000000000000003,"duration_str":"280\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:746","connection":"mds_dev"},{"sql":"select * from `po_chat` where `id_conversation` = 80 order by `id` desc limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":746},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00028000000000000003,"duration_str":"280\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:746","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = 2433 limit 1","type":"query","params":[],"bindings":["2433"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00031,"duration_str":"310\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_dev"},{"sql":"select * from `po_chat` where `id_conversation` = 81 order by `id` desc limit 1","type":"query","params":[],"bindings":["81"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":746},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00027,"duration_str":"270\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:746","connection":"mds_dev"},{"sql":"select * from `po_chat` where `id_conversation` = 81 order by `id` desc limit 1","type":"query","params":[],"bindings":["81"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":746},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:746","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = 115 limit 1","type":"query","params":[],"bindings":["115"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.0003,"duration_str":"300\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_dev"},{"sql":"select * from `po_client_api` where `id` = '2433' limit 1","type":"query","params":[],"bindings":["2433"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00033,"duration_str":"330\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `id` = 80 limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":766},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00028000000000000003,"duration_str":"280\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:766","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.0005200000000000001,"duration_str":"520\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00038,"duration_str":"380\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00039,"duration_str":"390\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00037,"duration_str":"370\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00032,"duration_str":"320\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `id` = 80 limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":766},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00027,"duration_str":"270\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:766","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00038,"duration_str":"380\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00035,"duration_str":"350\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00037,"duration_str":"370\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `id` = 80 limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":766},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.0003,"duration_str":"300\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:766","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00032,"duration_str":"320\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00035,"duration_str":"350\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00032,"duration_str":"320\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `id` = 80 limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":766},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00033,"duration_str":"330\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:766","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00034,"duration_str":"340\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"},{"sql":"select * from `po_conversation` where `id` = 80 limit 1","type":"query","params":[],"bindings":["80"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":766},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00032,"duration_str":"320\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:766","connection":"mds_dev"},{"sql":"select * from `po_curated_post` where `id` = 12229 limit 1","type":"query","params":[],"bindings":["12229"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":756},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00037,"duration_str":"370\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:756","connection":"mds_dev"}]},"swiftmailer_mails":{"count":0,"mails":[]},"gate":{"count":0,"messages":[]},"session":{"_token":"QqzjCUSLcAO1lOmuenA6jQkTmoqf2f6hFVfEnjI3","_previous":"array:1 [\n  \"url\" => \"https:\/\/staging.manisdansedap.com\/chat_mobile?header_chat_isbuyer=1&receiver_id=2433\"\n]","_flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","login_web-client_59ba36addc2b2f9401580f014c7f58ea4e30989d":"64","is_user_exsisting":"0","id_user_exsisting":"0","dashboard_header":"1","link_chat":"https:\/\/staging.manisdansedap.com\/chat?header_chat_isbuyer=1","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"path_info":"\/chat_mobile","status_code":"<pre class=sf-dump id=sf-dump-307285863 data-indent-pad=\"  \"><span class=sf-dump-num>200<\/span>\n<\/pre><script>Sfdump(\"sf-dump-307285863\", {\"maxDepth\":0})<\/script>\n","status_text":"OK","format":"html","content_type":"text\/html; charset=UTF-8","request_query":"<pre class=sf-dump id=sf-dump-689582793 data-indent-pad=\"  \"><span class=sf-dump-note>array:2<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>receiver_id<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">2433<\/span>\"\n  \"<span class=sf-dump-key>header_chat_isbuyer<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-689582793\", {\"maxDepth\":0})<\/script>\n","request_request":"<pre class=sf-dump id=sf-dump-180525680 data-indent-pad=\"  \"><span class=sf-dump-note>array:2<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>receiver_id<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">2433<\/span>\"\n  \"<span class=sf-dump-key>header_chat_isbuyer<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-180525680\", {\"maxDepth\":0})<\/script>\n","request_headers":"<pre class=sf-dump id=sf-dump-1165730749 data-indent-pad=\"  \"><span class=sf-dump-note>array:13<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>host<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>user-agent<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"84 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.15; rv:104.0) Gecko\/20100101 Firefox\/104.0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"85 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,*\/*;q=0.8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-language<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.5<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-encoding<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>connection<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>referer<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"60 characters\">https:\/\/staging.manisdansedap.com\/chat?header_chat_isbuyer=2<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cookie<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"962 characters\">_ga_3SN6VN00GR=GS1.1.1664195961.6.1.1664198323.60.0.0; _ga=GA1.1.1706758155.1660630033; __auc=f65e92fb182a543bc86e042f039; _ga=GA1.3.1706758155.1660630033; XSRF-TOKEN=eyJpdiI6InhWcSt2UmxPbDJBKzZ5QURlY2VmVmc9PSIsInZhbHVlIjoiUU44dll5d2gwRTQ0K1RNc08vTHJBS0s2UnJPQkQ5RUJrUDBoeXhWQThuVjVuZisvUVpRcHdKZXV2ekpxQ0I4ZGtFVTc0bldmRHZCYkdhTCt5aFNhRzdrMkxJRkVvMUZNdzZFdUpaMHpucG1VV1c2MitNVmRkZytlQ2RhelJ0NlEiLCJtYWMiOiIzOWE5YWMxMWQ2NTFlZDA2OWI4YjI5MmYyNGM3NzBjNjJiNDAwYzZmM2MzNDI1MmQyZmRmODRmZDdiNWQxOTY1IiwidGFnIjoiIn0%3D; mnd_session=eyJpdiI6IjA3SWR3R0tWeXJOVk1IMzF1Tm1mL1E9PSIsInZhbHVlIjoiWVJTZC93UXpFRTltS2F2THdPTEtVZ0ZFN2YvNW5NYWNjeG5xdm1YbVlZRDB6WTcza3RoK1pYUm9YK3JNdktMekFHeTBZMW45eE1zOXVwRVdwWGFCN0QvcThKSlhSYVMrWFhlNkVxNEtTWlhiM2NnQTNQTUhPT0VjSTZwT3dBNWgiLCJtYWMiOiJkZDUxMmRlN2JhODI3NDhmODI3OWJjMGVjYjMzMDUzYzU2YWVmMzk2ZWJkNWQ0MzI1NWJiMzBlMWIxOTU1YTdmIiwidGFnIjoiIn0%3D; _gid=GA1.3.60606746.1664192642; __asc=af9815ef18379cf1d19f3f994ac; _gat_%5Bobject%20Object%5D=1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>upgrade-insecure-requests<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-dest<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-mode<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-site<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-user<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1165730749\", {\"maxDepth\":0})<\/script>\n","request_server":"<pre class=sf-dump id=sf-dump-671744412 data-indent-pad=\"  \"><span class=sf-dump-note>array:43<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>REDIRECT_HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_STATUS<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">200<\/span>\"\n  \"<span class=sf-dump-key>HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP_HOST<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP_USER_AGENT<\/span>\" => \"<span class=sf-dump-str title=\"84 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.15; rv:104.0) Gecko\/20100101 Firefox\/104.0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT<\/span>\" => \"<span class=sf-dump-str title=\"85 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,*\/*;q=0.8<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_LANGUAGE<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.5<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_ENCODING<\/span>\" => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  \"<span class=sf-dump-key>HTTP_CONNECTION<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  \"<span class=sf-dump-key>HTTP_REFERER<\/span>\" => \"<span class=sf-dump-str title=\"60 characters\">https:\/\/staging.manisdansedap.com\/chat?header_chat_isbuyer=2<\/span>\"\n  \"<span class=sf-dump-key>HTTP_COOKIE<\/span>\" => \"<span class=sf-dump-str title=\"962 characters\">_ga_3SN6VN00GR=GS1.1.1664195961.6.1.1664198323.60.0.0; _ga=GA1.1.1706758155.1660630033; __auc=f65e92fb182a543bc86e042f039; _ga=GA1.3.1706758155.1660630033; XSRF-TOKEN=eyJpdiI6InhWcSt2UmxPbDJBKzZ5QURlY2VmVmc9PSIsInZhbHVlIjoiUU44dll5d2gwRTQ0K1RNc08vTHJBS0s2UnJPQkQ5RUJrUDBoeXhWQThuVjVuZisvUVpRcHdKZXV2ekpxQ0I4ZGtFVTc0bldmRHZCYkdhTCt5aFNhRzdrMkxJRkVvMUZNdzZFdUpaMHpucG1VV1c2MitNVmRkZytlQ2RhelJ0NlEiLCJtYWMiOiIzOWE5YWMxMWQ2NTFlZDA2OWI4YjI5MmYyNGM3NzBjNjJiNDAwYzZmM2MzNDI1MmQyZmRmODRmZDdiNWQxOTY1IiwidGFnIjoiIn0%3D; mnd_session=eyJpdiI6IjA3SWR3R0tWeXJOVk1IMzF1Tm1mL1E9PSIsInZhbHVlIjoiWVJTZC93UXpFRTltS2F2THdPTEtVZ0ZFN2YvNW5NYWNjeG5xdm1YbVlZRDB6WTcza3RoK1pYUm9YK3JNdktMekFHeTBZMW45eE1zOXVwRVdwWGFCN0QvcThKSlhSYVMrWFhlNkVxNEtTWlhiM2NnQTNQTUhPT0VjSTZwT3dBNWgiLCJtYWMiOiJkZDUxMmRlN2JhODI3NDhmODI3OWJjMGVjYjMzMDUzYzU2YWVmMzk2ZWJkNWQ0MzI1NWJiMzBlMWIxOTU1YTdmIiwidGFnIjoiIn0%3D; _gid=GA1.3.60606746.1664192642; __asc=af9815ef18379cf1d19f3f994ac; _gat_%5Bobject%20Object%5D=1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_UPGRADE_INSECURE_REQUESTS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_DEST<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_MODE<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_SITE<\/span>\" => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_USER<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  \"<span class=sf-dump-key>PATH<\/span>\" => \"<span class=sf-dump-str title=\"60 characters\">\/usr\/local\/sbin:\/usr\/local\/bin:\/usr\/sbin:\/usr\/bin:\/sbin:\/bin<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SIGNATURE<\/span>\" => \"<span class=sf-dump-str title=\"87 characters\">&lt;address&gt;Apache\/2.4.41 (Ubuntu) Server at staging.manisdansedap.com Port 443&lt;\/address&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n<\/span><\/span>\"\n  \"<span class=sf-dump-key>SERVER_SOFTWARE<\/span>\" => \"<span class=sf-dump-str title=\"22 characters\">Apache\/2.4.41 (Ubuntu)<\/span>\"\n  \"<span class=sf-dump-key>SERVER_NAME<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">10.80.0.5<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PORT<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">443<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">34.124.209.212<\/span>\"\n  \"<span class=sf-dump-key>DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">\/var\/www\/mds\/mds-core\/public\/<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_SCHEME<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">https<\/span>\"\n  \"<span class=sf-dump-key>CONTEXT_PREFIX<\/span>\" => \"\"\n  \"<span class=sf-dump-key>CONTEXT_DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">\/var\/www\/mds\/mds-core\/public\/<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADMIN<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">webmaster@kly.id<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_FILENAME<\/span>\" => \"<span class=sf-dump-str title=\"38 characters\">\/var\/www\/mds\/mds-core\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_PORT<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">64360<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_URL<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">\/chat_mobile<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_QUERY_STRING<\/span>\" => \"<span class=sf-dump-str title=\"38 characters\">receiver_id=2433&amp;header_chat_isbuyer=1<\/span>\"\n  \"<span class=sf-dump-key>GATEWAY_INTERFACE<\/span>\" => \"<span class=sf-dump-str title=\"7 characters\">CGI\/1.1<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PROTOCOL<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">HTTP\/1.1<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_METHOD<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET<\/span>\"\n  \"<span class=sf-dump-key>QUERY_STRING<\/span>\" => \"<span class=sf-dump-str title=\"38 characters\">receiver_id=2433&amp;header_chat_isbuyer=1<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_URI<\/span>\" => \"<span class=sf-dump-str title=\"51 characters\">\/chat_mobile?receiver_id=2433&amp;header_chat_isbuyer=1<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_NAME<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">\/index.php<\/span>\"\n  \"<span class=sf-dump-key>PHP_SELF<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_TIME_FLOAT<\/span>\" => <span class=sf-dump-num>1664198324.6527<\/span>\n  \"<span class=sf-dump-key>REQUEST_TIME<\/span>\" => <span class=sf-dump-num>1664198324<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-671744412\", {\"maxDepth\":0})<\/script>\n","request_cookies":"<pre class=sf-dump id=sf-dump-55133009 data-indent-pad=\"  \"><span class=sf-dump-note>array:8<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_ga_3SN6VN00GR<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_ga<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>__auc<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>XSRF-TOKEN<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">QqzjCUSLcAO1lOmuenA6jQkTmoqf2f6hFVfEnjI3<\/span>\"\n  \"<span class=sf-dump-key>mnd_session<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">Tn1keaNUgnfziehdDg7q8SK71fLK0cJBbbgldCzN<\/span>\"\n  \"<span class=sf-dump-key>_gid<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>__asc<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_gat_%5Bobject%20Object%5D<\/span>\" => <span class=sf-dump-const>null<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-55133009\", {\"maxDepth\":0})<\/script>\n","response_headers":"<pre class=sf-dump id=sf-dump-817478160 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>content-type<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"24 characters\">text\/html; charset=UTF-8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cache-control<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">no-cache, private<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>date<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"29 characters\">Mon, 26 Sep 2022 13:18:44 GMT<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>set-cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"414 characters\">XSRF-TOKEN=eyJpdiI6Ilp6R1UzazhIWXYweVRkelFjcWpPeGc9PSIsInZhbHVlIjoiTFR0Rko4NUkzRzBTaE9ZQUxRY0NGTWRHRTRlYXJDcjJJeWQxdmgvRzZINXR5aW5zMnBBbGZJanV0aFdZcFNGWkhEYnhCQndhN0picWJQV3ZWQkRrVTRsOEZJaFNOWkU2ZjJPUSt0aTBhTmp2bzJKUk1BMFBoRGRKTjdtM1JEWm8iLCJtYWMiOiI3YzZiYWM2MmUzMzNmMjUzNDBjNjQwOWY1MmE2YWZhYTM5ZDIwOWFmZGE4MjE1YTY2MTM4MzU2ODA2NTljMmIyIiwidGFnIjoiIn0%3D; expires=Mon, 26-Sep-2022 15:18:44 GMT; Max-Age=7200; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"425 characters\">mnd_session=eyJpdiI6IkwzSkQ1alVFZmc4dGxUaXhTZXk1ZUE9PSIsInZhbHVlIjoiRjc2dWZCWG0yN1U4VmZuVDIrVG1RODBHN2hhOTZJTFBITzFnVjg4UktjdXQrNVU4bkkrSGVkMkJuS2hoSkNGQ1hxYll6a3YrK203VWs4OUhOYzdRbHNyS0FmQ0pTYUJSeGs2RU9OTHdpd28vYnJudGo4VkFPbkZaWElyc2F5QUgiLCJtYWMiOiJiYmUyY2I4ZjM3MDYzMTIzODU0MDA0ZTkwNDlkY2I2NjNjOGY0MjI5YTg0NjgxNTRlNTIyOGE0ZThmMTVjMjU3IiwidGFnIjoiIn0%3D; expires=Mon, 26-Sep-2022 15:18:44 GMT; Max-Age=7200; path=\/; httponly<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>Set-Cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"400 characters\">XSRF-TOKEN=eyJpdiI6Ilp6R1UzazhIWXYweVRkelFjcWpPeGc9PSIsInZhbHVlIjoiTFR0Rko4NUkzRzBTaE9ZQUxRY0NGTWRHRTRlYXJDcjJJeWQxdmgvRzZINXR5aW5zMnBBbGZJanV0aFdZcFNGWkhEYnhCQndhN0picWJQV3ZWQkRrVTRsOEZJaFNOWkU2ZjJPUSt0aTBhTmp2bzJKUk1BMFBoRGRKTjdtM1JEWm8iLCJtYWMiOiI3YzZiYWM2MmUzMzNmMjUzNDBjNjQwOWY1MmE2YWZhYTM5ZDIwOWFmZGE4MjE1YTY2MTM4MzU2ODA2NTljMmIyIiwidGFnIjoiIn0%3D; expires=Mon, 26-Sep-2022 15:18:44 GMT; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"411 characters\">mnd_session=eyJpdiI6IkwzSkQ1alVFZmc4dGxUaXhTZXk1ZUE9PSIsInZhbHVlIjoiRjc2dWZCWG0yN1U4VmZuVDIrVG1RODBHN2hhOTZJTFBITzFnVjg4UktjdXQrNVU4bkkrSGVkMkJuS2hoSkNGQ1hxYll6a3YrK203VWs4OUhOYzdRbHNyS0FmQ0pTYUJSeGs2RU9OTHdpd28vYnJudGo4VkFPbkZaWElyc2F5QUgiLCJtYWMiOiJiYmUyY2I4ZjM3MDYzMTIzODU0MDA0ZTkwNDlkY2I2NjNjOGY0MjI5YTg0NjgxNTRlNTIyOGE0ZThmMTVjMjU3IiwidGFnIjoiIn0%3D; expires=Mon, 26-Sep-2022 15:18:44 GMT; path=\/; httponly<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-817478160\", {\"maxDepth\":0})<\/script>\n","session_attributes":"<pre class=sf-dump id=sf-dump-1676863128 data-indent-pad=\"  \"><span class=sf-dump-note>array:9<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_token<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">QqzjCUSLcAO1lOmuenA6jQkTmoqf2f6hFVfEnjI3<\/span>\"\n  \"<span class=sf-dump-key>_previous<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>url<\/span>\" => \"<span class=sf-dump-str title=\"84 characters\">https:\/\/staging.manisdansedap.com\/chat_mobile?header_chat_isbuyer=1&amp;receiver_id=2433<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>_flash<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>old<\/span>\" => []\n    \"<span class=sf-dump-key>new<\/span>\" => []\n  <\/samp>]\n  \"<span class=sf-dump-key>login_web-client_59ba36addc2b2f9401580f014c7f58ea4e30989d<\/span>\" => <span class=sf-dump-num>64<\/span>\n  \"<span class=sf-dump-key>is_user_exsisting<\/span>\" => \"<span class=sf-dump-str>0<\/span>\"\n  \"<span class=sf-dump-key>id_user_exsisting<\/span>\" => \"<span class=sf-dump-str>0<\/span>\"\n  \"<span class=sf-dump-key>dashboard_header<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>link_chat<\/span>\" => \"<span class=sf-dump-str title=\"60 characters\">https:\/\/staging.manisdansedap.com\/chat?header_chat_isbuyer=1<\/span>\"\n  \"<span class=sf-dump-key>PHPDEBUGBAR_STACK_DATA<\/span>\" => []\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1676863128\", {\"maxDepth\":0})<\/script>\n"}}, "X36589a4012eea842441db829a0bf1476");
+
+</script>
+</body>
+</html>
+<script>
+$("#form_submit_message").submit(function(e){
+    e.preventDefault();
+})
+
+const id_prd = $("#id_prod_if").val(); 
+if (id_prd != undefined) {
+    window.onload = function() { //reload first time
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
+}
+$(document).ready(function () {
+    // setInterval( function() {
+    //     $("#ini_all_body").load(location.href + "#ini_all_body");
+    // }, 20000 );
+    const element = document.getElementById('isi_pesan')
+
+    // element.addEventListener("click", () => {
+    //     console.log('chat click');
+    // });
+
+    const textPlaceholder = "Tulis pesan disini..."
+    const $editable = $("[contenteditable].edit")
+    if($editable.text() == "") $editable.text(textPlaceholder)
+    $editable.on("focus", function(){
+        if($editable.text()== textPlaceholder) $editable.text("")
+    })
+   $editable.on("blur", function(){
+        if($editable.text() == "") $editable.text(textPlaceholder)
+    })
+    $('#scroll_mobile').scrollTop($('#scroll_mobile')[0].scrollHeight);
+});
+
+
+function send_message(){
+    // const isi_pesan = document.getElementById('isi_pesan').value
+    var contenteditable = document.querySelector('[contenteditable]')
+   isi_pesan = contenteditable.innerText;
+   isi_pesan = isi_pesan.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+   const id_produk = document.getElementById('id_produk').value
+    const pesan = document.getElementById("coba");
+    const id_send = document.getElementById('id_pengirim').value
+   const id_recive = document.getElementById('id_penerima').value //kalau pesan kosong error
+    $.ajax({
+            url: "https://staging.manisdansedap.com/send_chat",
+            type:"POST",
+            data:{
+                pesan : isi_pesan,
+                id_send : id_send, 
+                id_recive: id_recive, 
+                id_produk: id_produk, 
+                _token: "QqzjCUSLcAO1lOmuenA6jQkTmoqf2f6hFVfEnjI3",
+            },
+            success:function(res){
+                const time_send = res.pesan.created_at;
+                const fix_time = time_send.replace(/\//g, "-");//date am / pm
+                const just_date_number = fix_time.substring(0, fix_time.length - 2);
+               
+                const pesan_kirim = `<li>
+                                        <div class="chat pengirim ajax-dom" style="margin-bottom:0px;margin-top:-30px;">
+                                            <div class="body">
+                                                <div class="row" style="justify-content: end; margin-right: 5px;">
+                                                    <div class="col-12">
+                                                        &nbsp;
+                                                    </div>
+                                                        <div class="content bg-me-chat" style="border-radius: 2px !important;">
+                                                        <p style="color:#fff;" id="isi_pesan_sender">
+                                                            ${isi_pesan}
+                                                        </p>
+                                                        </div>
+                                                        <div class="head" style="margin-left: 90px;">
+                                                            <span class="mt-2" id="jam_pesan_sender" style="text-align:right;margin:0">
+                                                                ${just_date_number}
+                                                            </span>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    `;
+                $(".chat-list").append(pesan_kirim);
+                //document.getElementById('isi_pesan').value=null;
+                let content = document.querySelector('[contenteditable]')
+                isi_pesan = content.innerText;
+                isi_pesan = isi_pesan.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
+                $(".edit").empty();
+            },
+            error:function(er){
+                console.log(er);
+            }
+    })
+    
+}
+
+</script>
