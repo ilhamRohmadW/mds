@@ -1,2 +1,88 @@
-* 
-    outline: 1px solid red
+=line-clamp($line)
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: $line
+.site-header
+    position: sticky
+    top: 0
+    background-color: white
+    z-index: 9
+.chat-contacts
+    &_top
+        position: sticky
+        top: 72px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding: 15px 20px
+        column-gap: 18px
+        background-color: white
+        border-bottom: 1px solid #ebebeb
+        z-index: 5
+    &_list
+        &_item
+            border-bottom: 1px solid #ebebeb
+            padding: 20px
+.chats
+    display: flex
+    align-items: stretch
+    text-decoration: none
+    color: black
+    position: relative
+    &--unread
+        .chats
+            &_message
+                font-weight: 600
+                color: black
+    &_img
+        border-radius: 50% 
+        width: 40px
+        height: auto
+        margin-bottom: 0
+        margin-right: 15px 
+    &_left
+        flex: 1
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &_right
+        flex: 0 0 55px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: space-between
+        padding-top: 4px
+    &_name
+        font-size: 16px
+        font-weight: 600
+        margin-bottom: 0
+    &_message
+        font-size: 12px
+        font-weight: 400
+        margin-bottom: 0
+        color: #969696
+        +line-clamp(1)
+    &_time
+        font-size: 12px
+        color: #949494
+    &_notif
+        border-radius: 50%
+        background-color: #20A647
+        color: white
+        width: 20px
+        height: 20px
+        text-align: center
+        line-height: 22px
+        font-size: 10px
+        font-weight: 500
+    
+.mt-0
+    margin-top: 0
+.px-0
+    padding-left: 0
+    padding-right: 0
+@media(min-width:767px)
+    .chat-contacts
+        &_top
+            top: 97px
