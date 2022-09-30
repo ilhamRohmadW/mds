@@ -257,9 +257,14 @@ body.overflow-hidden {
 }
 .content_cart h5 {
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .content_cart p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .chat.penerima {
@@ -446,6 +451,7 @@ body.overflow-hidden {
 .quotation_subtotal p {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 .quotation_footer {
   position: absolute;
