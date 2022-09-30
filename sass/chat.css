@@ -1,3 +1,22 @@
+body {
+  --color-primary: #20A647;
+  --color-white: #fff;
+  --color-gray: #ddd;
+  --color-black: #000;
+  font-family: "Poppins", sans-serif;
+}
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .site-header {
   position: -webkit-sticky;
   position: sticky;
@@ -148,7 +167,7 @@
   background-color: #20A647;
 }
 .chat-wrap {
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 .chat-submission {
   position: fixed;
@@ -215,7 +234,6 @@
 
 .chat-wrap {
   min-height: unset;
-  max-height: 370px;
 }
 
 #scoll_auto {
