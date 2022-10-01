@@ -9727,9 +9727,7 @@ flex: 1;
 
     </style>
     <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/login.css?v=1.4">
-
-
-    
+  
     <link rel="icon" sizes="16x16" href="https://cdn-staging.manisdansedap.com/assets/new-asset/Favicon_manisdansedap.png">
     <meta name="csrf-token" content="QqzjCUSLcAO1lOmuenA6jQkTmoqf2f6hFVfEnjI3" />
     <script>
@@ -10377,23 +10375,30 @@ flex: 1;
                                 <div class="chat pengirim">
                                     <div class="body">
                                         <div class="content" >
-                                            <div class="content_cart" style="max-width: 350px;">
+                                            <div class="content_cart">
                                                 <img class="content_cart_img" src="https://cdn.manisdansedap.com/assets/images/logo_300x300.png" alt="" width="78px" height="78px">
-                                                <div>
+                                                <div class="content_cart_detail">
                                                     <h5 style="font-size: 13px;font-weight:600;">
                                                         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M4.66687 11.5002C3.93354 11.5002 3.3402 12.1002 3.3402 12.8335C3.3402 13.5668 3.93354 14.1668 4.66687 14.1668C5.4002 14.1668 6.0002 13.5668 6.0002 12.8335C6.0002 12.1002 5.4002 11.5002 4.66687 11.5002ZM0.66687 0.833496V2.16683H2.0002L4.4002 7.22683L3.5002 8.86016C3.39354 9.04683 3.33354 9.26683 3.33354 9.50016C3.33354 10.2335 3.93354 10.8335 4.66687 10.8335H12.6669V9.50016H4.94687C4.85354 9.50016 4.7802 9.42683 4.7802 9.3335L4.8002 9.2535L5.4002 8.16683H10.3669C10.8669 8.16683 11.3069 7.8935 11.5335 7.48016L13.9202 3.1535C13.9752 3.05175 14.0029 2.93748 14.0005 2.82185C13.9982 2.70621 13.9658 2.59317 13.9067 2.49376C13.8476 2.39434 13.7637 2.31196 13.6633 2.25466C13.5628 2.19736 13.4492 2.1671 13.3335 2.16683H3.47354L2.84687 0.833496H0.66687ZM11.3335 11.5002C10.6002 11.5002 10.0069 12.1002 10.0069 12.8335C10.0069 13.5668 10.6002 14.1668 11.3335 14.1668C12.0669 14.1668 12.6669 13.5668 12.6669 12.8335C12.6669 12.1002 12.0669 11.5002 11.3335 11.5002Z" fill="black"/>
                                                         </svg>                                                                    
-                                                        3 Items
+                                                        3 Menu Pesanan
                                                     </h5>                                                       
-                                                    <p class="col-12 px-0" style=" font-size: 11px">
+                                                    <p class="px-0" style=" font-size: 11px">
                                                         Rp 300.000 (estimate total)
                                                     </p>
-                                                    <div class="buttons text-right col-12 px-0">
+                                                    <div class="buttons text-right px-0">
                                                         <button data-target="#modal_quotation" data-toggle="modal" rel="nofollow" target="_blank" 
                                                         class="submit button button-round bg-me-send text-white" 
                                                         style="border-radius: 10px !important;">Lihat Pesanan</button>
                                                     </div>
+                                                </div>
+                                                <div class="content_bottom">
+                                                  <svg class="content_bottom_notif --read" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.33325 4.00008L4.83325 7.33341L6.58325 5.33341M5.33325 4.00008L8.83325 7.33341L14.6666 0.666748M10.6666 0.666748L8.33325 3.33341" 
+                                                    stroke="" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>                                                  
+                                                  <span class="content_bottom_time">14:32</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -10405,9 +10410,16 @@ flex: 1;
                                     <div class="body">
                                         <div style="justify-content: end;">
                                                 <div class="content bg-me-chat">
-                                                <p style="color:#fff;" id="isi_pesan_sender">
-                                                    Kak saya mau order ini bisa ya?
-                                                </p>
+                                                  <div class="content_bottom">
+                                                    <p id="isi_pesan_sender">
+                                                      Kak saya mau order ini bisa ya?
+                                                    </p>
+                                                    <svg class="content_bottom_notif --read" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M1.33325 4.00008L4.83325 7.33341L6.58325 5.33341M5.33325 4.00008L8.83325 7.33341L14.6666 0.666748M10.6666 0.666748L8.33325 3.33341" 
+                                                      stroke="" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>                                                  
+                                                    <span class="content_bottom_time">14:32</span>
+                                                  </div>
                                                 </div>
                                         </div>
                                     </div>
@@ -10418,7 +10430,8 @@ flex: 1;
                                 <div class="chat penerima" id="penerima_id_reload">
                                     <div class="body">
                                         <div class="content" >
-                                            <p style="max-width: 350px;">
+                                          <div class="content_bottom">
+                                            <p>
                                                 Hi selamat datang, Melani Food siap melayani anda 🤗🤗
                                                 Produk ditoko kami dijamin Enak dan Lezat😊😉
                                                 Kami tidak ada toko offline ya kakak 🙏
@@ -10427,6 +10440,29 @@ flex: 1;
                                                 Terimakasih 😊
                                                 <br>
                                                 Happy Makan Makan 💞💞</p>
+                                              <span class="content_bottom_time">14:32</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="hidden" name="" id="id_produk" value="12229">
+                                <div class="chat penerima" id="penerima_id_reload">
+                                    <div class="body">
+                                        <div class="content" >
+                                          <div class="content_bottom">
+                                            <p>
+                                                Hi selamat datang, Melani Food siap melayani anda 🤗🤗
+                                                Produk ditoko kami dijamin Enak dan Lezat😊😉
+                                                Kami tidak ada toko offline ya kakak 🙏
+                                                <br>
+                                                Harap menunggu chat anda akan segera kami balas
+                                                Terimakasih 😊
+                                                <br>
+                                                Happy Makan Makan 💞💞</p>
+                                              <span class="content_bottom_time">14:32</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -10435,23 +10471,30 @@ flex: 1;
                               <div class="chat pengirim">
                                   <div class="body">
                                       <div class="content" >
-                                          <div class="content_cart" style="max-width: 350px;">
+                                          <div class="content_cart">
                                               <img class="content_cart_img" src="https://cdn.manisdansedap.com/assets/images/logo_300x300.png" alt="" width="78px" height="78px">
-                                              <div>
+                                              <div class="content_cart_detail">
                                                   <h5 style="font-size: 13px;font-weight:600;">
                                                       <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                           <path d="M4.66687 11.5002C3.93354 11.5002 3.3402 12.1002 3.3402 12.8335C3.3402 13.5668 3.93354 14.1668 4.66687 14.1668C5.4002 14.1668 6.0002 13.5668 6.0002 12.8335C6.0002 12.1002 5.4002 11.5002 4.66687 11.5002ZM0.66687 0.833496V2.16683H2.0002L4.4002 7.22683L3.5002 8.86016C3.39354 9.04683 3.33354 9.26683 3.33354 9.50016C3.33354 10.2335 3.93354 10.8335 4.66687 10.8335H12.6669V9.50016H4.94687C4.85354 9.50016 4.7802 9.42683 4.7802 9.3335L4.8002 9.2535L5.4002 8.16683H10.3669C10.8669 8.16683 11.3069 7.8935 11.5335 7.48016L13.9202 3.1535C13.9752 3.05175 14.0029 2.93748 14.0005 2.82185C13.9982 2.70621 13.9658 2.59317 13.9067 2.49376C13.8476 2.39434 13.7637 2.31196 13.6633 2.25466C13.5628 2.19736 13.4492 2.1671 13.3335 2.16683H3.47354L2.84687 0.833496H0.66687ZM11.3335 11.5002C10.6002 11.5002 10.0069 12.1002 10.0069 12.8335C10.0069 13.5668 10.6002 14.1668 11.3335 14.1668C12.0669 14.1668 12.6669 13.5668 12.6669 12.8335C12.6669 12.1002 12.0669 11.5002 11.3335 11.5002Z" fill="black"/>
                                                       </svg>                                                                    
-                                                      3 Items
+                                                      3 Menu Pesanan
                                                   </h5>                                                       
-                                                  <p class="col-12 px-0" style=" font-size: 11px">
+                                                  <p class="px-0" style=" font-size: 11px">
                                                       Rp 300.000 (estimate total)
                                                   </p>
-                                                  <div class="buttons text-right col-12 px-0">
+                                                  <div class="buttons text-right px-0">
                                                       <button data-target="#modal_quotation" data-toggle="modal" rel="nofollow" target="_blank" 
                                                       class="submit button button-round bg-me-send text-white" 
                                                       style="border-radius: 10px !important;">Lihat Pesanan</button>
                                                   </div>
+                                              </div>
+                                              <div class="content_bottom">
+                                                <svg class="content_bottom_notif" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M1.33325 4.00008L4.83325 7.33341L6.58325 5.33341M5.33325 4.00008L8.83325 7.33341L14.6666 0.666748M10.6666 0.666748L8.33325 3.33341" 
+                                                  stroke="" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                  
+                                                <span class="content_bottom_time">14:32</span>
                                               </div>
                                           </div>
                                       </div>
@@ -10463,28 +10506,17 @@ flex: 1;
                                   <div class="body">
                                       <div style="justify-content: end;">
                                               <div class="content bg-me-chat">
-                                              <p style="color:#fff;" id="isi_pesan_sender">
-                                                  Kak saya mau order ini bisa ya?
-                                              </p>
+                                                <div class="content_bottom">
+                                                  <p id="isi_pesan_sender">
+                                                    Kak saya mau order ini bisa ya?
+                                                  </p>
+                                                  <svg class="content_bottom_notif" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.33325 4.00008L4.83325 7.33341L6.58325 5.33341M5.33325 4.00008L8.83325 7.33341L14.6666 0.666748M10.6666 0.666748L8.33325 3.33341" 
+                                                    stroke="" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                  </svg>                                                  
+                                                  <span class="content_bottom_time">14:32</span>
+                                                </div>
                                               </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                              <input type="hidden" name="" id="id_produk" value="12229">
-                              <div class="chat penerima" id="penerima_id_reload">
-                                  <div class="body">
-                                      <div class="content" >
-                                          <p style="max-width: 350px;">
-                                              Hi selamat datang, Melani Food siap melayani anda 🤗🤗
-                                              Produk ditoko kami dijamin Enak dan Lezat😊😉
-                                              Kami tidak ada toko offline ya kakak 🙏
-                                              <br>
-                                              Harap menunggu chat anda akan segera kami balas
-                                              Terimakasih 😊
-                                              <br>
-                                              Happy Makan Makan 💞💞</p>
                                       </div>
                                   </div>
                               </div>
@@ -10505,13 +10537,13 @@ flex: 1;
                           </a>
                           <input class="chat-submission__input" placeholder="Tulis Pesan..." type="text">
                         </div>
-                          <div class="chat-submission__send">
-                              <button id="btn_send" onclick="send_message()" class="submit button button-box button-round bg-me-send text-white">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1.18827 0.336564C1.08203 0.283431 0.963019 0.261179 0.844764 0.272339C0.726508 0.283499 0.613758 0.327624 0.51934 0.399695C0.424921 0.471765 0.352624 0.568887 0.310673 0.680013C0.268722 0.791139 0.258801 0.911809 0.282037 1.02829L2.06277 7.18406C2.09597 7.29878 2.16087 7.4018 2.25001 7.48128C2.33914 7.56076 2.4489 7.61348 2.56665 7.63337L9.78858 8.84295C10.1287 8.91022 10.1287 9.3976 9.78858 9.46487L2.56665 10.6744C2.4489 10.6943 2.33914 10.7471 2.25001 10.8265C2.16087 10.906 2.09597 11.009 2.06277 11.1238L0.282037 17.2795C0.258801 17.396 0.268722 17.5167 0.310673 17.6278C0.352624 17.7389 0.424921 17.8361 0.51934 17.9081C0.613758 17.9802 0.726508 18.0243 0.844764 18.0355C0.963019 18.0466 1.08203 18.0244 1.18827 17.9713L17.6883 9.72126C17.7935 9.66849 17.8821 9.58749 17.9439 9.48729C18.0058 9.38709 18.0385 9.27166 18.0385 9.15391C18.0385 9.03616 18.0058 8.92073 17.9439 8.82053C17.8821 8.72033 17.7935 8.63932 17.6883 8.58656L1.18827 0.336564Z" fill="white"/>
-                                </svg>
-                              </button>
-                          </div>
+                        <div class="chat-submission__send">
+                            <button id="btn_send" onclick="send_message()" class="submit button button-box button-round bg-me-send text-white">
+                              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.18827 0.336564C1.08203 0.283431 0.963019 0.261179 0.844764 0.272339C0.726508 0.283499 0.613758 0.327624 0.51934 0.399695C0.424921 0.471765 0.352624 0.568887 0.310673 0.680013C0.268722 0.791139 0.258801 0.911809 0.282037 1.02829L2.06277 7.18406C2.09597 7.29878 2.16087 7.4018 2.25001 7.48128C2.33914 7.56076 2.4489 7.61348 2.56665 7.63337L9.78858 8.84295C10.1287 8.91022 10.1287 9.3976 9.78858 9.46487L2.56665 10.6744C2.4489 10.6943 2.33914 10.7471 2.25001 10.8265C2.16087 10.906 2.09597 11.009 2.06277 11.1238L0.282037 17.2795C0.258801 17.396 0.268722 17.5167 0.310673 17.6278C0.352624 17.7389 0.424921 17.8361 0.51934 17.9081C0.613758 17.9802 0.726508 18.0243 0.844764 18.0355C0.963019 18.0466 1.08203 18.0244 1.18827 17.9713L17.6883 9.72126C17.7935 9.66849 17.8821 9.58749 17.9439 9.48729C18.0058 9.38709 18.0385 9.27166 18.0385 9.15391C18.0385 9.03616 18.0058 8.92073 17.9439 8.82053C17.8821 8.72033 17.7935 8.63932 17.6883 8.58656L1.18827 0.336564Z" fill="white"/>
+                              </svg>
+                            </button>
+                        </div>
                       </form>
                   </div>
                     </div>
@@ -11732,6 +11764,27 @@ aria-labelledby="modal_reject" aria-hidden="true">
     
     <script src="https://cdn-staging.manisdansedap.com/assets/jsFull1/js-full.min.js"></script>
     <script>
+      function checkForInput(element) {
+        // element is passed to the function ^
+        
+        const $label = $('#btn_send');
+        console.log($label);
+        if ($(element).val().length > 0) {
+          $label.addClass('active');
+        } else {
+          $label.removeClass('active');
+        }
+      }
+
+      // The lines below are executed on page load
+      $('.chat-submission__input').each(function() {
+        checkForInput(this);
+      });
+
+      // The lines below (inside) are executed on change & keyup
+      $('.chat-submission__input').on('change keyup', function() {
+        checkForInput(this);  
+      });
         /*
             chanif: ketika enter jangan pindah halaman, show step3 saja
             $('#filterForm').keypress(function(e){

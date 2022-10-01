@@ -248,10 +248,37 @@ body.overflow-hidden {
   border: 0;
 }
 
+.content_bottom {
+  margin-top: 10px;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.content_bottom_notif {
+  stroke: #999;
+  margin-left: 17px;
+}
+.content_bottom_notif.--read {
+  stroke: #20A647;
+}
+.content_bottom_time {
+  color: #949494;
+  font-size: 10px;
+  margin-left: 5px;
+}
 .content_cart {
   display: flex;
+  flex-wrap: wrap;
+}
+.content_cart_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 calc(100% - 78px - 12px);
 }
 .content_cart_img {
+  flex: 0 0 78px;
   margin-right: 12px;
   border-radius: 20px;
 }
@@ -271,6 +298,19 @@ body.overflow-hidden {
   padding-right: 15px;
   padding-left: 15px;
 }
+.chat.penerima .body .content {
+  position: relative;
+  padding-bottom: 20px;
+  border-radius: 0 12px 12px 12px;
+}
+.chat.penerima .body .content_bottom {
+  margin-top: 0;
+}
+.chat.penerima .body .content_bottom_time {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
 .chat.pengirim {
   position: relative;
   display: flex;
@@ -283,11 +323,16 @@ body.overflow-hidden {
 }
 
 .chat .body .content, .widget-chat .body .content {
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0px 3.2126px 16.063px rgba(0, 0, 0, 0.15);
   padding: 15px;
   width: 100%;
   margin-left: 0;
+  max-width: 350px;
+}
+.chat .body .content p, .widget-chat .body .content p {
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 .chat-list li .chat, .widget-chat-list li .chat, .chat-list li .widget-chat, .widget-chat-list li .widget-chat {
@@ -299,11 +344,23 @@ body.overflow-hidden {
 }
 
 .bg-me-chat {
-  border-radius: 20px 0 20px 20px !important;
-  background-color: #00AF3B !important;
+  border-radius: 12px 0 12px 12px;
+  background-color: #E7FFEB;
+  color: #4e4e4e;
+}
+.bg-me-chat .content_bottom {
+  margin-top: 0;
 }
 .bg-me-send {
-  background-color: #00AF3B !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+  pointer-events: none;
+}
+.bg-me-send.active {
+  background-color: #00AF3B;
+  pointer-events: auto;
 }
 
 #form_submit_message {
