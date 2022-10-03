@@ -1,41 +1,5 @@
-body
-    --color-primary: #20A647
-    --color-white: #fff
-    --color-gray: #ddd
-    --color-black: #000
-    font-family: 'Poppins', sans-serif
-    &.overflow-hidden
-        overflow: hidden
-.btn
-    border-radius: 12px
-    font-size: 15px
-    &--delete
-        background-color: var(--color-white)
-        padding: 0
-        margin-right: 15px
-        height: 30px
-        display: flex
-        align-items: center
-    &--square
-        width: 44px
-        height: 44px
-        padding: 0
-    &--border
-        border-color: var(--color-primary)
-        background-color: var(--color-white)
-        display: flex
-        justify-content: center
-        align-items: center
-        color: var(--color-primary)
-        font-size: 15px
-        font-weight: 500
-    &.disabled, 
-    &:disabled
-        opacity: 1
-        color: #aaa
-    &.focus,
-    &:focus
-        box-shadow: none
+
+
 
 .fixed-bottom
     padding: 13px 20px 35px
@@ -62,24 +26,6 @@ body
             font-size: 15px
             font-weight: 500
             color: var(--color-black)
-
-    // .counter_input
-    //     -moz-appearance: textfield
-    //     // min-width: 44px
-    //     width: 44px
-    //     // max-width: calc( 100% - 88px )
-    //     border: 0
-    //     outline: 0
-    //     padding: 0
-    //     font-style: normal
-    //     text-align: center
-    //     font-size: 15px
-    //     font-weight: 500
-    //     color: var(--color-black)
-    //     &::-webkit-outer-spin-button,
-    //     &::-webkit-inner-spin-button 
-    //         -webkit-appearance: none
-    //         margin: 0
     &_btn
         background-color: var(--color-gray)
         font-size: 29px
@@ -174,18 +120,6 @@ body
             max-width: 500px
             right: 0
             left: 0
-.px-0
-    padding-left: 0
-    padding-right: 0
-.mx-auto
-    margin-left: auto
-    margin-right: auto
-.w
-    &-full
-        width: 100%
-.h
-    &-full
-        height: 100%
 
 /*! chat */
 .header-section
@@ -304,9 +238,6 @@ $border: #E2E2EF
             margin-bottom: 35px
             &_list
                 padding: 10px 0
-.list-unstyled
-    list-style: none
-    padding-left: 0
 .modal.modal-bottom 
     .modal-dialog
         -webkit-transform: translate3d(0%,0,0)
@@ -383,60 +314,6 @@ $border: #E2E2EF
             padding: 10px 0
             font-size: 14px
             font-weight: 600
-.input
-    position: relative
-    &.--type
-        &.--icon
-            border: 1px solid #E3E3E3
-            border-radius: 12px
-            position: relative
-            padding-left: 20px
-            display: flex
-            align-items: center
-            &:before
-                content: 'Rp'
-                font-size: 14px
-                font-weight: 600
-            .input
-                &_input
-                    border: 0
-                    outline: 0
-                    width: 100%
-                    padding: 20px
-                    padding-left: 10px
-    &.--radio
-        .input
-            &_input
-                opacity: 0
-                inset: 0
-                position: absolute
-                &:checked ~ label
-                    &:before
-                        background-color: var(--color-primary)
-            &_label
-                position: relative
-                line-height: 24px
-                display: flex
-                align-items: center
-                &:before
-                    transition: all .5s ease
-                    background-color: white
-                    border-width: 3px
-                    border-style: solid
-                    border-color: white
-                    content: ''
-                    width: 21px
-                    height: 21px
-                    border-radius: 20px
-                    display: inline-block
-                    outline: 1px solid
-                    margin-right: 10px
-
-.btn
-    &--primary
-        padding: 10px 0
-        background-color: var(--color-primary)
-        color: white
 @media(max-width:479px)
     .header-notification-area > li a .user .avatar
         height: 34px
