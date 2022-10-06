@@ -49,6 +49,26 @@ body.overflow-hidden {
   padding: 20px;
 }
 
+.chat-contacts_empty {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+
+.chat-contacts_empty h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.chat-contacts_empty p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #949494;
+}
+
 .chats {
   display: flex;
   align-items: stretch;
