@@ -137,3 +137,7 @@ body.overflow-hidden {
 .h-full {
   height: 100%;
 }
+
+.right-header__login_btn {
+  margin-bottom: 10px;
+}
