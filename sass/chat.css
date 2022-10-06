@@ -521,6 +521,10 @@ body.overflow-hidden {
   pointer-events: none;
 }
 
+#btn_send svg {
+  transform: translateX(2px);
+}
+
 #btn_send.active {
   background-color: #00AF3B;
   pointer-events: auto;
@@ -579,6 +583,7 @@ body.overflow-hidden {
 .modal--quotation .modal-body h2 {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .modal--confirm .modal-title {
@@ -654,6 +659,7 @@ body.overflow-hidden {
 
 .quotation_list {
   border-bottom: 1px solid #E2E2EF;
+  margin-bottom: 1rem;
   padding-left: 0;
   list-style-type: none;
   list-style: none;
@@ -688,6 +694,7 @@ body.overflow-hidden {
 .quotation_subtotal_info {
   font-size: 10px;
   color: #4E4E4E;
+  display: block;
 }
 
 .quotation_subtotal_total {
