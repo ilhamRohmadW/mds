@@ -209,7 +209,10 @@ body.overflow-hidden {
 
 .chat-submission {
   position: fixed;
-  bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  bottom: 0;
+  background-color: #fff;
   left: 0;
   right: 0;
   max-width: 1140px;
@@ -226,19 +229,12 @@ body.overflow-hidden {
   column-gap: 8px;
 }
 
-.chat-submission__emoji {
-  display: flex;
-  align-items: center;
-}
-
 .chat-submission__wrap {
   flex: 1;
-  background-color: #fff;
   border: 1px solid #E6E6E6;
   border-radius: 50px;
   display: flex;
   overflow: hidden;
-  padding-left: 20px;
 }
 
 .chat-submission__send .submit {
