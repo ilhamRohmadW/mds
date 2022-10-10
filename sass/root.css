@@ -198,7 +198,8 @@ body.overflow-hidden {
 @media (min-width: 767px) {
   .right-header__notif,
   .right-header__login_btn,
-  .menu-footer {
+  .menu-footer,
+  .right-header__login_sign {
     display: none !important;
   }
 }
