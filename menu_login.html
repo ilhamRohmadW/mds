@@ -13227,7 +13227,7 @@
                             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
                         }
                     </style>
-                    <div class="col-md-7 col-8" style="margin-bottom: 25px;">
+                    <div class="col-md-7 col-8" >
                         <div class="flex">
                             <div class="site" style="width: 360px;">
                                 <div class="site__brand">
@@ -13264,7 +13264,7 @@
                             class="manu_logo_class" alt="Sidemenu" width="32px" height="auto">
                     </div>
                     <hr>
-                    <div class="col-md-5 col-4 menu overflow-menu align-right scroll-new">
+                    <div class="col-md-5 col-4 menu overflow-menu align-right">
                         <div class="overflow-menu-header row">
                             <div class="col-md-6 col-8">
                                 <div class="site">
@@ -13376,7 +13376,7 @@
 
                                 </div>
                             </div>
-                            <div class="right-header__login ">
+                            <div class="right-header__login lg:hide">
                                 <img class="img-arrow-icon" style="margin-right: 14px;"
                                     src="https://staging.manisdansedap.com/assets/images/member-avatar.png" width="48px">
                                 <a class="login-mobile-new user" title="Daftar Kota" style="width: 100%; margin: auto">mamaskoken</a>
@@ -13603,13 +13603,75 @@
                     </a>
                     <h3 class="chat-contacts_title">Chat</h3>
                 </div>
-                <div class="chat-contacts_empty">
-                    <figure>
-                        <img src="asset/chat_empty.jpg" width="205" height="141" alt="">
-                    </figure>
-                    <h2>Selamat datang di Chat</h2>
-                    <p>Saat ini belum ada chat untuk kamu</p>
-                </div>
+                
+    <div style="background-color: #fefdfd; min-height: 65vh;" class="no-pesan">
+
+        <!-- data diri buyer-->
+<!-- foto profil -->
+<div style="position: absolute; top: 10% !important; left: 5%;">
+
+    <form action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="" id="id_pengirim" value="5">
+
+        <div class=" col-sm-12" style="margin-bottom: -25px">
+            <div class="text-center" style="cursor: pointer;">
+
+                                        
+                <img id="preview_thumbnail_buyer" src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" class="" style="height:130px; width:130px;border-radius: 50%;object-fit: cover;">
+                <br><br>
+
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control" id="thumbnail_seller_new" name="update_thumbnail" style="display: none;">
+            </div>
+
+        </div>
+        <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Ukuran gambar: maks. 1 MB</span></br>
+        <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Format gambar: .JPEG, .PNG</span></br>
+
+        <button style="margin-left: 10px; width: 175px;background-color: #F7F7F7;color: #20A647; margin-top: 15px;    border: 1px solid #20a647;border-radius: 10px;    padding: 10px;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
+    </form>
+</div>
+<!-- end foto profil -->
+
+<div style="position: absolute; top: 15% !important; left: 31%;padding-left: 3rem;border-left: 2px solid #ddd;">
+
+    <div class="dv-margin">
+        <span class="label-name col-sm-5">Username</span>
+        <span class="label-name col-sm-7" style="font-weight: 500;">UItest</span>
+    </div>
+
+    <div class="dv-margin">
+        <span class="label-name col-sm-5">Nama</span>
+        <span class="label-name col-sm-7" style="margin-left: 33px;font-weight: 500;">UI test</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_name">ubah</span>
+    </div>
+
+    <div class="dv-margin">
+        <span class="label-name col-sm-5">Email</span>
+        <span class="label-name col-sm-7" style="margin-left: 39px;font-weight: 500;">ilham.rohmad@kly.id</span>
+        <!--  -->
+        <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
+        <!--  -->
+        <span class="label-ubah" data-toggle="modal" data-target="#update_email">ubah</span>
+    </div>
+
+    <div class="dv-margin">
+        <span class="label-name col-sm-5">Nomor Hp</span>
+                        <span class="label-name col-sm-7" style="margin-left: 2px;font-weight: 500;">6285159901910</span>
+                                <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
+                            
+        <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">ubah</span>
+                    </div>
+
+    <div class="dv-margin">
+        <span class="label-name col-sm-5">Password</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_password" style="margin-left:20px">Atur Password Baru</span>
+    </div>
+
+</div>
+<!-- data diri -->
+    </div>
             </div>
         </div>
 
@@ -14490,75 +14552,271 @@
                 }
             }
         </style>
-        <!-- popup pesan baru -->
-
-        <!--     <div class="modal modal_pesan popup-pesan" id="modal_pesan" tabindex="-1" role="dialog" style="display:none;">
-     -->
-
-        <div class="modal modal_pesan popup-seller" id="modal_seller" tabindex="-1" role="dialog" style="display:none;">
-            <div class="modal-dialog" role="document" style="max-width: 20rem;">
-                <div class="modal-content" style="border-radius: 8px;">
-                    <svg style="margin-top: -28px;color:#fef3f0;" xmlns="http://www.w3.org/2000/svg" width="40"
-                        height="40" fill="currentColor" class="bi bi-caret-up-fill pop-svg" viewBox="0 0 16 16">
-                        <path
-                            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                    </svg>
-                    <div class="modal-header" style="background-color:#fef3f0;margin-top: -12px;">
-                        <i class="fa fa-envelope login-desktop-new" style="font-size: 28px; color:#20A647; "
-                            aria-hidden="true"> </i>
-                        <h5 class="modal-title" style="margin-top: 5px;margin-left: 10px;font-size: 16px;">
-                            0 Pesan Baru</h5>
-
-                        <button type="button" class="close" style="visibility: hidden;" data-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="font-size: 13px;font-weight: 400;color: #2d2d2d;">
-                        <p>Kamu mendapatkan pesan baru dari calon pembeli loh, segera balas agar calon pembeli tidak
-                            menunggu!</p>
-                    </div>
-                    <div class="modal-footer" style="border-top: 1px solid transparent; margin-top: -20px;">
-                        <a type="button" onclick="mengerti()" data-dismiss="modal" class="btn btn-success"
-                            style="color:#fff; border-radius: 8px;font-size: 12px;font-weight: 600;">Mengerti</a>
-                    </div>
+        <div class="modal fade update-modal" id="update_name" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Ubah Nama</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-            </div>
-        </div>
-
-        <div class="modal modal_seller popup-menu" id="modal_seller" tabindex="-1" role="dialog" style="display:none">
-            <div class="modal-dialog" role="document" style="max-width: 20rem;">
-                <div class="modal-content" style="border-radius: 8px;">
-                    <svg style="margin-top: -28px;color:#fef3f0;  margin-left: 9rem;" xmlns="http://www.w3.org/2000/svg"
-                        width="40" height="40" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                        <path
-                            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                    </svg>
-                    <div class="modal-header" style="background-color:#fef3f0;margin-top: -12px;">
-                        <i class="fa fa-envelope login-desktop-new" style="font-size: 28px; color:#20A647; "
-                            aria-hidden="true"> </i>
-                        <h5 class="modal-title" style="margin-top: 5px;margin-left: 35px;font-size: 16px;margin: auto;">
-                            <img src="https://staging.manisdansedap.com/assets/images/message.png" alt="Sidemenu"
-                                width="32px">Notifikasi Pesan Baru
-                        </h5>
-
-                        <button type="button" class="close" style="visibility: hidden;" data-dismiss="modal"
-                            aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="font-size: 13px;font-weight: 400;color: #2d2d2d;">
-                        <p>Kamu mendapatkan pesan baru dari calon pembeli loh, segera balas agar calon pembeli tidak
-                            menunggu!</p>
-                    </div>
-                    <div class="modal-footer" style="border-top: 1px solid transparent; margin-top: -20px;">
-                        <a type="button" onclick="mengerti()" data-dismiss="modal" class="btn btn-success"
-                            style="color:#fff; border-radius: 8px;font-size: 12px;font-weight: 600;">Mengerti</a>
-                    </div>
+                <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Pastikan nama yang anda masukkan sesuai dengan data diri anda</label>
+                  
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Masukkan Nama</label>
+                          <input style="padding: 15px;" type="text" class="input-new form-control" name="update_name" id="namanya" aria-describedby="emailHelp" placeholder="Nama Lengkap"  value="">
+                          <p style="color:red; font-size: 12px; margin-left: 0px;" id ="nama_alert"></p>
+                      </div>
+                      
                 </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" onclick="changeName()" id="submit" class="btn btn-success btn-simpan" >Simpan</button>
+                </div>
+                </form>
+              </div>
             </div>
-        </div>
-        <!-- end popup pesan baru -->
+          </div>
+          
+          <!-- modal update email -->
+          <div class="modal fade update-modal" id="update_email" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Email Baru</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+          
+                <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
+                <!-- <input type="hidden" name="id" value="5"> -->
+                  <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui email, pastikan email yang kamu masukkan benar ya</label>
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Email Lama</label>
+                          <input style="padding: 15px; font-style: normal;" type="email" class="input-new form-control" name="update_email_lama" id="update_email_lama"  placeholder="Email Lama"  value="ilham.rohmad@kly.id" readOnly>
+                      </div>
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Email Baru</label>
+                          <input style="padding: 15px; font-style: normal;" onkeypress="inputemail()" type="email" class="input-new form-control" name="email" id="email"  placeholder="Email Baru" required>
+                          <p style="color:red; font-size: 12px; margin-left: 0px;" id ="email_alert"></p>
+                      </div>
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" onclick="emailselanjutnya()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          <!-- modal update email -->
+          
+          <!-- modal verifikasi otp email -->
+          <div class="modal fade update-modal" id="update_email_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Verifikasi</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke email <span style="color:  #20a647;">ilham.rohmad@kly.id <span></label>
+                  <!-- <p id="demo"></p> -->
+                      
+                      <!-- input kode -->
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Kode OTP</label>
+                          <input style="padding: 15px; font-style: normal;" onkeypress="inputkode()" type="number" class="input-new form-control" name="update_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
+                      </div>
+                      <!-- timer -->
+                      <div class="form-group" id="kirim" style="text-align: center; margin-top: 11px;">
+                          Kirim ulang dalam <span  id="countdown" class="times" style="font-size: 12px; color:#ff0000"></span>    
+                      </div>
+                      <!-- kirim ulang aksi -->
+                      <form action="https://staging.manisdansedap.com/change-email-ulang" method="POST">
+                      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
+                          <input type="hidden" id="email" class="signup" placeholder="email" name="email_ulang" value="ilham.rohmad@kly.id">
+                          <button id="kirim_ulang" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
+                      </form>  
+          
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" id="btn_verifikasi" onclick="emailverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal verifikasi otp email -->
+          
+          
+          
+          
+          
+          <div class="modal fade update-modal" id="update_nomor" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Tambahkan Nomor Hp</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui nomor HP kamu, pastikan nomor HP yang kamu masukkan benar ya</label>
+                    <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
+                    <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
+                        <div class="input-group" style="margin-top: 8px;">
+                            <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
+                                <div id="prepend0"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #e9ecef; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
+                            </div>
+                            <input type="number" class="form-control" name="phone_number2" id="phone_number2" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px;margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" value="6285159901910" readOnly>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
+                    <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
+                        <div class="input-group" style="margin-top: 8px;">
+                            <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
+                                <div id="prepend"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #ffffff; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
+                            </div>
+                            <input type="number" class="form-control" onkeypress="inputnumberphone()" name="phone_number" id="phone_number" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px; margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" minlength="10" required>
+                        </div>
+                        <p style="color:red; font-size: 12px; margin-left: -14px;" id ="phone_alert"></p>
+                    </div>
+                      
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="submit" onclick="changePhone()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- modal verifikasi otp phone -->
+          <div class="modal fade update-modal" id="update_phone_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Verifikasi</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke nomor hp <span style="color:  #20a647;">+6285159901910 <span></label>
+                  <!-- <p id="demo"></p> -->
+                      
+                      <!-- input kode -->
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Kode OTP</label>
+                          <input style="padding: 15px; font-style: normal;" onkeypress="inputkodephone()" type="number" class="input-new form-control" name="otp_phone" id="otp_phone" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
+                      </div>
+                      <p style="color:red; font-size: 12px; margin-left: 40px; margin-top: -10px;" id ="otp_alert"></p>
+                      <!-- timer -->
+                      <div class="form-group" id="kirimnew" style="text-align: center; margin-top: 11px;">
+                          Kirim ulang dalam <span  id="countdown_new" class="times_new" style="font-size: 12px; color:#ff0000"></span>    
+                      </div>
+                      <!-- kirim ulang aksi -->
+                      <form action="https://staging.manisdansedap.com/change-phone-ulang" method="POST">
+                      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
+                          <input type="hidden" id="phone" class="signup" placeholder="Phone Number" name="phone_ulang" value="6285159901910">
+                          <button id="kirim_ulangnew" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
+                      </form>  
+          
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" id="btn_verifikasiphone" onclick="phoneverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal verifikasi otp email -->
+          
+          <!-- modal update password -->
+          <div class="modal fade update-modal" id="update_password" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Buat Password Baru</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+          
+                <form action="https://staging.manisdansedap.com/update_password" method="POST" data-parsley-validate>
+                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <input type="hidden" name="phone" value="6285159901910">
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Atur password baru agar akun kamu lebih aman</label>
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Password Baru</label>
+                          <input style="padding: 15px;" type="password" class="input-new form-control" name="password" id="password" aria-describedby="emailHelp" placeholder="Password"  value="" Required>
+                          <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+                      </div>
+                      <div class="form-group col-sm-12 update-form-group">
+                          <label class="update-form-name">Verifikasi Password</label>
+                          <input style="padding: 15px;" type="password" class="input-new form-control" name="kon_password" id="password_confirm" aria-describedby="emailHelp" placeholder="Password"  value="" >
+                          <i class="fa fa-eye" id="togglePasswordConfirm" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+                      </div>
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="submit" class="btn btn-success btn-simpan" >Simpan</button>
+                </div>
+                </from>
+              </div>
+            </div>
+          </div>
+          <!-- modal update password -->
+          
+          
+          <!-- modal update email selesai -->
+          <div class="modal fade update-modal" id="update_selesai" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Email Baru</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Email sudah berhasil di update</label>
+                  
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" onclick="emailselesai()"  id="selesai"  class="btn btn-success btn-simpan" >Selesai</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- modal update email selesai -->
+          
+          <!-- modal update phone selesai -->
+          <div class="modal fade update-modal" id="update_phoneselesai" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content update-content" >
+                <div class="modal-header update-header">
+                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Nomor Hp Baru Tersimpan</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label class="update-label" for="exampleInputEmail1">Nomor HP anda sudah berhasil di update</label>
+                </div>
+                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                  <button type="button" onclick="emailselesai()"  id="selesai"  class="btn btn-success btn-simpan" >Selesai</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- modal update phone selesai -->
 
 
         <!-- jQuery -->

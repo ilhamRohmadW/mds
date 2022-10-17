@@ -1,0 +1,2062 @@
+<style>
+    input[type=text] {
+        font-style: normal;
+        /* font-family: 'Poppins-Light'; */
+        border-radius: 8px;
+        color: #2e2e2e;
+    }
+
+    .swal-button {
+        background-color: #20a647;
+    }
+</style>
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Manis dan Sedap - Profile</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="https://cdn.manisdansedap.com/assets/new-asset/Favicon_manisdansedap.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/themify-icons.css">
+    <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/vendor/cryptocurrency-icons.css ">
+    <link href="https://cdn.manisdansedap.com/admin/vendors/select2/css/select2.min.css" rel="stylesheet" /> 
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/plugins/plugins.css">
+
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/helper.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/style.css">
+
+    <!-- Custom Style CSS Only For Demo Purpose -->
+    <link id="cus-style" rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/style-primary.css?v=1.5">
+
+    <link rel="stylesheet" type="text/css" href="https://staging.manisdansedap.com/assets/cssJadi1/lineAw-fontAw.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.manisdansedap.com/assets/css/newcss.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.manisdansedap.com/assets/cssFull1/full-css1-detail.min.css"> 
+    <link rel="stylesheet" type="text/css" href="/assets/css/frontend.css?id=6576fb0f8dacc308b00f"/>
+    <link  rel="stylesheet" href="https://staging.manisdansedap.com/assets/assets_chat/css/login.css?v=2.1">
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script> -->
+
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script> -->
+    
+
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//staging.manisdansedap.com/_debugbar/assets/stylesheets?v=1657531602&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'><script src='//staging.manisdansedap.com/_debugbar/assets/javascript?v=1657531602' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval="false">jQuery.noConflict(true);</script>
+<script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; refStyle.innerHTML = '.phpdebugbar pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }'; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); refStyle = doc.createElement('style'); (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } else if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = '.phpdebugbar pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').slice(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.slice(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump span { display: inline; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { display: inline-block; overflow: visible; text-overflow: ellipsis; max-width: 5em; white-space: nowrap; overflow: hidden; vertical-align: top; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis+.sf-dump-ellipsis { max-width: none; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}</style>
+    <style>
+        /* devanagari */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTk3j77e.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTA3j77e.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTs3j77e.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTo3j77e.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTQ3jw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* devanagari */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* devanagari */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    <link rel="stylesheet" href="sass/profile.min.css">
+</head>
+<body id="ini_all_body">
+    
+    <div class="main-wrapper">
+        <!-- Header Section Start -->
+                    <style>
+    .header-mobile {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .header-mobile {
+            display: none;
+        }
+    }
+</style>
+<div class="header-section header-mobile" style="border-radius: 0px 0px 30px 0px;">
+    <div class="container-fluid " style="background: linear-gradient(297.17deg,#80ff95 3.18%,#22859b 130.61%) !important; border-radius: 0px 0px 30px 0px;">
+        <div class="row align-items-center" style="max-width: 1170px; margin: 0 auto; flex-wrap: nowrap; gap: 1rem; padding: 1rem; height: 107px;">
+
+            <a href="https://staging.manisdansedap.com" style="1">
+                <img id="nav_logo" class="home_logo" src="https://cdn.manisdansedap.com/assets/new-asset/Homepage/3 B 1.png" alt="Sidemenu" width="auto" height="auto">
+            </a>
+            <div class="search search-home desktop-search" style="flex: 1;height: 45px;background: #f1f4f9;border-radius: 10px;display: flex;align-items: center;padding: 10px 15px;" data-toggle="modal" data-target="#searchModal">
+                <img src="assets/new-asset/Homepage/Search.png" style="width: 20px;">
+                <input id="serach_bar" readonly="" type="text" placeholder="Apa yang kamu cari, manis?" style="border: none;background: none;font-style: initial; width: 100%;">
+            </div>
+            <div class="">
+                <a href="https://staging.manisdansedap.com/chat?header_chat_isbuyer=0"><i class="fa fa-envelope" style="font-size: 28px; color:#ffffff; margin-top: 5px;" aria-hidden="true"></i></a>
+            </div>
+            <div class="right-header__login login-desktop">
+                <a style="color: #fff"> <b>|</b> </a>
+            </div>
+            <div class="right-header__login">
+
+                <!-- <a href="" type="submit"  id="submit_register"  style="color: #fff ; width: 100px; border-color: #fff; ">Akun Seller</a> -->
+                <div class="dropdown">
+                                        <img src="https://staging.manisdansedap.com/assets/images/member-avatar.png" alt="Sidemenu" width="32px" style="border-radius: 50%;">
+                    <a class="btn" style="color: #fff;">
+                        Akun Seller
+                    </a>
+                    <div class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton" style="width: 21rem; border-radius: 12px; padding: 15px;">
+                        <p style="font-size:14px;margin-left: 10px; margin-right: 10px; margin-bottom: -20px; text-align: center; margin-top: 10px; ">Anda belum memiliki akun Seller</p>
+                        <br>
+                        <a class="btn btn-success btn-lg" style="background-color: #28a745;color: #fff;  margin-top:-5px;margin-left: 2px; width: 296px; border-radius: 8px; font-size: 14px; margin: auto; margin-bottom: 5px;" href="https://staging.manisdansedap.com/daftar-seller" target="_blank" role="button">Buat Akun Seller<i class="bi bi-arrow-right"></i></a>
+                    </div>
+                                    </div>
+            </div>
+
+            <div class="right-header__login" style="margin-left: -15px">
+                <a style="color: #fff"> <b>|</b> </a>
+            </div>
+
+            
+            <div class="dropdown">
+                <img src="https://staging.manisdansedap.com/assets/images/member-avatar.png" style="margin-right: -8px;border-radius: 50%; height: 32px; object-fit: cover;" alt="Sidemenu" width="32px">
+                <button class="dropbtn">
+                    <a href="https://staging.manisdansedap.com/chat?header_chat_isbuyer=0" class="btn" style="color: #fff" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                        User Buyer
+                    </a></button>
+                <div class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton" style="width: max-content; border-radius: 12px;">
+
+                    <a style="margin-left: 0px;text-align: left; margin-top: -5px;    padding-bottom: 10px; color:black"><i class="fa fa-cog"></i>&nbsp;&nbsp;Notifikasi&nbsp;&nbsp;
+                        <label class="switch" style="position: absolute;margin-top: -6px;">
+                            <input data-id="5" class="toggle-class" data-toggle="toggle" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </a>
+                    <a href="https://staging.manisdansedap.com/update-profile" style="margin-left: 0px;text-align: left; margin-top: -10px;    padding-bottom: 1px; color:black"><i class="fa fa-user"></i>&nbsp;&nbsp;Update Profil&nbsp;&nbsp;</a>
+                    <hr style="width:100%;     margin-top: 10px; margin-bottom: 15px;" />
+                    <form id="logout-form" action="https://staging.manisdansedap.com/logout_client" method="POST">
+                        <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                        <br><br>
+                        <a href="javascript:;" onclick="parentNode.submit();" style=" margin-bottom: 0px;margin-left: 0px; margin-top: -60px; border-radius: 15px; width: 85%;text-align: left; height: 45px;background-color: transparent;" class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-top: -4px;margin-right: 5px;" class="bi bi-box-arrow-right" viewBox="0 -2 16 16">
+                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>&nbsp;Keluar</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <script>
+    $(document).ready(function(){
+  $("#serach_bar").click(function(){
+    console.log("oke");
+    $('.searchModal').modal('show');
+  });
+});
+    </script> -->                <!-- Header Section End -->
+
+
+<!-- Content Body Start -->
+<div class="content-body">
+    <style>
+        
+
+        .label-name {
+            color: #414141;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .dv-margin {
+            margin-bottom: 20px;
+        }
+
+        .label-ubah {
+            color: #20A647;
+            margin-bottom: 15px;
+            font-weight: 600;
+            cursor: pointer
+        }
+    </style>
+    <h5 style="font-size: 24px;margin-left: 0px;margin-bottom: 30px;color: #414141"><b style="color: #20a647;">|</b> Update Profile</h5>
+
+    <div style="background-color: #fefdfd; min-height: 65vh;" class="no-pesan">
+
+                <!-- data diri buyer-->
+        <!-- foto profil -->
+        <div style="position: absolute; top: 10% !important; left: 5%;">
+
+            <form action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="" id="id_pengirim" value="5">
+
+                <div class=" col-sm-12" style="margin-bottom: -25px">
+                    <div class="text-center" style="cursor: pointer;">
+
+                                                
+                        <img id="preview_thumbnail_buyer" src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" class="" style="height:130px; width:130px;border-radius: 50%;object-fit: cover;">
+                        <br><br>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="thumbnail_seller_new" name="update_thumbnail" style="display: none;">
+                    </div>
+
+                </div>
+                <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Ukuran gambar: maks. 1 MB</span></br>
+                <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Format gambar: .JPEG, .PNG</span></br>
+
+                <button style="margin-left: 10px; width: 175px;background-color: #F7F7F7;color: #20A647; margin-top: 15px;    border: 1px solid #20a647;border-radius: 10px;    padding: 10px;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
+            </form>
+        </div>
+        <!-- end foto profil -->
+
+        <div style="position: absolute; top: 15% !important; left: 31%;padding-left: 3rem;border-left: 2px solid #ddd;">
+
+            <div class="dv-margin">
+                <span class="label-name col-sm-5">Username</span>
+                <span class="label-name col-sm-7" style="font-weight: 500;">UItest</span>
+            </div>
+
+            <div class="dv-margin">
+                <span class="label-name col-sm-5">Nama</span>
+                <span class="label-name col-sm-7" style="margin-left: 33px;font-weight: 500;">UI test</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_name">ubah</span>
+            </div>
+
+            <div class="dv-margin">
+                <span class="label-name col-sm-5">Email</span>
+                <span class="label-name col-sm-7" style="margin-left: 39px;font-weight: 500;">ilham.rohmad@kly.id</span>
+                <!--  -->
+                <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
+                <!--  -->
+                <span class="label-ubah" data-toggle="modal" data-target="#update_email">ubah</span>
+            </div>
+
+            <div class="dv-margin">
+                <span class="label-name col-sm-5">Nomor Hp</span>
+                                <span class="label-name col-sm-7" style="margin-left: 2px;font-weight: 500;">6285159901910</span>
+                                        <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
+                                    
+                <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">ubah</span>
+                            </div>
+
+            <div class="dv-margin">
+                <span class="label-name col-sm-5">Password</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_password" style="margin-left:20px">Atur Password Baru</span>
+            </div>
+
+        </div>
+        <!-- data diri -->
+            </div>
+</div>
+</div>
+
+<style>
+    .modal-search-seller {
+        width: 100%;
+        height: 45px;
+        background: #FDFDFD;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border: 1px solid #EEEEEE;
+        margin-right: 0px;
+    }
+
+    .masak-seller {
+        justify-content: center;
+        display: flex;
+        margin-left: 12rem;
+    }
+
+    @media (max-width: 795px) {
+        .masak-seller {
+            justify-content: center;
+            display: flex;
+            margin-left: 0px;
+        }
+    }
+</style>
+<div class="modal modal-fullscreen" id="searchModal" tabindex="-1" role="dialog" style="z-index: 9999">
+    <div class="modal-dialog" role="document" style="width:100vw; margin:0; max-width:none;">
+        <div class="modal-content">
+            <div class="container modal-header" style="border-bottom: none; background: #FFF; justify-content: center;display: flex;width: 100%; ">
+                
+
+                <div class="filter-after-input" id="step2" style="display: none; overflow-wrap: break-word;">
+
+                </div>
+                <div class="filter-default" id="step1" style="margin-top: 20px">
+                    <div class="filter-box" id="step1popular">
+                        <h3>Pencarian Popular</h3>
+                        <div class="filter-list">
+                            <div class="filter-group" style="line-height: 2.5;">
+                                <div class="mt-2">
+                                                                                                            <input type="hidden" id="total_word_1820" value="1">
+                                    <a id="populer" style="cursor: pointer; color:#fff; background:#20A647;" class="btn-success tags-btn btn-lg mr-2 my-3  hastag_list_for_Js" target="_blank" rel="nofollow" data-hashtag="Hantaran">Hantaran
+                                    </a>
+                                                                                                            <input type="hidden" id="total_word_1819" value="1">
+                                    <a id="populer" style="cursor: pointer; color:#fff; background:#20A647;" class="btn-success tags-btn btn-lg mr-2 my-3  hastag_list_for_Js" target="_blank" rel="nofollow" data-hashtag="Kecombrang">Kecombrang
+                                    </a>
+                                                                                                            <input type="hidden" id="total_word_1818" value="2">
+                                    <a id="populer" style="cursor: pointer; color:#fff; background:#20A647;" class="btn-success tags-btn btn-lg mr-2 my-3  hastag_list_for_Js" target="_blank" rel="nofollow" data-hashtag="Rendang Daging">Rendang Daging
+                                    </a>
+                                                                                                            <input type="hidden" id="total_word_1817" value="2">
+                                    <a id="populer" style="cursor: pointer; color:#fff; background:#20A647;" class="btn-success tags-btn btn-lg mr-2 my-3  hastag_list_for_Js" target="_blank" rel="nofollow" data-hashtag="Ayam Crispy">Ayam Crispy
+                                    </a>
+                                                                                                            <input type="hidden" id="total_word_1784" value="1">
+                                    <a id="populer" style="cursor: pointer; color:#fff; background:#20A647;" class="btn-success tags-btn btn-lg mr-2 my-3  hastag_list_for_Js" target="_blank" rel="nofollow" data-hashtag="cabai">cabai
+                                    </a>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-box">
+                        <h3>Open Order berdasarkan Kota</h3>
+                        <div class="filter-list">
+                            <div style="padding:0px 0px !important; margin: 0;" class="row">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Bali">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Bali">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Bali" class="ml-2" style="font-size: 20px !important; " title="Bali">Bali</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Bali">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Balikpapan">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Balikpapan">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Balikpapan" class="ml-2" style="font-size: 20px !important; " title="Balikpapan">Balikpapan</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Balikpapan">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Bandung">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Bandung">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Bandung" class="ml-2" style="font-size: 20px !important; " title="Bandung">Bandung</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Bandung">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Batam">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Batam">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Batam" class="ml-2" style="font-size: 20px !important; " title="Batam">Batam</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Batam">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Bekasi">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Bekasi">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Bekasi" class="ml-2" style="font-size: 20px !important; " title="Bekasi">Bekasi</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Bekasi">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Bogor">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Bogor">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Bogor" class="ml-2" style="font-size: 20px !important; " title="Bogor">Bogor</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Bogor">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Depok">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Depok">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Depok" class="ml-2" style="font-size: 20px !important; " title="Depok">Depok</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Depok">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Jakarta">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Jakarta">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Jakarta" class="ml-2" style="font-size: 20px !important; " title="Jakarta">Jakarta</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Jakarta">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Kediri">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Kediri">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Kediri" class="ml-2" style="font-size: 20px !important; " title="Kediri">Kediri</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Kediri">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Makassar">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Makassar">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Makassar" class="ml-2" style="font-size: 20px !important; " title="Makassar">Makassar</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Makassar">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Malang">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Malang">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Malang" class="ml-2" style="font-size: 20px !important; " title="Malang">Malang</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Malang">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Manado">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Manado">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Manado" class="ml-2" style="font-size: 20px !important; " title="Manado">Manado</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Manado">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Medan">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Medan">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Medan" class="ml-2" style="font-size: 20px !important; " title="Medan">Medan</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Medan">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Other">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Other">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Other" class="ml-2" style="font-size: 20px !important; " title="Other">Other</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Other">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Palangkaraya">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Palangkaraya">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Palangkaraya" class="ml-2" style="font-size: 20px !important; " title="Palangkaraya">Palangkara...</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Palangkaraya">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Palembang">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Palembang">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Palembang" class="ml-2" style="font-size: 20px !important; " title="Palembang">Palembang</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Palembang">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Pekanbaru">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Pekanbaru">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Pekanbaru" class="ml-2" style="font-size: 20px !important; " title="Pekanbaru">Pekanbaru</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Pekanbaru">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Pontianak">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Pontianak">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Pontianak" class="ml-2" style="font-size: 20px !important; " title="Pontianak">Pontianak</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Pontianak">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Samarinda">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Samarinda">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Samarinda" class="ml-2" style="font-size: 20px !important; " title="Samarinda">Samarinda</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Samarinda">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Semarang">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Semarang">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Semarang" class="ml-2" style="font-size: 20px !important; " title="Semarang">Semarang</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Semarang">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Solo">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Solo">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Solo" class="ml-2" style="font-size: 20px !important; " title="Solo">Solo</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Solo">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Surabaya">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Surabaya">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Surabaya" class="ml-2" style="font-size: 20px !important; " title="Surabaya">Surabaya</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Surabaya">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Tangerang">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Tangerang">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Tangerang" class="ml-2" style="font-size: 20px !important; " title="Tangerang">Tangerang</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Tangerang">
+                                                                                                <div class="col-6" style="line-height: 3rem; padding: 0;margin: 0;" id="city_more">
+                                    <a id="id_img_city" style="display: inline" class="on_click_kota" href="https://staging.manisdansedap.com/kota/Yogyakarta">
+                                        <img class="img-arrow-icon" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" alt="Yogyakarta">
+                                        <a id="id_title_city" style="display: inline" class="on_click_kota size-new" href="https://staging.manisdansedap.com/kota/Yogyakarta" class="ml-2" style="font-size: 20px !important; " title="Yogyakarta">Yogyakarta</a>
+                                    </a>
+                                </div>
+                                <input type="hidden" class="city_item" value="Yogyakarta">
+                                                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-enter" id="step3" style="display: none;margin-top: 25px;margin-bottom: -30px;min-width:100%">
+                    <ul class="nav nav-fill my-3" style="border-bottom: 1px solid #F2F2F2;">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="masakan" style="border-bottom: 2px solid #20A647; color: #20A647;">Masakan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="penjual">Penjual</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="archive-filter col-12" style="position: fixed;top: 0;left: 0; flex: none !important; max-width:100% !important; min-height: 25px;">
+                    <!-- chanif:tak jadikan div utk memastikan enter tidak mentriger submit -->
+                    <div class="filterForm" id="filterForm">
+                        <div class="container filter-head" style="margin-top: 10px;justify-content: center;">
+                            <a data-dismiss="modal" href="#">
+                                <img src="https://cdn.manisdansedap.com/assets/new-asset/Search/Arrow-Left-Grey.png" width="20px" height="auto" alt="search" class="arrow-new" style="">
+                            </a>
+                            <div id="search" class="search modal-search-seller">
+                                <img src="https://cdn.manisdansedap.com/assets/new-asset/Homepage/Search.png" width="20px" height="auto" alt="search" style="width: 20px;">
+                                <style>
+                                    input::placeholder {
+                                        line-height: normal !important;
+                                    }
+                                </style>
+                                <input type="text" name="keyword" id="keyword" value="" autocomplete="off" placeholder="Apa yang kamu cari, manis?" style="border: none;background: none;font-style: initial; width: 100%;">
+                                <a onclick="remove_text_input()"> <img src="https://cdn.manisdansedap.com/assets/new-asset/Search/Close-Circle.png" style="width: 25px;" width="25px" height="auto" alt="close" aria-label="Close"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body masak-seller">
+                <div class="tab-content" id="myTabContent" style="width: 100%">
+                    <div class="container tab-pane fade show active" style="overflow-y: scroll;" id="masakan1" role="tabpanel" aria-labelledby="masakan-tab"></div>
+                    <div class="container tab-pane fade show active" style="overflow-y: scroll;" id="penjual1" role="tabpanel" aria-labelledby="penjual-tab"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="filter-list my-2" id="pairMasakan" style="display: none;">
+    <a class="entry-thumb" href="">
+        <div class="row" style="height: 100px;">
+            <div style="min-height: 80px;margin-right:10px;">
+                <img class="cek_img_home" src="" alt="seller-icon" style="border-radius: 10px;max-width: 80px;max-height: 80px;">
+            </div>
+            <div class="col">
+                <h5 class="p_name" style="margin-bottom: 5px;"></h5>
+                <p class="p_price" style="margin-bottom: 5px;"></p>
+                <div>
+                    <img class="img-arrow-icon mr-1" src="https://cdn.manisdansedap.com/assets/new-asset/humberger/map-green.png" width="24px" height="auto" style="float: left;">
+                    <p class="p_city" style="float: left;"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="filter-list my-2" id="pairSeller" style="display:none">
+    <a class="entry-thumb" href="">
+        <div class="row" style="height: 100px;">
+            <div style="min-height: 80px;margin-right:10px;">
+                <img class="cek_img_home" src="" alt="seller-icon" style="border-radius: 10px;max-width: 80px;max-height: 80px;">
+            </div>
+            <div class="col">
+                <h5 class="s_name" style="margin-bottom: 5px;"></h5>
+                <p class="s_insta" style="margin-bottom: 5px;"></p>
+                <p class="s_city"></p>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div id="more_masakan" style="display: none;">
+    <div class="container">
+        <div class="row grid text-center" style="justify-content: center;">
+            <div class="col my-2" style="max-width: 376px;">
+                <a class="lmore col-12 btn btn-outline-success " style="font-weight: 600;letter-spacing: 0.01em; color: #28a745; margin: auto !important;">Load
+                    more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="more_penjual" style="display: none;">
+    <div class="container">
+        <div class="row grid text-center" style="justify-content: center;">
+            <div class="col my-2" style="max-width: 376px;">
+                <a class="lmore col-12 btn btn-outline-success " style="font-weight: 600;letter-spacing: 0.01em; color: #28a745; margin: auto !important;">Load
+                    more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 my-2 text-center" id="not_found_addition" style="display:none;">
+    <img src="https://cdn.manisdansedap.com/assets/new-asset/Search/NoFound.png" height="250px" width="250px" />
+    <p class="text_not_found">Makanan yang anda cari belum tersedia</p>
+</div>
+
+<script>
+    // $(document).ready(function(){
+    //   $("#serach_bar").click(function(){
+    //     console.log("oke");
+    //     $('.searchModal').modal('show');
+    //   });
+    // });
+    $("#searchModal").on('shown.bs.modal', function() {
+        //alert('The modal is displayed completely!');
+        $('#keyword').focus();
+    });
+
+    function remove_text_input() {
+        const keyword_input = document.getElementById('keyword');
+        keyword_input.value = "";
+        $('.filter-after-input').hide();
+        $('.filter-default').show();
+        $('.filter-enter').hide();
+    };
+    const cek_city = (document.getElementById('cek_name_city_id') == null ||
+            document.getElementById('cek_name_city_id').value.includes("kota_kosong")) ?
+        'kota_kosong' : document.getElementById('cek_name_city_id').value
+    const id_cityy = cek_city.split("-")
+    var limit = 10;
+    var offset_masakan = 0;
+    var offset_penjual = 0;
+
+    $(".nav-link").click(function() {
+        $(".nav-link").removeClass("active");
+
+        $(".nav-link").css('border-bottom', "none");
+        $(".nav-link").css('color', "black");
+        $(this).addClass("active");
+        $(this).css('border-bottom', "2px solid #20A647");
+        $(this).css('color', "#20A647");
+
+        next_fs = $(this).attr('id');
+        next_fs = "#" + next_fs + "1";
+
+        $(".tab-pane").removeClass("show");
+        $(".tab-pane").removeClass("active");
+        $(next_fs).addClass("show");
+        $(next_fs).addClass("active");
+    });
+
+    let input = document.getElementById('keyword');
+    // Init a timeout variable to be used below
+    let timeout = null;
+    // Listen for keystroke events
+    input.addEventListener('keyup', function onEvent(event) {
+        // Clear the timeout if it has already been set.
+        // This will prevent the previous task from executing
+        // if it has been less than <MILLISECONDS>
+        clearTimeout(timeout);
+        // Make a new timeout set to go off in 1000ms (1 second)
+        timeout = setTimeout(function() {
+            event.preventDefault();
+            offset_masakan = 0;
+            offset_penjual = 0;
+
+            var keyword = input.value;
+            // console.log(keyword);
+            if (keyword.length > 0) {
+                $('.filter-after-input').html('');
+                $('.filter-after-input').hide();
+                $('.filter-default').hide();
+                $('.filter-enter').show();
+
+                if (cek_city == 'kota_kosong') {
+                    $.ajax({
+                        url: "https://staging.manisdansedap.com/search",
+                        type: "POST",
+                        data: {
+                            keyword: keyword,
+                            _token: "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+                        },
+                        success: function(res) {
+
+
+                            $('#more_masakan').appendTo('body');
+                            $('#more_masakan').css("display", "none");
+                            $('#masakan1').empty();
+                            var pair = $('#pairMasakan');
+                            var number_of_options = res.masakan.length;
+                            offset_masakan = offset_masakan + number_of_options;
+                            for (var countMasakan = 0; countMasakan <
+                                number_of_options; countMasakan++) {
+                                var newBox = pair.clone();
+                                newBox[0].id = 'pair' + countMasakan;
+                                newBox[0].className = 'pairclone filter-list my-3';
+                                newBox[0].style =
+                                    "background-color: white;margin-left: 20px;";
+                                newBox.appendTo('#masakan1');
+                                $("#pair" + countMasakan + " .entry-thumb").attr("href", res
+                                    .masakan[countMasakan].route);
+                                $("#pair" + countMasakan + " .p_name").first().html(res
+                                    .masakan[countMasakan].product_name);
+                                $("#pair" + countMasakan + " .p_city").first().html(res
+                                    .masakan[countMasakan].city);
+
+                                if (res.masakan[countMasakan].price == null) {
+                                    $("#pair" + countMasakan + " .p_price").first().html(
+                                        "Price by DM");
+                                } else {
+                                    $("#pair" + countMasakan + " .p_price").first().html(
+                                        new Intl.NumberFormat('id-ID', {
+                                            style: 'currency',
+                                            currency: 'IDR'
+                                        }).format(res.masakan[countMasakan].price)
+                                        .replace(/(\,+\d{2})/, ''));
+                                }
+                                $("#pair" + countMasakan + " .cek_img_home").attr("id",
+                                    "cek_img_home_" + countMasakan);
+                                $("#pair" + countMasakan + " .cek_img_home").attr("src", res
+                                    .masakan[countMasakan].thumbnail);
+                            }
+
+                            if (res.count_masakan > limit) {
+                                $('#more_masakan').appendTo('#masakan1');
+                                $('#more_masakan').css("display", "block");
+                            }
+
+                            if (number_of_options == 0) {
+                                var pairPopular = $('#step1popular');
+                                var pairNotFound = $('#not_found_addition');
+                                var newBox = pairPopular.clone();
+                                var newBox2 = pairNotFound.clone();
+                                newBox2[0].id = "not_found_addition2";
+                                newBox2[0].style = "display: block;";
+                                newBox2.appendTo('#masakan1');
+                                newBox.appendTo('#masakan1');
+                            }
+
+                            $('#more_penjual').appendTo('body');
+                            $('#more_penjual').css("display", "none");
+                            $('#penjual1').empty();
+                            var pairSeller = $('#pairSeller');
+                            var number_of_options = res.penjual.length;
+                            offset_penjual = offset_penjual + number_of_options;
+                            for (var countPenjual = 0; countPenjual <
+                                number_of_options; countPenjual++) {
+                                var newBox = pairSeller.clone();
+                                newBox[0].id = 'pairPenjual' + countPenjual;
+                                newBox[0].className = 'pairclone filter-list my-3';
+                                newBox[0].style =
+                                    "background-color: white;margin-left: 20px;";
+                                newBox.appendTo('#penjual1');
+                                $("#pairPenjual" + countPenjual + " .entry-thumb").attr(
+                                    "href", res.penjual[countPenjual].route);
+                                $("#pairPenjual" + countPenjual + " .s_name").first().html(
+                                    res.penjual[countPenjual].name);
+                                $("#pairPenjual" + countPenjual + " .s_insta").first().html(
+                                    res.penjual[countPenjual].insta_username);
+                                $("#pairPenjual" + countPenjual + " .s_city").first().html(
+                                    res.penjual[countPenjual].city);
+
+                                $("#pairPenjual" + countPenjual + " .cek_img_home").attr(
+                                    "id", "cek_img_home_" + countPenjual);
+                                $("#pairPenjual" + countPenjual + " .cek_img_home").attr(
+                                    "src", res.penjual[countPenjual].thumbnail);
+                            }
+
+                            if (res.count_seller > limit) {
+                                $('#more_penjual').appendTo('#penjual1');
+                                $('#more_penjual').css("display", "block");
+                            }
+
+                            if (number_of_options == 0) {
+                                var pairPopular = $('#step1popular');
+                                var pairNotFound = $('#not_found_addition');
+                                var newBox = pairPopular.clone();
+                                var newBox2 = pairNotFound.clone();
+                                newBox2[0].id = "not_found_addition3";
+                                newBox2[0].style = "display: block;";
+                                newBox2.appendTo('#penjual1');
+                                newBox.appendTo('#penjual1');
+
+                                $("#not_found_addition3 .text_not_found").first().html(
+                                    "Penjual yang anda cari belum tersedia");
+                            }
+                        }
+                    });
+                } else {
+                    $.ajax({
+                        url: "https://staging.manisdansedap.com/search_by_city",
+                        type: "POST",
+                        data: {
+                            keyword: keyword,
+                            id_city: id_cityy[1],
+                            name_city: id_cityy[0],
+                            _token: "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+                        },
+                        success: function(res) {
+
+                            //const name_food = res.masakan
+
+                            $('#more_masakan').appendTo('body');
+                            $('#more_masakan').css("display", "none");
+                            $('#masakan1').empty();
+                            var pair = $('#pairMasakan');
+                            var number_of_options = res.masakan.length;
+                            offset_masakan = offset_masakan + number_of_options;
+                            for (var countMasakan = 0; countMasakan <
+                                number_of_options; countMasakan++) {
+                                var newBox = pair.clone();
+                                newBox[0].id = 'pair' + countMasakan;
+                                newBox[0].className = 'pairclone filter-list my-3';
+                                newBox[0].style =
+                                    "background-color: white;margin-left: 20px;";
+                                newBox.appendTo('#masakan1');
+                                $("#pair" + countMasakan + " .entry-thumb").attr("href", res
+                                    .masakan[countMasakan].route);
+                                $("#pair" + countMasakan + " .p_name").first().html(res
+                                    .masakan[countMasakan].product_name);
+                                $("#pair" + countMasakan + " .p_city").first().html(res
+                                    .masakan[countMasakan].city);
+
+                                if (res.masakan[countMasakan].price == null) {
+                                    $("#pair" + countMasakan + " .p_price").first().html(
+                                        "Price by DM");
+                                } else {
+                                    $("#pair" + countMasakan + " .p_price").first().html(
+                                        new Intl.NumberFormat('id-ID', {
+                                            style: 'currency',
+                                            currency: 'IDR'
+                                        }).format(res.masakan[countMasakan].price)
+                                        .replace(/(\,+\d{2})/, ''));
+                                }
+                                $("#pair" + countMasakan + " .cek_img_home").attr("id",
+                                    "cek_img_home_" + countMasakan);
+                                $("#pair" + countMasakan + " .cek_img_home").attr("src", res
+                                    .masakan[countMasakan].thumbnail);
+                            }
+
+                            if (res.count_masakan > limit) {
+                                $('#more_masakan').appendTo('#masakan1');
+                                $('#more_masakan').css("display", "block");
+                            }
+
+                            if (number_of_options == 0) {
+                                var pairPopular = $('#step1popular');
+                                var pairNotFound = $('#not_found_addition');
+                                var newBox = pairPopular.clone();
+                                var newBox2 = pairNotFound.clone();
+                                newBox2[0].id = "not_found_addition2";
+                                newBox2[0].style = "display: block;";
+                                newBox2.appendTo('#masakan1');
+                                newBox.appendTo('#masakan1');
+                            }
+
+                            $('#more_penjual').appendTo('body');
+                            $('#more_penjual').css("display", "none");
+                            $('#penjual1').empty();
+                            var pairSeller = $('#pairSeller');
+                            var number_of_options = res.penjual.length;
+                            offset_penjual = offset_penjual + number_of_options;
+                            for (var countPenjual = 0; countPenjual <
+                                number_of_options; countPenjual++) {
+                                var newBox = pairSeller.clone();
+                                newBox[0].id = 'pairPenjual' + countPenjual;
+                                newBox[0].className = 'pairclone filter-list my-3';
+                                newBox[0].style =
+                                    "background-color: white;margin-left: 20px;";
+                                newBox.appendTo('#penjual1');
+                                $("#pairPenjual" + countPenjual + " .entry-thumb").attr(
+                                    "href", res.penjual[countPenjual].route);
+                                $("#pairPenjual" + countPenjual + " .s_name").first().html(
+                                    res.penjual[countPenjual].name);
+                                $("#pairPenjual" + countPenjual + " .s_insta").first().html(
+                                    res.penjual[countPenjual].insta_username);
+                                $("#pairPenjual" + countPenjual + " .s_city").first().html(
+                                    res.penjual[countPenjual].city);
+
+                                $("#pairPenjual" + countPenjual + " .cek_img_home").attr(
+                                    "id", "cek_img_home_" + countPenjual);
+                                $("#pairPenjual" + countPenjual + " .cek_img_home").attr(
+                                    "src", res.penjual[countPenjual].thumbnail);
+                            }
+
+                            if (res.count_seller > limit) {
+                                $('#more_penjual').appendTo('#penjual1');
+                                $('#more_penjual').css("display", "block");
+                            }
+
+                            if (number_of_options == 0) {
+                                var pairPopular = $('#step1popular');
+                                var pairNotFound = $('#not_found_addition');
+                                var newBox = pairPopular.clone();
+                                var newBox2 = pairNotFound.clone();
+                                newBox2[0].id = "not_found_addition3";
+                                newBox2[0].style = "display: block;";
+                                newBox2.appendTo('#penjual1');
+                                newBox.appendTo('#penjual1');
+
+                                $("#not_found_addition3 .text_not_found").first().html(
+                                    "Penjual yang anda cari belum tersedia");
+                            }
+                        }
+                    });
+                }
+
+            } else {
+                $('.filter-after-input').html('');
+                $('.filter-after-input').hide();
+                $('.filter-default').show();
+                $('.filter-enter').hide();
+            }
+        }, 1000);
+
+    });
+
+    $('#more_penjual').on('click', function() {
+        var keyword = $('#keyword').val();
+        $.ajax({
+            url: "https://staging.manisdansedap.com/search_penjual/" + limit + "/" + offset_penjual,
+            type: "POST",
+            data: {
+                keyword: keyword,
+                defatult_city: cek_city == 'kota_kosong' ? 'null' : id_cityy[1],
+                _token: "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+            },
+            success: function(res) {
+
+                $('#more_penjual').css("display", "none");
+                var pairSeller = $('#pairSeller');
+                var number_of_options = res.penjual.length;
+                for (var countPenjual = 0; countPenjual < number_of_options; countPenjual++) {
+                    var newBox = pairSeller.clone();
+                    newBox[0].id = 'pairPenjual' + (countPenjual + offset_penjual);
+                    newBox[0].className = 'pairclone filter-list my-3';
+                    newBox[0].style = "background-color: white;margin-left: 20px;";
+                    newBox.appendTo('#penjual1');
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .entry-thumb").attr(
+                        "href", res.penjual[countPenjual].route);
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .s_name").first().html(
+                        res.penjual[countPenjual].name);
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .s_insta").first().html(
+                        res.penjual[countPenjual].insta_username);
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .s_city").first().html(
+                        res.penjual[countPenjual].city);
+
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .cek_img_home").attr(
+                        "id", "cek_img_home_" + (countPenjual + offset_penjual));
+                    $("#pairPenjual" + (countPenjual + offset_penjual) + " .cek_img_home").attr(
+                        "src", res.penjual[countPenjual].thumbnail);
+                }
+
+                offset_penjual = offset_penjual + number_of_options;
+
+                if (res.count_seller > offset_penjual) {
+                    $('#more_penjual').appendTo('#penjual1');
+                    $('#more_penjual').css("display", "block");
+                }
+            }
+        });
+    });
+
+    $('#more_masakan').on('click', function() {
+        var keyword = $('#keyword').val();
+        //console.log(keyword);
+        $.ajax({
+            url: "https://staging.manisdansedap.com/search_masakan/" + limit + "/" + offset_masakan,
+            type: "POST",
+            data: {
+                keyword: keyword,
+                defatult_city: cek_city == 'kota_kosong' ? 'null' : id_cityy[1],
+                _token: "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+            },
+            success: function(res) {
+
+                $('#more_masakan').css("display", "none");
+                var pair = $('#pairMasakan');
+                var number_of_options = res.masakan.length;
+
+                for (var countMasakan = 0; countMasakan < number_of_options; countMasakan++) {
+                    var newBox = pair.clone();
+                    newBox[0].id = 'pair' + (countMasakan + offset_masakan);
+                    newBox[0].className = 'pairclone filter-list my-3';
+                    newBox[0].style = "background-color: white;margin-left: 20px;";
+                    newBox.appendTo('#masakan1');
+                    $("#pair" + (countMasakan + offset_masakan) + " .entry-thumb").attr("href", res
+                        .masakan[countMasakan].route);
+                    $("#pair" + (countMasakan + offset_masakan) + " .p_name").first().html(res
+                        .masakan[countMasakan].product_name);
+                    $("#pair" + (countMasakan + offset_masakan) + " .p_city").first().html(res
+                        .masakan[countMasakan].city);
+
+                    if (res.masakan[countMasakan].price == null) {
+                        $("#pair" + (countMasakan + offset_masakan) + " .p_price").first().html(
+                            "Price by DM");
+                    } else {
+                        $("#pair" + (countMasakan + offset_masakan) + " .p_price").first().html(
+                            new Intl.NumberFormat('id-ID', {
+                                style: 'currency',
+                                currency: 'IDR'
+                            }).format(res.masakan[countMasakan].price).replace(/(\,+\d{2})/, '')
+                        );
+                    }
+                    $("#pair" + (countMasakan + offset_masakan) + " .cek_img_home").attr("id",
+                        "cek_img_home_" + (countMasakan + offset_masakan));
+                    $("#pair" + (countMasakan + offset_masakan) + " .cek_img_home").attr("src", res
+                        .masakan[countMasakan].thumbnail);
+                }
+                offset_masakan = offset_masakan + number_of_options;
+
+                if (res.count_masakan > limit) {
+                    $('#more_masakan').appendTo('#masakan1');
+                    $('#more_masakan').css("display", "block");
+                }
+            }
+        });
+    });
+    $("#searchModal").on('shown.bs.modal', function() {
+        //alert('The modal is displayed completely!');
+        $('#keyword').focus();
+    });
+
+    $(".modal").on("scroll", function() {
+        $("#keyword").blur();
+    });
+    $(".modal-dialog").on("scroll", function() {
+        $("#keyword").blur();
+    });
+    $(".modal-header").on("scroll", function() {
+        $("#keyword").blur();
+    });
+    $(".modal-body").on("scroll", function() {
+        $("#keyword").blur();
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('input#keyword').keyup(function(e) {
+            // if((this.value+'').match(/^0/,)) {
+            this.value = (this.value + '').replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+            // 
+        });
+    });
+
+    $(document).on('click', '.hastag_list_for_Js', function() {
+        $('.filter-after-input').html('');
+        $('.filter-after-input').hide();
+        $('.filter-default').hide();
+        $('.filter-enter').show();
+        var keyword = $(this).attr("data-hashtag");
+
+        const keyword_input = document.getElementById('keyword');
+        keyword_input.value = keyword;
+        //console.log(keyword);
+        var limit = 100;
+        var offset_masakan = 0;
+        var offset_penjual = 0;
+
+        $.ajax({
+            url: "https://staging.manisdansedap.com/search",
+            type: "POST",
+            data: {
+                keyword: keyword,
+                _token: "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+            },
+            success: function(res) {
+
+
+                $('#more_masakan').appendTo('body');
+                $('#more_masakan').css("display", "none");
+                $('#masakan1').empty();
+                var pair = $('#pairMasakan');
+                var number_of_options = res.masakan.length;
+                offset_masakan = offset_masakan + number_of_options;
+                for (var countMasakan = 0; countMasakan < number_of_options; countMasakan++) {
+                    var newBox = pair.clone();
+                    newBox[0].id = 'pair' + countMasakan;
+                    newBox[0].className = 'pairclone filter-list my-3';
+                    newBox[0].style = "background-color: white;margin-left: 20px;";
+                    newBox.appendTo('#masakan1');
+                    $("#pair" + countMasakan + " .entry-thumb").attr("href", res.masakan[
+                        countMasakan].route);
+                    $("#pair" + countMasakan + " .p_name").first().html(res.masakan[countMasakan]
+                        .product_name);
+                    $("#pair" + countMasakan + " .p_city").first().html(res.masakan[countMasakan]
+                        .city);
+
+                    if (res.masakan[countMasakan].price == null) {
+                        $("#pair" + countMasakan + " .p_price").first().html("Price by DM");
+                    } else {
+                        $("#pair" + countMasakan + " .p_price").first().html(new Intl.NumberFormat(
+                            'id-ID', {
+                                style: 'currency',
+                                currency: 'IDR'
+                            }).format(res.masakan[countMasakan].price).replace(/(\,+\d{2})/,
+                            ''));
+                    }
+                    $("#pair" + countMasakan + " .cek_img_home").attr("id", "cek_img_home_" +
+                        countMasakan);
+                    $("#pair" + countMasakan + " .cek_img_home").attr("src", res.masakan[
+                        countMasakan].thumbnail);
+                }
+
+                if (res.count_masakan > limit) {
+                    $('#more_masakan').appendTo('#masakan1');
+                    $('#more_masakan').css("display", "block");
+                }
+
+                if (number_of_options == 0) {
+                    var pairPopular = $('#step1popular');
+                    var pairNotFound = $('#not_found_addition');
+                    var newBox = pairPopular.clone();
+                    var newBox2 = pairNotFound.clone();
+                    newBox2[0].id = "not_found_addition2";
+                    newBox2[0].style = "display: block;";
+                    newBox2.appendTo('#masakan1');
+                    newBox.appendTo('#masakan1');
+                }
+
+                $('#more_penjual').appendTo('body');
+                $('#more_penjual').css("display", "none");
+                $('#penjual1').empty();
+                var pairSeller = $('#pairSeller');
+                var number_of_options = res.penjual.length;
+                offset_penjual = offset_penjual + number_of_options;
+                for (var countPenjual = 0; countPenjual < number_of_options; countPenjual++) {
+                    var newBox = pairSeller.clone();
+                    newBox[0].id = 'pairPenjual' + countPenjual;
+                    newBox[0].className = 'pairclone filter-list my-3';
+                    newBox[0].style = "background-color: white;margin-left: 20px;";
+                    newBox.appendTo('#penjual1');
+                    $("#pairPenjual" + countPenjual + " .entry-thumb").attr("href", res.penjual[
+                        countPenjual].route);
+                    $("#pairPenjual" + countPenjual + " .s_name").first().html(res.penjual[
+                        countPenjual].name);
+                    $("#pairPenjual" + countPenjual + " .s_insta").first().html(res.penjual[
+                        countPenjual].insta_username);
+                    $("#pairPenjual" + countPenjual + " .s_city").first().html(res.penjual[
+                        countPenjual].city);
+
+                    $("#pairPenjual" + countPenjual + " .cek_img_home").attr("id", "cek_img_home_" +
+                        countPenjual);
+                    $("#pairPenjual" + countPenjual + " .cek_img_home").attr("src", res.penjual[
+                        countPenjual].thumbnail);
+                }
+
+                if (res.count_seller > limit) {
+                    $('#more_penjual').appendTo('#penjual1');
+                    $('#more_penjual').css("display", "block");
+                }
+
+                if (number_of_options == 0) {
+                    var pairPopular = $('#step1popular');
+                    var pairNotFound = $('#not_found_addition');
+                    var newBox = pairPopular.clone();
+                    var newBox2 = pairNotFound.clone();
+                    newBox2[0].id = "not_found_addition3";
+                    newBox2[0].style = "display: block;";
+                    newBox2.appendTo('#penjual1');
+                    newBox.appendTo('#penjual1');
+
+                    $("#not_found_addition3 .text_not_found").first().html(
+                        "Penjual yang anda cari belum tersedia");
+                }
+            }
+        });
+
+
+    });
+</script><style>
+    .update-modal{
+        background-color: rgba(0, 0, 0, 0.30); 
+        z-index:1111;
+        padding-right: 0px;
+    }
+    .update-content{
+        border-radius: 20px; 
+        width:85%; 
+        margin: auto;
+    }
+    .update-header{
+        border-bottom: 0px; 
+        margin-bottom: -1rem;
+    }
+    .update-title{
+        font-weight: 600;
+        font-size: 24px;
+        margin-left: 2.5rem;    
+        margin-top: 2.5rem;
+    }
+    .update-label{
+        color: #2e2e2e; 
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .update-form-group{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        width: auto;
+    }
+    .update-form-name{
+      color: #2e2e2e;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .btn-simpan{
+        width: 100%;padding: 15px;  
+        margin-bottom: 2.5rem;   
+        margin-left: 2.5rem;    
+        margin-right: 2.5rem; 
+        border-radius: 12px;
+        background-color: #20a647; 
+        border-color: #20a647;
+    }
+    input[type=email]{
+        font-style: normal;
+        /* font-family: 'Poppins-Light';     */
+        border-radius: 8px;
+        color: #2e2e2e; 
+    }
+    input[type=number]{
+        font-style: normal;
+        /* font-family: 'Poppins-Light';     */
+        border-radius: 8px;
+        color: #2e2e2e; 
+    }
+    input[type=password]{
+        font-style: normal;
+        /* font-family: 'Poppins-Light';     */
+        border-radius: 8px;
+        color: #2e2e2e; 
+    }
+    .name-ig{
+    background: url('assets/images/input-instagram.png') no-repeat 12% 16px;
+}
+</style>
+
+
+<div class="modal fade update-modal" id="update_name" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Ubah Nama</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
+      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Pastikan nama yang anda masukkan sesuai dengan data diri anda</label>
+        
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Masukkan Nama</label>
+                <input style="padding: 15px;" type="text" class="input-new form-control" name="update_name" id="namanya" aria-describedby="emailHelp" placeholder="Nama Lengkap"  value="">
+                <p style="color:red; font-size: 12px; margin-left: 0px;" id ="nama_alert"></p>
+            </div>
+            
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" onclick="changeName()" id="submit" class="btn btn-success btn-simpan" >Simpan</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- modal update email -->
+<div class="modal fade update-modal" id="update_email" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Email Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
+      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
+      <!-- <input type="hidden" name="id" value="5"> -->
+        <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui email, pastikan email yang kamu masukkan benar ya</label>
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Email Lama</label>
+                <input style="padding: 15px; font-style: normal;" type="email" class="input-new form-control" name="update_email_lama" id="update_email_lama"  placeholder="Email Lama"  value="ilham.rohmad@kly.id" readOnly>
+            </div>
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Email Baru</label>
+                <input style="padding: 15px; font-style: normal;" onkeypress="inputemail()" type="email" class="input-new form-control" name="email" id="email"  placeholder="Email Baru" required>
+                <p style="color:red; font-size: 12px; margin-left: 0px;" id ="email_alert"></p>
+            </div>
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" onclick="emailselanjutnya()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<!-- modal update email -->
+
+<!-- modal verifikasi otp email -->
+<div class="modal fade update-modal" id="update_email_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Verifikasi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke email <span style="color:  #20a647;">ilham.rohmad@kly.id <span></label>
+        <!-- <p id="demo"></p> -->
+            
+            <!-- input kode -->
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Kode OTP</label>
+                <input style="padding: 15px; font-style: normal;" onkeypress="inputkode()" type="number" class="input-new form-control" name="update_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
+            </div>
+            <!-- timer -->
+            <div class="form-group" id="kirim" style="text-align: center; margin-top: 11px;">
+                Kirim ulang dalam <span  id="countdown" class="times" style="font-size: 12px; color:#ff0000"></span>    
+            </div>
+            <!-- kirim ulang aksi -->
+            <form action="https://staging.manisdansedap.com/change-email-ulang" method="POST">
+            <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
+                <input type="hidden" id="email" class="signup" placeholder="email" name="email_ulang" value="ilham.rohmad@kly.id">
+                <button id="kirim_ulang" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
+            </form>  
+
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" id="btn_verifikasi" onclick="emailverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal verifikasi otp email -->
+
+
+
+
+
+<div class="modal fade update-modal" id="update_nomor" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Tambahkan Nomor Hp</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui nomor HP kamu, pastikan nomor HP yang kamu masukkan benar ya</label>
+          <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
+          <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
+              <div class="input-group" style="margin-top: 8px;">
+                  <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
+                      <div id="prepend0"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #e9ecef; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
+                  </div>
+                  <input type="number" class="form-control" name="phone_number2" id="phone_number2" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px;margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" value="6285159901910" readOnly>
+              </div>
+          </div>
+          <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
+          <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
+              <div class="input-group" style="margin-top: 8px;">
+                  <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
+                      <div id="prepend"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #ffffff; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
+                  </div>
+                  <input type="number" class="form-control" onkeypress="inputnumberphone()" name="phone_number" id="phone_number" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px; margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" minlength="10" required>
+              </div>
+              <p style="color:red; font-size: 12px; margin-left: -14px;" id ="phone_alert"></p>
+          </div>
+            
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="submit" onclick="changePhone()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal verifikasi otp phone -->
+<div class="modal fade update-modal" id="update_phone_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Verifikasi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke nomor hp <span style="color:  #20a647;">+6285159901910 <span></label>
+        <!-- <p id="demo"></p> -->
+            
+            <!-- input kode -->
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Kode OTP</label>
+                <input style="padding: 15px; font-style: normal;" onkeypress="inputkodephone()" type="number" class="input-new form-control" name="otp_phone" id="otp_phone" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
+            </div>
+            <p style="color:red; font-size: 12px; margin-left: 40px; margin-top: -10px;" id ="otp_alert"></p>
+            <!-- timer -->
+            <div class="form-group" id="kirimnew" style="text-align: center; margin-top: 11px;">
+                Kirim ulang dalam <span  id="countdown_new" class="times_new" style="font-size: 12px; color:#ff0000"></span>    
+            </div>
+            <!-- kirim ulang aksi -->
+            <form action="https://staging.manisdansedap.com/change-phone-ulang" method="POST">
+            <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
+                <input type="hidden" id="phone" class="signup" placeholder="Phone Number" name="phone_ulang" value="6285159901910">
+                <button id="kirim_ulangnew" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
+            </form>  
+
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" id="btn_verifikasiphone" onclick="phoneverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal verifikasi otp email -->
+
+<!-- modal update password -->
+<div class="modal fade update-modal" id="update_password" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Buat Password Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form action="https://staging.manisdansedap.com/update_password" method="POST" data-parsley-validate>
+      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <input type="hidden" name="phone" value="6285159901910">
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Atur password baru agar akun kamu lebih aman</label>
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Password Baru</label>
+                <input style="padding: 15px;" type="password" class="input-new form-control" name="password" id="password" aria-describedby="emailHelp" placeholder="Password"  value="" Required>
+                <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+            </div>
+            <div class="form-group col-sm-12 update-form-group">
+                <label class="update-form-name">Verifikasi Password</label>
+                <input style="padding: 15px;" type="password" class="input-new form-control" name="kon_password" id="password_confirm" aria-describedby="emailHelp" placeholder="Password"  value="" >
+                <i class="fa fa-eye" id="togglePasswordConfirm" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+            </div>
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="submit" class="btn btn-success btn-simpan" >Simpan</button>
+      </div>
+      </from>
+    </div>
+  </div>
+</div>
+<!-- modal update password -->
+
+
+<!-- modal update email selesai -->
+<div class="modal fade update-modal" id="update_selesai" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Email Baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Email sudah berhasil di update</label>
+        
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" onclick="emailselesai()"  id="selesai"  class="btn btn-success btn-simpan" >Selesai</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal update email selesai -->
+
+<!-- modal update phone selesai -->
+<div class="modal fade update-modal" id="update_phoneselesai" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content update-content" >
+      <div class="modal-header update-header">
+        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Nomor Hp Baru Tersimpan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label class="update-label" for="exampleInputEmail1">Nomor HP anda sudah berhasil di update</label>
+      </div>
+      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+        <button type="button" onclick="emailselesai()"  id="selesai"  class="btn btn-success btn-simpan" >Selesai</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- modal update phone selesai -->
+
+<!-- kota -->
+<!-- JS
+============================================ -->
+
+
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/popper.min.js"></script>
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/vendor/bootstrap.min.js"></script>
+<!--Plugins JS-->
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/plugins/tippy4.min.js.js"></script>
+<!--Main JS-->
+<script src="https://staging.manisdansedap.com/assets/assets_chat/js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    const togglePassword = document.querySelector('#togglePasswordConfirm');
+    const password = document.querySelector('#password_confirm');
+
+    togglePassword.addEventListener('click', function(e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+<script>
+    const togglePassword2 = document.querySelector('#togglePassword');
+    const password2 = document.querySelector('#password');
+    togglePassword2.addEventListener('click', function(e) {
+        const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+        password2.setAttribute('type', type);    
+        this.classList.toggle('fa-eye-slash');
+    });
+
+    function previewUploadImage(input, element_id) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                $(`#${element_id}`).attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    };
+
+    $(document).ready(function() {
+        $('input#id_phone').keyup(function(e) {
+            if ((this.value + '').match(/^0/)) {
+                this.value = (this.value + '').replace(/^0+/g, '');
+            }
+            if ((this.value + '').match(/^62/)) {
+                this.value = (this.value + '').replace(/62/gi, '');
+            }
+        });
+    });
+
+    $(document).on('change', '#thumbnail_seller_new', function() {
+        previewUploadImage(this, 'preview_thumbnail_buyer');
+    });
+    $(document).on('click', '#preview_thumbnail_buyer', function() {
+        $('#thumbnail_seller_new').trigger('click');
+    });
+</script>
+
+<script>
+    function changeName() {
+        let id = '5';
+        const full_name = document.getElementById('namanya');
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-name',
+            data: {
+                'id': id,
+                'full_name': full_name.value,
+            },
+            success: function(data) {
+                location.reload();
+            },
+            error: function(data) {
+                $("#nama_alert").text("Pastikan nama yang kamu masukkan benar");
+            },
+        });
+    }
+</script>
+<script>
+    function inputkode() {
+        document.getElementById("btn_verifikasi").disabled = false;
+        document.getElementById("btn_verifikasi").style.backgroundColor = "#20A647";
+        document.getElementById("btn_verifikasi").style.color = "#ffffff";
+    }
+</script>
+<script>
+    const startingMinutes = 2;
+    let time = startingMinutes * 60;
+    const countdownEl = document.getElementById('countdown');
+    const tee = document.getElementById('te');
+    const aa = setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        countdownEl.innerHTML = `${minutes}: ${seconds}`;
+        time--;
+        if (time <= -1) {
+            clearInterval(aa);
+            $("#kirim").css("display", "none");
+            $("#kirim_ulang").css("display", "block");
+        }
+    };
+</script>
+<script>
+    function emailselanjutnya() {
+        let id = '5';
+        const email = document.getElementById('email');
+        const emailnya = sessionStorage.getItem("email");
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-email',
+            data: {
+                "_token": "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+                'id': id,
+                'email': email.value,
+            },
+            success: function(data) {
+                sessionStorage.setItem("email", 1)
+                $('#update_email').modal('hide');
+                //$('#update_email_otp').modal('show');
+                location.reload();
+            },
+            error: function(data) {
+                document.getElementById("email_alert").style.display = "block";
+                $("#email_alert").text("Email sudah terdaftar")
+                document.getElementById("email").style.borderColor = "red";
+
+            },
+        });
+
+    }
+
+    function inputemail() {
+        document.getElementById("email_alert").style.display = "none";
+        document.getElementById("email").style.borderColor = "#dddddd";
+    }
+</script>
+<script>
+    $(document).ready(function() {
+        $('input#phone_number').keyup(function(e) {
+            if ((this.value + '').match(/^0/)) {
+                this.value = (this.value + '').replace(/^0+/g, '');
+            }
+            if ((this.value + '').match(/^62/)) {
+                this.value = (this.value + '').replace(/62/gi, '');
+            }
+        });
+        $('input#ig_account').keyup(function(e) {
+            if ((this.value + '').match(/^@/)) {
+                this.value = (this.value + '').replace(/^@+/g, '');
+            }
+        });
+    });
+
+    function inputkodephone() {
+        document.getElementById("btn_verifikasiphone").disabled = false;
+        document.getElementById("btn_verifikasiphone").style.backgroundColor = "#20A647";
+        document.getElementById("btn_verifikasiphone").style.color = "#ffffff";
+    }
+
+    const emailnya = sessionStorage.getItem("email");
+    const phonenya = sessionStorage.getItem("phone");
+    const cek_phone = '6285159901910';
+    if (emailnya == 1) {
+        sessionStorage.removeItem('email');
+        $('#update_email_otp').modal('show');
+    }
+    if (phonenya == 1 && cek_phone != 0) {
+        sessionStorage.removeItem('phone');
+        $('#update_phone_otp').modal('show');
+    }
+
+    function emailverifikasi() {
+        sessionStorage.removeItem('email');
+        //sessionStorage.setItem("email", 0);
+        $('#update_email_otp').modal('hide');
+        $('#update_selesai').modal('show');
+    }
+</script>
+<script>
+    function emailselesai() {
+        $('#update_selesai').modal('hide');
+        location.reload();
+    }
+</script>
+<script>
+    const startingMinutes_new = 2;
+    let time_new = startingMinutes_new * 60;
+    const countdownEl_new = document.getElementById('countdown_new');
+    const tee_new = document.getElementById('te_new');
+    const aa_new = setInterval(updateCountdownnew, 1000);
+
+    function updateCountdownnew() {
+        const minutes_new = Math.floor(time / 60);
+        let seconds_new = time % 60;
+
+        seconds_new = seconds_new < 10 ? '0' + seconds_new : seconds_new;
+        countdownEl_new.innerHTML = `${minutes_new}: ${seconds_new}`;
+        time_new--;
+        if (time_new <= -1) {
+            clearInterval(aa);
+            $("#kirimnew").css("display", "none");
+            $("#kirim_ulangnew").css("display", "block");
+        }
+    };
+
+    function changePhone() {
+        let id = '5';
+        const phone_number = document.getElementById('phone_number');
+
+        if (phone_number.value.length < 8) {
+            document.getElementById("phone_alert").style.display = "block";
+            $("#phone_alert").text("Pastikan nomor HP yang kamu masukkan benar");
+            document.getElementById("phone_number").style.borderColor = "red";
+            document.getElementById("prepend").style.borderColor = "red";
+            return;
+        }
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-phone',
+            data: {
+                'id': id,
+                'phone_number': phone_number.value,
+            },
+            success: function(data) {
+                sessionStorage.setItem("phone", 1)
+                location.reload();
+            },
+            error: function(data) {
+                document.getElementById("phone_alert").style.display = "block";
+                $("#phone_alert").text("Pastikan nomor HP yang kamu masukkan benar")
+                document.getElementById("phone_number").style.borderColor = "red";
+                document.getElementById("prepend").style.borderColor = "red";
+            },
+        });
+    }
+
+    function inputnumberphone() {
+        document.getElementById("phone_alert").style.display = "none";
+        document.getElementById("phone_number").style.borderColor = "#5d5d5d";
+        document.getElementById("prepend").style.borderColor = "#5d5d5d";
+    };
+
+    function phoneverifikasi() {
+        const otp_phone = document.getElementById('otp_phone');
+        let id = '5';
+
+        if (otp_phone.value.length < 6) {
+            document.getElementById("otp_alert").style.display = "block";
+            $("#otp_alert").text("Pastikan kode OTP yang anda masukkan benar ");
+            document.getElementById("otp_phone").style.borderColor = "red";
+
+            return;
+        }
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-phone-otp',
+            data: {
+                'id': id,
+                'pin': otp_phone.value,
+            },
+            success: function(data) {
+                sessionStorage.removeItem('phone');
+                $('#update_phone_otp').modal('hide');
+                $('#update_phoneselesai').modal('show');
+                //location.reload();
+            },
+            error: function(data) {
+                document.getElementById("otp_alert").style.display = "block";
+                $("#otp_alert").text("Pastikan kode OTP yang kamu masukkan benar")
+                document.getElementById("otp_phone").style.borderColor = "red";
+            },
+        });
+    }
+</script>
+<script>
+    function changeinsta() {
+        let id = '5';
+        const ig_account = document.getElementById('ig_account');
+
+
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-ig',
+            data: {
+                'id': id,
+                'ig_account': ig_account.value,
+            },
+            success: function(data) {
+                location.reload();
+            },
+
+        });
+    }
+</script>
+<script>
+    function changekota() {
+        let id = '5';
+        const city_id = document.getElementById('city_id');
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-kota',
+            data: {
+                'id': id,
+                'city_id': city_id.value,
+            },
+            success: function(data) {
+                location.reload();
+            },
+
+        });
+    }
+</script>
+<script>
+    function produk() {
+        const sidebar = sessionStorage.getItem("sidebar");
+        if (sidebar == 0) {
+            sessionStorage.setItem("sidebar", 1);
+            document.getElementById("tambah_produk").style.display = "block";
+            document.getElementById("daftar_produk").style.display = "block";
+
+        } else {
+            sessionStorage.setItem("sidebar", 0);
+            document.getElementById("tambah_produk").style.display = "none";
+            document.getElementById("daftar_produk").style.display = "none";
+        }
+
+    }
+</script>
+<script>
+    function changeNameSeller() {
+        let id = '5';
+        const name = document.getElementById('namanyaseller');
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: '/change-name-seller',
+            data: {
+                'id': id,
+                'name': name.value,
+            },
+            success: function(data) {
+                location.reload();
+            },
+            error: function(data) {
+                $("#nama_alert").text("Pastikan nama yang kamu masukkan benar");
+            },
+        });
+    }
+</script>
+
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addIndicator("php_version", new PhpDebugBar.DebugBar.Indicator({"icon":"code","tooltip":"PHP Version"}), "right");
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.setDataMap({
+"php_version": ["php.version", ],
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"https:\/\/staging.manisdansedap.com\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"X9db56ae0eb9b84200d091ee540be276c","datetime":"2022-10-15 05:19:35","utime":1665785975.258587,"method":"GET","uri":"\/update-profile-buyer","ip":"114.4.216.38"},"php":{"version":"7.4.30","interface":"apache2handler"},"messages":{"count":0,"messages":[]},"time":{"start":1665785975.120199,"end":1665785975.258608,"duration":0.13840913772583008,"duration_str":"138ms","measures":[{"label":"Booting","start":1665785975.120199,"relative_start":0,"end":1665785975.13631,"relative_end":1665785975.13631,"duration":0.016111135482788086,"duration_str":"16.11ms","params":[],"collector":null},{"label":"Application","start":1665785975.136428,"relative_start":0.01622915267944336,"end":1665785975.258611,"relative_end":2.86102294921875e-6,"duration":0.12218284606933594,"duration_str":"122ms","params":[],"collector":null}]},"memory":{"peak_usage":7379840,"peak_usage_str":"7MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":5,"templates":[{"name":"frontend.dashboard_seller.profile.update_profil (resources\/views\/frontend\/dashboard_seller\/profile\/update_profil.blade.php)","param_count":5,"params":["user_from","dashboard_header","no_read","seller_avatar","sidebar"],"type":"blade"},{"name":"frontend.dashboard_seller.sidebar_dashboard (resources\/views\/frontend\/dashboard_seller\/sidebar_dashboard.blade.php)","param_count":8,"params":["__env","app","errors","user_from","dashboard_header","no_read","seller_avatar","sidebar"],"type":"blade"},{"name":"frontend.dashboard_seller.buyer (resources\/views\/frontend\/dashboard_seller\/buyer.blade.php)","param_count":8,"params":["__env","app","errors","user_from","dashboard_header","no_read","seller_avatar","sidebar"],"type":"blade"},{"name":"frontend.dashboard_seller.modal_search (resources\/views\/frontend\/dashboard_seller\/modal_search.blade.php)","param_count":13,"params":["__env","app","errors","user_from","dashboard_header","no_read","seller_avatar","sidebar","imgNull","po_seller_img","disk","cek_gambar_gcs","cek_gambar"],"type":"blade"},{"name":"frontend.dashboard_seller.profile.update_profil_modal (resources\/views\/frontend\/dashboard_seller\/profile\/update_profil_modal.blade.php)","param_count":13,"params":["__env","app","errors","user_from","dashboard_header","no_read","seller_avatar","sidebar","imgNull","po_seller_img","disk","cek_gambar_gcs","cek_gambar"],"type":"blade"}]},"route":{"uri":"GET update-profile-buyer","middleware":"web","controller":"App\\Http\\Controllers\\Frontend\\UserController@updateProfilBuyer","namespace":"App\\Http\\Controllers","prefix":"","where":[],"as":"update-profile-buyer","file":"<a href=\"phpstorm:\/\/open?file=\/var\/www\/mds\/mds-core\/app\/Http\/Controllers\/Frontend\/UserController.php&line=1742\">app\/Http\/Controllers\/Frontend\/UserController.php:1742-1789<\/a>"},"queries":{"nb_statements":9,"nb_failed_statements":0,"accumulated_duration":0.006580000000000001,"accumulated_duration_str":"6.58ms","statements":[{"sql":"select * from information_schema.tables where table_schema = 'mds_live' and table_name = 'languages' and table_type = 'BASE TABLE'","type":"query","params":[],"bindings":["mds_live","languages"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":10,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":23},{"index":11,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":12,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":13,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":14,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00304,"duration_str":"3.04ms","stmt_id":"\/app\/Http\/Middleware\/Locale.php:23","connection":"mds_live"},{"sql":"select * from `languages` where `is_active` = 1","type":"query","params":[],"bindings":["1"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":26},{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":16,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":18,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00047,"duration_str":"470\u03bcs","stmt_id":"\/app\/Http\/Middleware\/Locale.php:26","connection":"mds_live"},{"sql":"select `code` from `languages` where `is_default` = 1 limit 1","type":"query","params":[],"bindings":["1"],"hints":["<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":30},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":17,"namespace":null,"name":"\/app\/Http\/Middleware\/HttpsProtocol.php","line":33},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":19,"namespace":"middleware","name":"bindings","line":50}],"duration":0.00032,"duration_str":"320\u03bcs","stmt_id":"\/app\/Http\/Middleware\/Locale.php:30","connection":"mds_live"},{"sql":"select * from `po_client_api` where `id` = 5 limit 1","type":"query","params":[],"bindings":["5"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php","line":53},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/SessionGuard.php","line":148},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/GuardHelpers.php","line":60},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/GuardHelpers.php","line":70},{"index":19,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1745}],"duration":0.00041999999999999996,"duration_str":"420\u03bcs","stmt_id":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php:53","connection":"mds_live"},{"sql":"select * from `po_seller` where `insta_username` = 'UItest' limit 1","type":"query","params":[],"bindings":["UItest"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Http\/Controllers\/Frontend\/UserController.php","line":1753},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":262},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":205}],"duration":0.0005,"duration_str":"500\u03bcs","stmt_id":"\/app\/Http\/Controllers\/Frontend\/UserController.php:1753","connection":"mds_live"},{"sql":"select * from `po_client_api` where `id` = 5 limit 1","type":"query","params":[],"bindings":["5"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":716},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00054,"duration_str":"540\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:716","connection":"mds_live"},{"sql":"select * from `po_seller` where `insta_username` = 'UItest' limit 1","type":"query","params":[],"bindings":["UItest"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/Commons\/Helpers.php","line":736},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":21,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00041999999999999996,"duration_str":"420\u03bcs","stmt_id":"\/app\/Commons\/Helpers.php:736","connection":"mds_live"},{"sql":"select * from `po_city` where `status` = '1' order by `title` asc","type":"query","params":[],"bindings":["1"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":"view","name":"058da0859785219688166ffab34392632ee26f0c","line":5},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":19,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00051,"duration_str":"510\u03bcs","stmt_id":"view::058da0859785219688166ffab34392632ee26f0c:5","connection":"mds_live"},{"sql":"select * from `po_hashtag` order by `visitor_count` desc limit 5","type":"query","params":[],"bindings":[],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","The <code>SELECT<\/code> statement has no <code>WHERE<\/code> clause and could examine many more rows than intended"],"show_copy":false,"backtrace":[{"index":14,"namespace":"view","name":"058da0859785219688166ffab34392632ee26f0c","line":9},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Filesystem\/Filesystem.php","line":108},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/PhpEngine.php","line":58},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":61},{"index":19,"namespace":null,"name":"\/vendor\/facade\/ignition\/src\/Views\/Engines\/CompilerEngine.php","line":37}],"duration":0.00035999999999999997,"duration_str":"360\u03bcs","stmt_id":"view::058da0859785219688166ffab34392632ee26f0c:9","connection":"mds_live"}]},"swiftmailer_mails":{"count":0,"mails":[]},"gate":{"count":0,"messages":[]},"session":{"_token":"dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb","_flash":"array:2 [\n  \"new\" => []\n  \"old\" => []\n]","_previous":"array:1 [\n  \"url\" => \"https:\/\/staging.manisdansedap.com\/update-profile-buyer\"\n]","login_web-client_59ba36addc2b2f9401580f014c7f58ea4e30989d":"5","is_user_exsisting":"0","id_user_exsisting":"0","dashboard_header":"0","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"path_info":"\/update-profile-buyer","status_code":"<pre class=sf-dump id=sf-dump-662220552 data-indent-pad=\"  \"><span class=sf-dump-num>200<\/span>\n<\/pre><script>Sfdump(\"sf-dump-662220552\", {\"maxDepth\":0})<\/script>\n","status_text":"OK","format":"html","content_type":"text\/html; charset=UTF-8","request_query":"<pre class=sf-dump id=sf-dump-2039598556 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-2039598556\", {\"maxDepth\":0})<\/script>\n","request_request":"<pre class=sf-dump id=sf-dump-977957380 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-977957380\", {\"maxDepth\":0})<\/script>\n","request_headers":"<pre class=sf-dump id=sf-dump-1600628892 data-indent-pad=\"  \"><span class=sf-dump-note>array:13<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>host<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>user-agent<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"84 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko\/20100101 Firefox\/105.0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"85 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,*\/*;q=0.8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-language<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.5<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-encoding<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>connection<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>referer<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"34 characters\">https:\/\/staging.manisdansedap.com\/<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cookie<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"989 characters\">_ga_3SN6VN00GR=GS1.1.1665785961.13.1.1665785974.47.0.0; _ga=GA1.1.1706758155.1660630033; __auc=f65e92fb182a543bc86e042f039; _ga=GA1.3.1706758155.1660630033; _gid=GA1.3.1861104649.1665753538; XSRF-TOKEN=eyJpdiI6IlliNTcwNjdCdHNFWkVjN0pTV21Bdnc9PSIsInZhbHVlIjoiTjdVaElmb1pBbytqOWFtMDgvTDF1Q20xOGRvWmFRWFdWSFJUbHFsMTRvb3RZZDNVUVJEVHUvNkRZQitzOFR1Q2JtQzlaQXJvQXNjbmtCRGtIN1psQUk1TTdwRVNOdmo2WTZRYWhqeTFPTHB2Mko5cUJITTZWeE1BTE9UNHkzY2EiLCJtYWMiOiJiZWNmYzcxNmRhNjc5MmEyZmZjYjA3NGU0MTNhZjMwNWFjMGQ0ZDIyZjc4NjM1MTkxNjBlOTk1NDQ5YjYxZWY1IiwidGFnIjoiIn0%3D; mnd_session=eyJpdiI6IjViem9HeEdLbUtNckE1ZDdsWW9Tb0E9PSIsInZhbHVlIjoiSzZMa0dVWU04bnJDbUU0a25wVFhRYTBzcjQzdjh1eC8yTXBqOVFBR0Z5UGxZcEFVWmRubGVsM1Rnemk5ZTFDQ3BLckl5Sm5DOXpPMlBlUjRaTEltMWRPcThFSHpFRXJGQVhtV1NJRWkwc0lrN25WQkxlTS84TTQySGVPRURpOFQiLCJtYWMiOiJkNDJiMGJlZDNiOGEzMTAzNmUxNmZmMGI2YTExYTBjMmQ2Y2QzMjUwZmNhM2E0ZjM3Nzk4Nzg2MWFmZDQyZWY5IiwidGFnIjoiIn0%3D; __asc=4dba1f21183d8949cd53bda7a03; _gat_UA-108534636-20=1; _gat_%5Bobject%20Object%5D=1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>upgrade-insecure-requests<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-dest<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-mode<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-site<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-user<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1600628892\", {\"maxDepth\":0})<\/script>\n","request_server":"<pre class=sf-dump id=sf-dump-1428812338 data-indent-pad=\"  \"><span class=sf-dump-note>array:42<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>REDIRECT_HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_STATUS<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">200<\/span>\"\n  \"<span class=sf-dump-key>HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP_HOST<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP_USER_AGENT<\/span>\" => \"<span class=sf-dump-str title=\"84 characters\">Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko\/20100101 Firefox\/105.0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT<\/span>\" => \"<span class=sf-dump-str title=\"85 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,*\/*;q=0.8<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_LANGUAGE<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.5<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_ENCODING<\/span>\" => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  \"<span class=sf-dump-key>HTTP_CONNECTION<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">keep-alive<\/span>\"\n  \"<span class=sf-dump-key>HTTP_REFERER<\/span>\" => \"<span class=sf-dump-str title=\"34 characters\">https:\/\/staging.manisdansedap.com\/<\/span>\"\n  \"<span class=sf-dump-key>HTTP_COOKIE<\/span>\" => \"<span class=sf-dump-str title=\"989 characters\">_ga_3SN6VN00GR=GS1.1.1665785961.13.1.1665785974.47.0.0; _ga=GA1.1.1706758155.1660630033; __auc=f65e92fb182a543bc86e042f039; _ga=GA1.3.1706758155.1660630033; _gid=GA1.3.1861104649.1665753538; XSRF-TOKEN=eyJpdiI6IlliNTcwNjdCdHNFWkVjN0pTV21Bdnc9PSIsInZhbHVlIjoiTjdVaElmb1pBbytqOWFtMDgvTDF1Q20xOGRvWmFRWFdWSFJUbHFsMTRvb3RZZDNVUVJEVHUvNkRZQitzOFR1Q2JtQzlaQXJvQXNjbmtCRGtIN1psQUk1TTdwRVNOdmo2WTZRYWhqeTFPTHB2Mko5cUJITTZWeE1BTE9UNHkzY2EiLCJtYWMiOiJiZWNmYzcxNmRhNjc5MmEyZmZjYjA3NGU0MTNhZjMwNWFjMGQ0ZDIyZjc4NjM1MTkxNjBlOTk1NDQ5YjYxZWY1IiwidGFnIjoiIn0%3D; mnd_session=eyJpdiI6IjViem9HeEdLbUtNckE1ZDdsWW9Tb0E9PSIsInZhbHVlIjoiSzZMa0dVWU04bnJDbUU0a25wVFhRYTBzcjQzdjh1eC8yTXBqOVFBR0Z5UGxZcEFVWmRubGVsM1Rnemk5ZTFDQ3BLckl5Sm5DOXpPMlBlUjRaTEltMWRPcThFSHpFRXJGQVhtV1NJRWkwc0lrN25WQkxlTS84TTQySGVPRURpOFQiLCJtYWMiOiJkNDJiMGJlZDNiOGEzMTAzNmUxNmZmMGI2YTExYTBjMmQ2Y2QzMjUwZmNhM2E0ZjM3Nzk4Nzg2MWFmZDQyZWY5IiwidGFnIjoiIn0%3D; __asc=4dba1f21183d8949cd53bda7a03; _gat_UA-108534636-20=1; _gat_%5Bobject%20Object%5D=1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_UPGRADE_INSECURE_REQUESTS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_DEST<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_MODE<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_SITE<\/span>\" => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_USER<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  \"<span class=sf-dump-key>PATH<\/span>\" => \"<span class=sf-dump-str title=\"60 characters\">\/usr\/local\/sbin:\/usr\/local\/bin:\/usr\/sbin:\/usr\/bin:\/sbin:\/bin<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SIGNATURE<\/span>\" => \"<span class=sf-dump-str title=\"87 characters\">&lt;address&gt;Apache\/2.4.41 (Ubuntu) Server at staging.manisdansedap.com Port 443&lt;\/address&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n<\/span><\/span>\"\n  \"<span class=sf-dump-key>SERVER_SOFTWARE<\/span>\" => \"<span class=sf-dump-str title=\"22 characters\">Apache\/2.4.41 (Ubuntu)<\/span>\"\n  \"<span class=sf-dump-key>SERVER_NAME<\/span>\" => \"<span class=sf-dump-str title=\"25 characters\">staging.manisdansedap.com<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">10.80.0.5<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PORT<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">443<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"12 characters\">114.4.216.38<\/span>\"\n  \"<span class=sf-dump-key>DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">\/var\/www\/mds\/mds-core\/public\/<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_SCHEME<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">https<\/span>\"\n  \"<span class=sf-dump-key>CONTEXT_PREFIX<\/span>\" => \"\"\n  \"<span class=sf-dump-key>CONTEXT_DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"29 characters\">\/var\/www\/mds\/mds-core\/public\/<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADMIN<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">webmaster@kly.id<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_FILENAME<\/span>\" => \"<span class=sf-dump-str title=\"38 characters\">\/var\/www\/mds\/mds-core\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_PORT<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">34633<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_URL<\/span>\" => \"<span class=sf-dump-str title=\"21 characters\">\/update-profile-buyer<\/span>\"\n  \"<span class=sf-dump-key>GATEWAY_INTERFACE<\/span>\" => \"<span class=sf-dump-str title=\"7 characters\">CGI\/1.1<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PROTOCOL<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">HTTP\/1.1<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_METHOD<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET<\/span>\"\n  \"<span class=sf-dump-key>QUERY_STRING<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REQUEST_URI<\/span>\" => \"<span class=sf-dump-str title=\"21 characters\">\/update-profile-buyer<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_NAME<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">\/index.php<\/span>\"\n  \"<span class=sf-dump-key>PHP_SELF<\/span>\" => \"<span class=sf-dump-str title=\"10 characters\">\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_TIME_FLOAT<\/span>\" => <span class=sf-dump-num>1665785975.1202<\/span>\n  \"<span class=sf-dump-key>REQUEST_TIME<\/span>\" => <span class=sf-dump-num>1665785975<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1428812338\", {\"maxDepth\":0})<\/script>\n","request_cookies":"<pre class=sf-dump id=sf-dump-137461909 data-indent-pad=\"  \"><span class=sf-dump-note>array:9<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_ga_3SN6VN00GR<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_ga<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>__auc<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_gid<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>XSRF-TOKEN<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb<\/span>\"\n  \"<span class=sf-dump-key>mnd_session<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">iPRaWTfK80cJ4nHW0FC9B6R7NAo1i7FbeZPbytrH<\/span>\"\n  \"<span class=sf-dump-key>__asc<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_gat_UA-108534636-20<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>_gat_%5Bobject%20Object%5D<\/span>\" => <span class=sf-dump-const>null<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-137461909\", {\"maxDepth\":0})<\/script>\n","response_headers":"<pre class=sf-dump id=sf-dump-1847914236 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>content-type<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"24 characters\">text\/html; charset=UTF-8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cache-control<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">no-cache, private<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>date<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"29 characters\">Fri, 14 Oct 2022 22:19:35 GMT<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>set-cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"414 characters\">XSRF-TOKEN=eyJpdiI6IlorbXBDdStmVGowWmdVL016R0tWWHc9PSIsInZhbHVlIjoiMFhGOHhablNYb0ppNVhTMzZJTVNFam9jOVo2ODVocVNPWlg2dEhqeXBxNFlXZ1g0czFqWlNiUHZGNk1TL0VGcjZMc1BQcklscWc3L0FiUFZZbTRYWi9wejBQenRzdzJrV1JneGxzK2RZVjJHbEtIQjFpVVZndVVqRU1UMUVNSGsiLCJtYWMiOiIwYTUxMGY1NDBhMWI0MzVlMzRlZjA4OWI0YTk1NDY4MDkwODBlZTgxMTgyNTYzOTRjYWY0MDY5MjcwMWE0ZWY2IiwidGFnIjoiIn0%3D; expires=Sat, 15-Oct-2022 00:19:35 GMT; Max-Age=7200; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"425 characters\">mnd_session=eyJpdiI6ImFJT0JOQWdhcUVFeVBkU29NQm8yY3c9PSIsInZhbHVlIjoiUm5GZTN1NUJNQW1VUFk4WUFqUGgwVGlydnF1d0dSSllSMC9Db0hBeWh5aW9ObFNiSXFFZnlJa1pEbHZudUdGaEsyZlp1Y0RxVGxOblBZeHF4Nyt6Sms1amhSUTk3TUdtbjhabzl4VTV5aEVpWUZnaEVUTkVCVWREZGFLbXUxUTMiLCJtYWMiOiIxNTE2N2RiYzY1YjEwODJmMWRhMzgxNmM5ZjBiN2NlMzE5M2QzOGNhMmFjM2Y3Njk0NWQxOWMwYjA2MjhjZWU2IiwidGFnIjoiIn0%3D; expires=Sat, 15-Oct-2022 00:19:35 GMT; Max-Age=7200; path=\/; httponly<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>Set-Cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"400 characters\">XSRF-TOKEN=eyJpdiI6IlorbXBDdStmVGowWmdVL016R0tWWHc9PSIsInZhbHVlIjoiMFhGOHhablNYb0ppNVhTMzZJTVNFam9jOVo2ODVocVNPWlg2dEhqeXBxNFlXZ1g0czFqWlNiUHZGNk1TL0VGcjZMc1BQcklscWc3L0FiUFZZbTRYWi9wejBQenRzdzJrV1JneGxzK2RZVjJHbEtIQjFpVVZndVVqRU1UMUVNSGsiLCJtYWMiOiIwYTUxMGY1NDBhMWI0MzVlMzRlZjA4OWI0YTk1NDY4MDkwODBlZTgxMTgyNTYzOTRjYWY0MDY5MjcwMWE0ZWY2IiwidGFnIjoiIn0%3D; expires=Sat, 15-Oct-2022 00:19:35 GMT; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"411 characters\">mnd_session=eyJpdiI6ImFJT0JOQWdhcUVFeVBkU29NQm8yY3c9PSIsInZhbHVlIjoiUm5GZTN1NUJNQW1VUFk4WUFqUGgwVGlydnF1d0dSSllSMC9Db0hBeWh5aW9ObFNiSXFFZnlJa1pEbHZudUdGaEsyZlp1Y0RxVGxOblBZeHF4Nyt6Sms1amhSUTk3TUdtbjhabzl4VTV5aEVpWUZnaEVUTkVCVWREZGFLbXUxUTMiLCJtYWMiOiIxNTE2N2RiYzY1YjEwODJmMWRhMzgxNmM5ZjBiN2NlMzE5M2QzOGNhMmFjM2Y3Njk0NWQxOWMwYjA2MjhjZWU2IiwidGFnIjoiIn0%3D; expires=Sat, 15-Oct-2022 00:19:35 GMT; path=\/; httponly<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-1847914236\", {\"maxDepth\":0})<\/script>\n","session_attributes":"<pre class=sf-dump id=sf-dump-552030523 data-indent-pad=\"  \"><span class=sf-dump-note>array:8<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_token<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb<\/span>\"\n  \"<span class=sf-dump-key>_flash<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>new<\/span>\" => []\n    \"<span class=sf-dump-key>old<\/span>\" => []\n  <\/samp>]\n  \"<span class=sf-dump-key>_previous<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>url<\/span>\" => \"<span class=sf-dump-str title=\"54 characters\">https:\/\/staging.manisdansedap.com\/update-profile-buyer<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>login_web-client_59ba36addc2b2f9401580f014c7f58ea4e30989d<\/span>\" => <span class=sf-dump-num>5<\/span>\n  \"<span class=sf-dump-key>is_user_exsisting<\/span>\" => \"<span class=sf-dump-str>0<\/span>\"\n  \"<span class=sf-dump-key>id_user_exsisting<\/span>\" => \"<span class=sf-dump-str>0<\/span>\"\n  \"<span class=sf-dump-key>dashboard_header<\/span>\" => <span class=sf-dump-num>0<\/span>\n  \"<span class=sf-dump-key>PHPDEBUGBAR_STACK_DATA<\/span>\" => []\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-552030523\", {\"maxDepth\":0})<\/script>\n"}}, "X9db56ae0eb9b84200d091ee540be276c");
+
+</script>
+</body>
+
+</html>
