@@ -1,5 +1,92 @@
-// .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
-//     font-family: "Poppins"
+// *
+//     background-color: rgba(0, 0, 0, 0.1)
+// // .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+// //     font-family: "Poppins"
 .no-pesan
     border: 0
     padding-left: 0
+    &_form
+        margin-bottom: 0
+        padding-bottom: 25px
+        border-bottom: 1px solid #ededed
+    &_right
+        padding-top: 25px
+    .btn--border
+        margin-left: auto
+        margin-right: auto
+        margin-top: 15px
+        padding: 10px 22px
+        font-weight: 500
+.label-name
+    display: block
+    margin-left: 0
+    text-align: center
+    color: #949494
+    font-size: 12px
+    font-weight: 400
+.dv-margin
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 25px
+    span
+        font-size: 14px
+        height: 21px
+    .label
+        &-ubah
+            margin-bottom: 0
+            width: 40px
+            text-align: right
+            svg
+                margin-top: 3px
+        &-name
+            padding: 0
+            text-align: left
+            flex: 0 0 98px
+            color: #949494
+        &-value
+            flex: 1
+            color: #000000
+            font-weight: 600
+            &.unset
+                color: #20A647
+.modal
+    &-dialog
+        margin: 0
+    &-content
+        height: 100vh
+    &-footer
+        border-top: 0
+    &-title
+        font-size: 16px
+        font-weight: 600
+    &-header
+        align-items: center
+        justify-content: flex-start
+        border-bottom: 1px solid #ededed
+        .close
+            float: none
+            margin: 0
+            padding: 0
+.update
+    &-header
+        margin-bottom: 0
+    &-content
+        width: 100%
+        margin: 0
+        border-radius: 0
+    &-title
+        margin-left: 18px
+        margin-top: 0
+    &-label
+        margin: 0
+        margin-bottom: 25px
+        color: #4E4E4E
+    &-form
+        &-name
+            color: #000
+        &-group
+            margin: 0
+            padding: 0
+.btn-simpan
+    margin: 0

@@ -209,6 +209,7 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
     </style>
+    <link rel="stylesheet" href="sass/root.min.css">
     <link rel="stylesheet" href="sass/profile.min.css">
 </head>
 <body id="ini_all_body">
@@ -308,7 +309,7 @@
     <style>
         
 
-        .label-name {
+        /* .label-name {
             color: #414141;
             margin-bottom: 15px;
             font-weight: 600;
@@ -317,80 +318,89 @@
 
         .dv-margin {
             margin-bottom: 20px;
-        }
-
+        } 
+        
         .label-ubah {
             color: #20A647;
             margin-bottom: 15px;
             font-weight: 600;
             cursor: pointer
         }
+        */
     </style>
-    <h5 style="font-size: 24px;margin-left: 0px;margin-bottom: 30px;color: #414141"><b style="color: #20a647;">|</b> Update Profile</h5>
+    <!-- <h5 style="font-size: 24px;margin-left: 0px;margin-bottom: 30px;color: #414141"><b style="color: #20a647;">|</b> Update Profile</h5> -->
 
     <div style="background-color: #fefdfd; min-height: 65vh;" class="no-pesan">
 
                 <!-- data diri buyer-->
         <!-- foto profil -->
-        <div style="position: absolute; top: 10% !important; left: 5%;">
+        <div class="no-pesan_left">
 
-            <form action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
+            <form class="no-pesan_form" action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="" id="id_pengirim" value="5">
 
-                <div class=" col-sm-12" style="margin-bottom: -25px">
+                <div class=" col-sm-12">
                     <div class="text-center" style="cursor: pointer;">
-
-                                                
                         <img id="preview_thumbnail_buyer" src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" class="" style="height:130px; width:130px;border-radius: 50%;object-fit: cover;">
-                        <br><br>
-
                     </div>
                     <div class="form-group">
                         <input type="file" class="form-control" id="thumbnail_seller_new" name="update_thumbnail" style="display: none;">
                     </div>
 
                 </div>
-                <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Ukuran gambar: maks. 1 MB</span></br>
-                <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Format gambar: .JPEG, .PNG</span></br>
+                <span class="label-name">Ukuran gambar: maks. 1 MB</span>
+                <span class="label-name">Format gambar: .JPEG, .PNG</span>
 
-                <button style="margin-left: 10px; width: 175px;background-color: #F7F7F7;color: #20A647; margin-top: 15px;    border: 1px solid #20a647;border-radius: 10px;    padding: 10px;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
+                <button type="submit" class="btn btn--border" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
             </form>
         </div>
         <!-- end foto profil -->
 
-        <div style="position: absolute; top: 15% !important; left: 31%;padding-left: 3rem;border-left: 2px solid #ddd;">
+        <div class="no-pesan_right">
 
             <div class="dv-margin">
-                <span class="label-name col-sm-5">Username</span>
-                <span class="label-name col-sm-7" style="font-weight: 500;">UItest</span>
+                <span class="label-name">Username</span>
+                <span class="label-value">UItest</span>
             </div>
 
             <div class="dv-margin">
-                <span class="label-name col-sm-5">Nama</span>
-                <span class="label-name col-sm-7" style="margin-left: 33px;font-weight: 500;">UI test</span>
-                <span class="label-ubah" data-toggle="modal" data-target="#update_name">ubah</span>
+                <span class="label-name">Nama</span>
+                <span class="label-value">UI test</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_name">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
             </div>
 
             <div class="dv-margin">
-                <span class="label-name col-sm-5">Email</span>
-                <span class="label-name col-sm-7" style="margin-left: 39px;font-weight: 500;">ilham.rohmad@kly.id</span>
-                <!--  -->
-                <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
-                <!--  -->
-                <span class="label-ubah" data-toggle="modal" data-target="#update_email">ubah</span>
+                <span class="label-name">Email</span>
+                <span class="label-value">ilham.rohmad@kly.id</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_email">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
             </div>
 
             <div class="dv-margin">
-                <span class="label-name col-sm-5">Nomor Hp</span>
-                                <span class="label-name col-sm-7" style="margin-left: 2px;font-weight: 500;">6285159901910</span>
-                                        <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
-                                    
-                <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">ubah</span>
-                            </div>
+                <span class="label-name">Nomer HP</span>
+                <span class="label-value unset" data-toggle="modal" data-target="#update_nomor">Tambahkan Nomer HP</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </div>
 
             <div class="dv-margin">
-                <span class="label-name col-sm-5">Password</span>
-                <span class="label-ubah" data-toggle="modal" data-target="#update_password" style="margin-left:20px">Atur Password Baru</span>
+                <span class="label-name">Password</span>
+                <span class="label-value unset" data-toggle="modal" data-target="#update_password">Atur Password Baru</span>
+                <span class="label-ubah" data-toggle="modal" data-target="#update_password">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
             </div>
 
         </div>
@@ -1311,21 +1321,17 @@
         z-index:1111;
         padding-right: 0px;
     }
-    .update-content{
+    /* .update-content{
         border-radius: 20px; 
         width:85%; 
         margin: auto;
-    }
-    .update-header{
-        border-bottom: 0px; 
-        margin-bottom: -1rem;
-    }
-    .update-title{
+    } */
+    /* .update-title{
         font-weight: 600;
         font-size: 24px;
         margin-left: 2.5rem;    
         margin-top: 2.5rem;
-    }
+    } 
     .update-label{
         color: #2e2e2e; 
         margin-left: 2.5rem;
@@ -1353,7 +1359,7 @@
         border-radius: 12px;
         background-color: #20a647; 
         border-color: #20a647;
-    }
+    } */
     input[type=email]{
         font-style: normal;
         /* font-family: 'Poppins-Light';     */
@@ -1382,10 +1388,13 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content update-content" >
       <div class="modal-header update-header">
-        <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Ubah Nama</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+            </svg>
+          </button>
+        <h5 class="modal-title update-title" id="update_name" >Ubah Nama</h5>
       </div>
       <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
       <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
@@ -1398,7 +1407,7 @@
             </div>
             
       </div>
-      <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+      <div class="modal-footer">
         <button type="button" onclick="changeName()" id="submit" class="btn btn-success btn-simpan" >Simpan</button>
       </div>
       </form>
