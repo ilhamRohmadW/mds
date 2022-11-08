@@ -9,8 +9,14 @@
   border-bottom: 1px solid #ededed;
 }
 
+.no-pesan_left {
+  padding-top: 25px;
+}
+
 .no-pesan_right {
   padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .no-pesan .btn--border {
@@ -69,16 +75,21 @@
   color: #20A647;
 }
 
+.modal {
+  top: 72px;
+}
+
 .modal-dialog {
   margin: 0;
 }
 
 .modal-content {
-  height: 100vh;
+  height: calc(100vh - 72px);
 }
 
 .modal-footer {
   border-top: 0;
+  margin-top: -1.5rem;
 }
 
 .modal-title {
@@ -96,6 +107,80 @@
   float: none;
   margin: 0;
   padding: 0;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal input[type=text],
+.modal input[type=number],
+.modal input[type=password],
+.modal input[type=email] {
+  border: 1px solid #E3E3E3;
+  border-radius: 12px;
+  font-style: normal;
+  outline: none;
+  box-shadow: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.modal input[type=text]:focus,
+.modal input[type=number]:focus,
+.modal input[type=password]:focus,
+.modal input[type=email]:focus {
+  border-color: #20A647;
+}
+
+.modal .form-group {
+  margin-bottom: 1rem;
+}
+
+.modal .input-group-prepend {
+  flex: 0 0 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.modal .input-group.number {
+  position: relative;
+}
+
+.modal .input-group.number .form-control {
+  border: 1px solid #e3e3e3;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-left: 48px;
+}
+
+.modal .input-group-text {
+  padding: 16px;
+  padding-right: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  z-index: 4;
+}
+
+.modal#update_nomor .modal-body {
+  flex: 0;
+}
+
+.modal .toggle-password {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
 }
 
 .update-header {
@@ -121,6 +206,7 @@
 
 .update-form-name {
   color: #000;
+  font-size: 14px;
 }
 
 .update-form-group {

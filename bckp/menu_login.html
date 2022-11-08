@@ -75,6 +75,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn-staging.manisdansedap.com/assets/css/newcss.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn-staging.manisdansedap.com/assets/cssFull1/full-css1-detail.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" type="text/css" href="/assets/css/frontend.css?id=6576fb0f8dacc308b00f" /> -->
     <style>
         /* devanagari */
@@ -13582,6 +13585,7 @@
         </style>
         <link rel="stylesheet" href="sass/root.min.css">
         <link rel="stylesheet" href="sass/chat.min.css">
+        <link rel="stylesheet" href="sass/profile.min.css">
         <div class="container px-0 mt-0">
             <!-- <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrum_detail_for_gtm" style="padding: 0 ;">
@@ -13601,72 +13605,77 @@
                                 fill="#AAAAAA" />
                         </svg>
                     </a>
-                    <h3 class="chat-contacts_title">Chat</h3>
+                    <h3 class="chat-contacts_title">Update Profile</h3>
                 </div>
                 
     <div style="background-color: #fefdfd; min-height: 65vh;" class="no-pesan">
 
         <!-- data diri buyer-->
 <!-- foto profil -->
-<div style="position: absolute; top: 10% !important; left: 5%;">
+<div  class="no-pesan_left">
 
-    <form action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
+    <form class="no-pesan_form" action="https://staging.manisdansedap.com/update-profile-post" method="POST" data-parsley-validate enctype="multipart/form-data">
         <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="" id="id_pengirim" value="5">
 
-        <div class=" col-sm-12" style="margin-bottom: -25px">
+        <div class=" col-sm-12">
             <div class="text-center" style="cursor: pointer;">
-
-                                        
                 <img id="preview_thumbnail_buyer" src="https://staging.manisdansedap.com/assets/assets_chat/images/avatar/icon-user.png" class="" style="height:130px; width:130px;border-radius: 50%;object-fit: cover;">
-                <br><br>
-
             </div>
             <div class="form-group">
                 <input type="file" class="form-control" id="thumbnail_seller_new" name="update_thumbnail" style="display: none;">
             </div>
-
         </div>
-        <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Ukuran gambar: maks. 1 MB</span></br>
-        <span class="label-name" style="margin-left: 9px; color: #949494; font-size: 13px">Format gambar: .JPEG, .PNG</span></br>
-
-        <button style="margin-left: 10px; width: 175px;background-color: #F7F7F7;color: #20A647; margin-top: 15px;    border: 1px solid #20a647;border-radius: 10px;    padding: 10px;" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
+        <span class="label-name">Ukuran gambar: maks. 1 MB</span>
+        <span class="label-name">Format gambar: .JPEG, .PNG</span>
+        <button type="submit" class="btn btn--border" data-toggle="modal" data-target="#exampleModalCenter"><b>Ubah Foto Profil</b></button>
     </form>
 </div>
 <!-- end foto profil -->
 
-<div style="position: absolute; top: 15% !important; left: 31%;padding-left: 3rem;border-left: 2px solid #ddd;">
-
+<div  class="no-pesan_right">
     <div class="dv-margin">
-        <span class="label-name col-sm-5">Username</span>
-        <span class="label-name col-sm-7" style="font-weight: 500;">UItest</span>
+        <span class="label-name">Username</span>
+        <span class="label-value">UItest</span>
     </div>
 
     <div class="dv-margin">
-        <span class="label-name col-sm-5">Nama</span>
-        <span class="label-name col-sm-7" style="margin-left: 33px;font-weight: 500;">UI test</span>
-        <span class="label-ubah" data-toggle="modal" data-target="#update_name">ubah</span>
+        <span class="label-name">Nama</span>
+        <span class="label-value">UI test</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_name">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
     </div>
 
     <div class="dv-margin">
-        <span class="label-name col-sm-5">Email</span>
-        <span class="label-name col-sm-7" style="margin-left: 39px;font-weight: 500;">ilham.rohmad@kly.id</span>
-        <!--  -->
-        <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
-        <!--  -->
-        <span class="label-ubah" data-toggle="modal" data-target="#update_email">ubah</span>
+        <span class="label-name">Email</span>
+        <span class="label-value">ilham.rohmad@kly.id</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_email">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
     </div>
 
     <div class="dv-margin">
-        <span class="label-name col-sm-5">Nomor Hp</span>
-                        <span class="label-name col-sm-7" style="margin-left: 2px;font-weight: 500;">6285159901910</span>
-                                <span class="badge badge-pill " style="color: #fff; background-color: #81db95;border-radius: 8px;    padding: 7px;"><i class="zmdi zmdi-check"></i> Terverifikasi</span>
-                            
-        <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">ubah</span>
-                    </div>
+        <span class="label-name">Nomer HP</span>
+        <span class="label-value unset" data-toggle="modal" data-target="#update_nomor">Tambahkan Nomer HP</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_nomor">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
+    </div>
 
     <div class="dv-margin">
-        <span class="label-name col-sm-5">Password</span>
-        <span class="label-ubah" data-toggle="modal" data-target="#update_password" style="margin-left:20px">Atur Password Baru</span>
+        <span class="label-name">Password</span>
+        <span class="label-value unset" data-toggle="modal" data-target="#update_password">Atur Password Baru</span>
+        <span class="label-ubah" data-toggle="modal" data-target="#update_password">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="#20A647" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </span>
     </div>
 
 </div>
@@ -14553,42 +14562,47 @@
             }
         </style>
         <div class="modal fade update-modal" id="update_name" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content update-content" >
-                <div class="modal-header update-header">
-                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Ubah Nama</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
-                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
-                  <label class="update-label" for="exampleInputEmail1">Pastikan nama yang anda masukkan sesuai dengan data diri anda</label>
-                  
-                      <div class="form-group col-sm-12 update-form-group">
-                          <label class="update-form-name">Masukkan Nama</label>
-                          <input style="padding: 15px;" type="text" class="input-new form-control" name="update_name" id="namanya" aria-describedby="emailHelp" placeholder="Nama Lengkap"  value="">
-                          <p style="color:red; font-size: 12px; margin-left: 0px;" id ="nama_alert"></p>
-                      </div>
-                      
-                </div>
-                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
-                  <button type="button" onclick="changeName()" id="submit" class="btn btn-success btn-simpan" >Simpan</button>
-                </div>
-                </form>
-              </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content update-content" >
+            <div class="modal-header update-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+                    </svg>
+                </button>
+                <h5 class="modal-title update-title" id="update_name" >Ubah Nama</h5>
             </div>
-          </div>
-          
+            <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
+            <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <div class="modal-body">
+                <label class="update-label" for="exampleInputEmail1">Pastikan nama yang anda masukkan sesuai dengan data diri anda</label>
+                
+                    <div class="form-group col-sm-12 update-form-group">
+                        <label class="update-form-name">Masukkan Nama</label>
+                        <input style="padding: 15px;" type="text" class="input-new form-control" name="update_name" id="namanya" aria-describedby="emailHelp" placeholder="Nama Lengkap"  value="">
+                        <p style="color:red; font-size: 12px; margin-left: 0px;" id ="nama_alert"></p>
+                    </div>
+                    
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="changeName()" id="submit" class="btn btn-success btn-simpan" >Simpan</button>
+            </div>
+            </form>
+            </div>
+        </div>
+        </div>
           <!-- modal update email -->
           <div class="modal fade update-modal" id="update_email" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content update-content" >
                 <div class="modal-header update-header">
-                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Email Baru</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+                        </svg>
+                    </button>
+                    <h5 class="modal-title update-title" id="update_name" >Update Email</h5>
                 </div>
           
                 <form action="" method="POST" data-parsley-validate enctype="multipart/form-data">
@@ -14597,16 +14611,16 @@
                   <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui email, pastikan email yang kamu masukkan benar ya</label>
                       <div class="form-group col-sm-12 update-form-group">
                           <label class="update-form-name">Email Lama</label>
-                          <input style="padding: 15px; font-style: normal;" type="email" class="input-new form-control" name="update_email_lama" id="update_email_lama"  placeholder="Email Lama"  value="ilham.rohmad@kly.id" readOnly>
+                          <input type="email" class="input-new form-control" name="update_email_lama" id="update_email_lama"  placeholder="Email Lama"  value="ilham.rohmad@kly.id" readOnly>
                       </div>
                       <div class="form-group col-sm-12 update-form-group">
                           <label class="update-form-name">Email Baru</label>
-                          <input style="padding: 15px; font-style: normal;" onkeypress="inputemail()" type="email" class="input-new form-control" name="email" id="email"  placeholder="Email Baru" required>
+                          <input onkeypress="inputemail()" type="email" class="input-new form-control" name="email" id="email"  placeholder="Email Baru" required>
                           <p style="color:red; font-size: 12px; margin-left: 0px;" id ="email_alert"></p>
                       </div>
                 </div>
                 <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
-                  <button type="button" onclick="emailselanjutnya()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+                  <button type="button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#update_email_otp" class="btn btn-success btn-simpan" >Selanjutnya</button>
                 </div>
               </form>
               </div>
@@ -14614,88 +14628,92 @@
           </div>
           <!-- modal update email -->
           
-          <!-- modal verifikasi otp email -->
-          <div class="modal fade update-modal" id="update_email_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content update-content" >
-                <div class="modal-header update-header">
-                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Verifikasi</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke email <span style="color:  #20a647;">ilham.rohmad@kly.id <span></label>
-                  <!-- <p id="demo"></p> -->
-                      
-                      <!-- input kode -->
-                      <div class="form-group col-sm-12 update-form-group">
-                          <label class="update-form-name">Kode OTP</label>
-                          <input style="padding: 15px; font-style: normal;" onkeypress="inputkode()" type="number" class="input-new form-control" name="update_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
-                      </div>
-                      <!-- timer -->
-                      <div class="form-group" id="kirim" style="text-align: center; margin-top: 11px;">
-                          Kirim ulang dalam <span  id="countdown" class="times" style="font-size: 12px; color:#ff0000"></span>    
-                      </div>
-                      <!-- kirim ulang aksi -->
-                      <form action="https://staging.manisdansedap.com/change-email-ulang" method="POST">
-                      <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
-                          <input type="hidden" id="email" class="signup" placeholder="email" name="email_ulang" value="ilham.rohmad@kly.id">
-                          <button id="kirim_ulang" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
-                      </form>  
-          
-                </div>
-                <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
-                  <button type="button" id="btn_verifikasi" onclick="emailverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end modal verifikasi otp email -->
-          
-          
-          
-          
           
           <div class="modal fade update-modal" id="update_nomor" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content update-content" >
+                      <div class="modal-header update-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+                                </svg>
+                            </button>
+                            <h5 class="modal-title update-title" id="update_name" >Ubah nomor HP</h5>
+                        </div>
+                        <div class="modal-body">
+                            <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui nomor HP kamu, pastikan nomor HP yang kamu masukkan benar ya</label>
+                            <div class="form-group col-sm-12 update-form-group">
+                                <label class="update-form-name">Nomor HP Lama</label>
+                                <div class="input-group number">
+                                    <div class="input-group-prepend" >
+                                        <div id="prepend0"class="input-group-text"><b>+62</b></div>
+                                    </div>
+                                    <input type="number" class="form-control" name="phone_number2" id="phone_number2" placeholder="85330690276"  value="85159901910" readOnly>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12 update-form-group">
+                                <label class="update-form-name">Nomor HP Lama</label>
+                                <div class="input-group number">
+                                    <div class="input-group-prepend" >
+                                        <div id="prepend"class="input-group-text"><b>+62</b></div>
+                                    </div>
+                                    <input type="number" class="form-control" onkeypress="inputnumberphone()" name="phone_number" id="phone_number" placeholder="85330690276"  minlength="10" required>
+                                </div>
+                                <p style="color:red; font-size: 12px; margin-left: -14px;" id ="phone_alert"></p>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
+                            <button type="submit" onclick="changePhone()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- modal verifikasi otp email -->
+        <div class="modal fade update-modal" id="update_email_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content update-content" >
+                <div class="modal-content update-content" >
                 <div class="modal-header update-header">
-                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Tambahkan Nomor Hp</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+                        </svg>
+                    </button>
+                    <h5 class="modal-title update-title" id="update_name" >Verifikasi</h5>
                 </div>
                 <div class="modal-body">
-                  <label class="update-label" for="exampleInputEmail1">Kami akan mengirimkan verifikasi melalui nomor HP kamu, pastikan nomor HP yang kamu masukkan benar ya</label>
-                    <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
-                    <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
-                        <div class="input-group" style="margin-top: 8px;">
-                            <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
-                                <div id="prepend0"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #e9ecef; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
-                            </div>
-                            <input type="number" class="form-control" name="phone_number2" id="phone_number2" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px;margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" value="6285159901910" readOnly>
+                    <label class="update-label" for="exampleInputEmail1">Masukkan kode OTP yang kami kirimkan ke email <span style="color:  #20a647;">ilham.rohmad@kly.id <span></label>
+                    <!-- <p id="demo"></p> -->
+                        
+                        <!-- input kode -->
+                        <div class="form-group col-sm-12 update-form-group">
+                            <label class="update-form-name">Kode OTP</label>
+                            <input style="padding: 15px; font-style: normal;" onkeypress="inputkode()" type="number" class="input-new form-control" name="update_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Kode OTP"  value="" >
                         </div>
-                    </div>
-                    <div class="form-group col-sm-12 update-form-group" style="margin-left: 2.5rem; margin-right: 2.5rem;">
-                    <label class="update-form-name" style="margin-left: -15px;">Nomor HP</label>
-                        <div class="input-group" style="margin-top: 8px;">
-                            <div class="input-group-prepend" style="margin-top: -7px; font-size: 14px; ">
-                                <div id="prepend"class="input-group-text" style="font-size: 16px;margin-left: -14px; border: 1px solid #5d5d5d!important; background-color: #ffffff; height: 56px; border-radius: 12px 0px 0px 12px!important; padding: 0 20% !important; width: 125px; margin-right: -58px; font-family: 'Inter', sans-serif; color: #000000 !important;"><b>+62</b></div>
-                            </div>
-                            <input type="number" class="form-control" onkeypress="inputnumberphone()" name="phone_number" id="phone_number" placeholder="85330690276" style="height:56px; margin-top: -7px; font-size: 16px;margin-right: -15px; border: 1px solid #5d5d5d!important;border-radius: 0px 12px 12px 0px; margin-left: -6px; font-family: 'Inter', sans-serif; color: #000000 !important;" minlength="10" required>
+                        <!-- timer -->
+                        <div class="form-group" id="kirim" style="text-align: center; margin-top: 11px;">
+                            Kirim ulang dalam <span  id="countdown" class="times" style="font-size: 12px; color:#ff0000"></span>    
                         </div>
-                        <p style="color:red; font-size: 12px; margin-left: -14px;" id ="phone_alert"></p>
-                    </div>
-                      
+                        <!-- kirim ulang aksi -->
+                        <form action="https://staging.manisdansedap.com/change-email-ulang" method="POST">
+                        <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">                <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">
+                            <input type="hidden" id="email" class="signup" placeholder="email" name="email_ulang" value="ilham.rohmad@kly.id">
+                            <button id="kirim_ulang" type="submit"  style="width: 100%;margin-bottom: 7px;margin-top: 0px; display:none; background-color: transparent; border-color: transparent; color: #20A647;">Kirim Ulang</button>    
+                        </form>  
+            
                 </div>
                 <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
-                  <button type="submit" onclick="changePhone()" class="btn btn-success btn-simpan" >Selanjutnya</button>
+                    <button type="button" id="btn_verifikasi" onclick="emailverifikasi()" class="btn btn-success btn-simpan" style="color: #000;background-color: #c5c7c6;  border-color: #c5c7c6;" disabled>Verifikasi</button>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
-          
+        </div>
+            <!-- end modal verifikasi otp email -->
+
+
           <!-- modal verifikasi otp phone -->
           <div class="modal fade update-modal" id="update_phone_otp" tabindex="-1" role="dialog" aria-labelledby="update_name" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -14741,25 +14759,28 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content update-content" >
                 <div class="modal-header update-header">
-                  <h5 class="modal-title update-title" id="update_name" ><b style="color: #20a647;">|</b> Buat Password Baru</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.43356 0.459195 8.97437 1.02564 8.97437H18.9744C19.5408 8.97437 20 9.43356 20 10C20 10.5665 19.5408 11.0256 18.9744 11.0256H1.02564C0.459195 11.0256 0 10.5665 0 10Z" fill="#AAAAAA"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7252 0.300403C11.1258 0.700941 11.1258 1.35034 10.7252 1.75088L2.47612 10L10.7252 18.2491C11.1258 18.6497 11.1258 19.2991 10.7252 19.6996C10.3247 20.1001 9.6753 20.1001 9.27476 19.6996L0.300403 10.7252C-0.100134 10.3247 -0.100134 9.6753 0.300403 9.27476L9.27476 0.300403C9.6753 -0.100134 10.3247 -0.100134 10.7252 0.300403Z" fill="#AAAAAA"/>
+                        </svg>
+                    </button>
+                    <h5 class="modal-title update-title" id="update_name" >Buat Password Baru</h5>
                 </div>
           
                 <form action="https://staging.manisdansedap.com/update_password" method="POST" data-parsley-validate>
                 <input type="hidden" name="_token" value="dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb">      <input type="hidden" name="phone" value="6285159901910">
                 <div class="modal-body">
                   <label class="update-label" for="exampleInputEmail1">Atur password baru agar akun kamu lebih aman</label>
-                      <div class="form-group col-sm-12 update-form-group">
+                      <div class="form-group col-sm-12 update-form-group form-password">
                           <label class="update-form-name">Password Baru</label>
-                          <input style="padding: 15px;" type="password" class="input-new form-control" name="password" id="password" aria-describedby="emailHelp" placeholder="Password"  value="" Required>
-                          <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+                          <input style="padding: 15px;" type="password" class="input-new form-control" value="test" name="password" id="password" aria-describedby="emailHelp" placeholder="Password"  value="" Required>
+                          <i class="fa fa-eye toggle-password" id="togglePassword"></i>
                       </div>
-                      <div class="form-group col-sm-12 update-form-group">
+                      <div class="form-group col-sm-12 update-form-group form-password">
                           <label class="update-form-name">Verifikasi Password</label>
-                          <input style="padding: 15px;" type="password" class="input-new form-control" name="kon_password" id="password_confirm" aria-describedby="emailHelp" placeholder="Password"  value="" >
-                          <i class="fa fa-eye" id="togglePasswordConfirm" style="cursor: pointer;position: absolute;right: 2rem;top: 3rem;"></i>
+                          <input style="padding: 15px;" type="password" class="input-new form-control" value="test" name="kon_password" id="password_confirm" aria-describedby="emailHelp" placeholder="Password"  value="" >
+                          <i class="fa fa-eye toggle-password" id="togglePasswordConfirm"></i>
                       </div>
                 </div>
                 <div class="modal-footer" style="border-top: 0px;margin-top: -25px;">
@@ -14818,16 +14839,27 @@
           </div>
           <!-- modal update phone selesai -->
 
-
-        <!-- jQuery -->
-
-
-
-
-
-
         <script src="https://cdn-staging.manisdansedap.com/assets/jsFull1/js-full.min.js"></script>
         <script>
+            $('.app-links a').on('click', function (e) {
+                    e.preventDefault();
+                    $('.modal').modal('show');
+                })
+            var nowPlus2 = new Date();
+            nowPlus2.setMinutes(nowPlus2.getMinutes() + 1);
+            var finalDate = nowPlus2;
+
+            $('#timer').countdown(finalDate)
+                .on('update.countdown', function (event) {
+                    if (event.elapsed) {
+                        $('.app-links a').off('click');
+                    }
+                    $(this).text(event.strftime('%-D days %H hours %-M minutes %-S seconds'));
+                })
+                .on('finish.countdown', function (event) {
+                    $('.app-links a').off('click');
+                    $('.modal').modal('hide');
+            });
             /*
                 chanif: ketika enter jangan pindah halaman, show step3 saja
                 $('#filterForm').keypress(function(e){
@@ -14851,7 +14883,65 @@
                 $('.filter-default').show();
                 $('.filter-enter').hide();
             }
+            
+            $('.form-password').find('.form-control').each(function (index, input) {
+                var $input = $(input);
+                $input.parent().find('.toggle-password').click(function () {
+                    console.log(this);
+                    var change = "";
+                    if ($(this).hasClass('fa-eye')) {
+                        $(this).removeClass('fa-eye')
+                        $(this).addClass('fa-eye-slash')
+                        change = "text";
+                    } else {
+                        $(this).removeClass('fa-eye-slash')
+                        $(this).addClass('fa-eye')
+                        change = "password";
+                    }
+                    var rep = $("<input type='" + change + "' />")
+                        .attr('id', $input.attr('id'))
+                        .attr('name', $input.attr('name'))
+                        .attr('class', $input.attr('class'))
+                        .val($input.val())
+                        .insertBefore($input);
+                    $input.remove();
+                    $input = rep;
+                }).insertAfter($input);
+            });
+            
+                // function emailselanjutnya() {
+                //     let id = '5';
+                //     const email = document.getElementById('email');
+                //     const emailnya = sessionStorage.getItem("email");
+                //     $.ajax({
+                //         type: "GET",
+                //         dataType: "json",
+                //         url: '/change-email',
+                //         data: {
+                //             "_token": "dC9FT7RtfHfDdxYWD7Biryybm3uUHpnx8WcFalsb",
+                //             'id': id,
+                //             'email': email.value,
+                //         },
+                //         success: function (data) {
+                //             sessionStorage.setItem("email", 1)
+                //             $('#update_email').modal('hide');
+                //             //$('#update_email_otp').modal('show');
+                //             location.reload();
+                //         },
+                //         error: function (data) {
+                //             document.getElementById("email_alert").style.display = "block";
+                //             $("#email_alert").text("Email sudah terdaftar")
+                //             document.getElementById("email").style.borderColor = "red";
 
+                //         },
+                //     });
+
+                // }
+
+                // function inputemail() {
+                //     document.getElementById("email_alert").style.display = "none";
+                //     document.getElementById("email").style.borderColor = "#dddddd";
+                // }
 
             var limit = 10;
             var offset_masakan = 0;
@@ -15284,28 +15374,6 @@
                     return base_url + "/" + type + slug;
             }
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- orther script -->
-
-
-
-
-
-
-
 
         <script>
             function rm_btn_whatup() {

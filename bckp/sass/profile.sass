@@ -9,8 +9,12 @@
         margin-bottom: 0
         padding-bottom: 25px
         border-bottom: 1px solid #ededed
+    &_left
+        padding-top: 25px
     &_right
         padding-top: 25px
+        padding-left: 15px
+        padding-right: 15px
     .btn--border
         margin-left: auto
         margin-right: auto
@@ -51,12 +55,14 @@
             &.unset
                 color: #20A647
 .modal
+    top: 72px
     &-dialog
         margin: 0
     &-content
-        height: 100vh
+        height: calc(100vh - 72px)
     &-footer
         border-top: 0
+        margin-top: -1.5rem
     &-title
         font-size: 16px
         font-weight: 600
@@ -68,6 +74,62 @@
             float: none
             margin: 0
             padding: 0
+    &-backdrop
+        background-color: transparent
+    input[type=text],
+    input[type=number],
+    input[type=password],
+    input[type=email]
+        border: 1px solid #E3E3E3
+        border-radius: 12px
+        font-style: normal
+        outline: none
+        box-shadow: none
+        padding: 15px
+        font-size: 16px
+        &:focus
+            border-color: #20A647
+    .form-group
+        margin-bottom: 1rem
+    input[type=number]
+    .input-group
+        &-prepend
+            flex: 0 0 45px
+            position: absolute
+            left: 0
+            top: 0
+        &.number
+            position: relative
+            .form-control
+                border: 1px solid #e3e3e3
+                border-top-left-radius: 12px 
+                border-bottom-left-radius: 12px 
+                padding-left: 48px
+        &-text
+            padding: 16px
+            padding-right: 0
+            margin-bottom: 0
+            font-size: 16px
+            font-weight: 600
+            line-height: 1.5
+            color: #495057
+            text-align: center
+            white-space: nowrap
+            background-color: transparent
+            border: none
+            border-radius: 0
+            z-index: 4
+    &#update_nomor    
+        .modal-body
+            flex: 0
+    .toggle-password
+        cursor: pointer
+        position: absolute
+        right: 0
+        bottom: 0
+        padding: 20px
+
+
 .update
     &-header
         margin-bottom: 0
@@ -85,6 +147,7 @@
     &-form
         &-name
             color: #000
+            font-size: 14px
         &-group
             margin: 0
             padding: 0
