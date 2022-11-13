@@ -3,6 +3,8 @@ html
 body
     --color-primary: #20A647
     --color-copyright: #AAAAAA
+    --color-black: #333333
+    --color-grey: #4E4E4E
     --bg-gray: #F8F8F8
     --bg-footer: #3E3E3E
     --bg-copyright: #4D4D4D
@@ -13,6 +15,8 @@ body
 .text
     &-primary
         color: var(--color-primary)
+    &-grey
+        color: var(--color-grey)
 .bg
     &-gray
         background-color: var(--bg-gray)
@@ -24,23 +28,51 @@ body
     &-primary
         border-color: var(--color-primary)
 .accordion
-    &_list
+    z-index: 0
     &_content
         display: none
-        &.--show
-        /*display: block*/
     &_btn
         width: 100%
         display: block
         padding: .75em
         border-radius: 0.15em
         transition: background .3s ease
+        z-index: -1
+        svg
+            transform: rotate(0deg)
+            transition: all .5s ease
+            // z-index: 0
+        &.--active
+            svg
+                transform: rotate(180deg)
 .tabs
     &_content
         &_item
             display: none
             &.--active
                 display: block
+.header
+    &_collapse
+        opacity: 0
+        transition: all .5s ease
+        pointer-events: none
+        &--menu
+            transform: translateX(100%)
+        &.--active
+            opacity: 1
+            transform: translateX(0%)
+            pointer-events: auto
+.nilai
+    &_item
+        svg
+            cursor: pointer
+        .border
+            fill: var(--color-primary)
+        input[type=radio]:checked ~ label svg
+            .fill
+                fill: var(--color-primary)
+            .border
+                fill: var(--color-black)
 .footer
     background-color: var(--bg-footer)
     &_copyright
@@ -48,79 +80,3 @@ body
         color: var(--color-copyright)
 .backtotop
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
-// $browser-context: 16
-// $blue: #1779ba
-// $gray: #cacaca
-// $red: #cc4b37
-// $white: #ffffff
-
-// // @function em($pixels, $context: $browser-context) 
-// //     @return #$pixels/$contexem
-
-// #app 
-//     margin: em(60) auto
-//     padding: em(12)
-//     max-width: em(800)
-
-// .container
-//     margin-bottom: em(24)
-
-// .btn-action-delete 
-//     color: $red
-//     cursor: pointer
-
-// .accordion
-//     padding: 0
-//     div:not(:last-child)
-//         border-bottom: 1px solid rgba(10, 10, 10, 0.1)
-//     div:last-child .accordion-item-details
-//         border-radius: 5px
-//     dd
-//         margin-left: 0
-
-
-// .accordion-item-trigger,
-// .accordion-item-details-inner
-//     padding: 0.75rem 1.25rem
-
-// .accordion-item-title
-//     position: relative
-//     h4 
-//         font-size: 1.25rem
-//         margin-bottom: 0
-//         padding-right: 1.25rem
-
-
-// .accordion-item-trigger 
-//     width: 100%
-//     text-align: left
-//     background-color: transparent
-//     border: none
-
-// .accordion-item-trigger-icon 
-//     $size: 8px
-//     display: block
-//     position: absolute
-//     top: 0 
-//     right: 1.25rem 
-//     bottom: 0
-//     margin: auto
-//     width: $size
-//     height: $size
-//     border-right: 2px solid #363636
-//     border-bottom: 2px solid #363636
-//     transform: translateY(-$size / 4) rotate(45deg)
-//     transition: transform 0.2s ease
-//     .is-active &
-//         transform: translateY($size / 4) rotate(225deg)
-
-
-// .accordion-item-details 
-//     overflow: hidden
-//     background-color: whitesmoke
-
-// .accordion-item-enter-active, .accordion-item-leave-active 
-//     will-change: height
-//     transition: height 0.2s ease
-// .accordion-item-enter, .accordion-item-leave-to
-//     height: 0 !important
