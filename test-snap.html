@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center w-screen h-screen bg-gray-800">
+        <div class="flex max-w-2xl mx-auto py-24">
+          <ul class="flex flex-1 relative overflow-x-scroll pb-10" x-data="{}" x-init="$el.scrollBy({left: 0})">
+            <li class="flex h-full sticky left-0">
+              <button class="text-4xl font-bold text-gray-400 hover:text-blue-100" @click="$el.scrollBy({left: -500})">&larr;</button>
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?mountains" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?nature" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?ocean" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?sunset" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?subaru" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?camping" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="min-w-full flex items-center justify-center">
+              <img x-breeze-from="scale-90 opacity-0" src="https://source.unsplash.com/random/500x500?bikes" alt="A random unsplash image" class="rounded-lg shadow-xl transform transition duration-300 ease-in max-w-100" />
+            </li>
+            <li class="flex h-full sticky right-0">
+              <button class="text-4xl font-bold text-gray-400 hover:text-blue-100" @click="$el.scrollBy({left: 500})">&rarr;</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

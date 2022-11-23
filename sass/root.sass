@@ -11,7 +11,11 @@ body
     --font-primary: 'Poppins', sans-serif
     --font-opensans: 'Open Sans', sans-serif
     font-family: var(--font-primary)
-
+=lineclamp($count)
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: $count
 .text
     &-primary
         color: var(--color-primary)
@@ -80,3 +84,34 @@ body
         color: var(--color-copyright)
 .backtotop
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
+.header
+    &--green
+        background: linear-gradient(297.17deg, #80FF95 -8%, #22859B 130.61%)
+.section
+    &--home
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            background: linear-gradient(297.17deg, #80FF95 3.18%, #22859B 130.61%)
+            border-radius: 0px 0px 30px 0px
+            height: 200px
+            width: 100%
+    // &--city
+.citySlide
+    &_list
+        flex: 0 0 200px
+        &_item
+            &_detail
+                p
+                    +lineclamp(2)
+.form
+    &_input
+        outline: 0
+        &::-webkit-input-placeholder
+            color: var(--color-primary)
+        &:-ms-input-placeholder
+            color: var(--color-primary)
+        &::placeholder
+            color: var(--color-primary)
