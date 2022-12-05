@@ -169,17 +169,15 @@
     <main class="">
         <section class="section section--home p-5">
             <form class="form relative z-10 mb-6" action="">
-                <div class="form">
-                    <div class="form_group flex items-center justify-between gap-x-2 bg-white shadow-md rounded-xl px-4 text-primary">
-                        <svg class="w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00028 2.00006C5.13417 2.00006 2.00006 5.13417 2.00006 9.00028C2.00006 12.8664 5.13417 16.0005 9.00028 16.0005C12.8664 16.0005 16.0005 12.8664 16.0005 9.00028C16.0005 5.13417 12.8664 2.00006 9.00028 2.00006ZM0 9.00028C0 4.02956 4.02956 0 9.00028 0C13.971 0 18.0006 4.02956 18.0006 9.00028C18.0006 13.971 13.971 18.0006 9.00028 18.0006C4.02956 18.0006 0 13.971 0 9.00028Z" fill="#AAAAAA"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9433 13.9433C14.3338 13.5528 14.967 13.5528 15.3576 13.9433L19.7077 18.2934C20.0982 18.684 20.0982 19.3171 19.7077 19.7077C19.3171 20.0982 18.684 20.0982 18.2934 19.7077L13.9433 15.3576C13.5528 14.967 13.5528 14.3338 13.9433 13.9433Z" fill="#AAAAAA"/>
-                        </svg>                            
-                        <input type="text" class="form_input w-11/12 text-sm h-10 outline-none" placeholder="Apa yang kamu cari, manis?">
-                    </div>
+                <div class="form_group flex items-center justify-between gap-x-2 bg-white shadow-xl rounded-xl px-4 text-primary">
+                    <svg class="w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00028 2.00006C5.13417 2.00006 2.00006 5.13417 2.00006 9.00028C2.00006 12.8664 5.13417 16.0005 9.00028 16.0005C12.8664 16.0005 16.0005 12.8664 16.0005 9.00028C16.0005 5.13417 12.8664 2.00006 9.00028 2.00006ZM0 9.00028C0 4.02956 4.02956 0 9.00028 0C13.971 0 18.0006 4.02956 18.0006 9.00028C18.0006 13.971 13.971 18.0006 9.00028 18.0006C4.02956 18.0006 0 13.971 0 9.00028Z" fill="#AAAAAA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9433 13.9433C14.3338 13.5528 14.967 13.5528 15.3576 13.9433L19.7077 18.2934C20.0982 18.684 20.0982 19.3171 19.7077 19.7077C19.3171 20.0982 18.684 20.0982 18.2934 19.7077L13.9433 15.3576C13.5528 14.967 13.5528 14.3338 13.9433 13.9433Z" fill="#AAAAAA"/>
+                    </svg>                            
+                    <input type="text" class="form_input w-11/12 text-sm h-10 outline-none" placeholder="Apa yang kamu cari, manis?">
                 </div>
             </form>
-            <ul class="section--home_list z-10 relative bg-white rounded-xl flex items-center justify-between sm:justify-evenly py-4 px-5 shadow-xl text-sm mb-2">
+            <ul class="section--home_list z-10 relative bg-white rounded-xl flex items-center justify-between sm:justify-evenly py-4 px-5 shadow-xl text-sm mb-2 text-grey">
                 <li>
                     <a href="#" class="flex flex-col items-center">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +361,7 @@
         </section>
         <section class="section section--join px-5">
             <div class="section--join_detail z-10 flex items-center justify-center gap-x-4">
-                <svg class="w-32" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-32 flex-none" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_605_93148)">
                         <path d="M62.9988 120.239C95.5441 120.239 121.927 117.195 121.927 113.44C121.927 109.686 95.5441 106.642 62.9988 106.642C30.4535 106.642 4.07031 109.686 4.07031 113.44C4.07031 117.195 30.4535 120.239 62.9988 120.239Z" fill="#81D8A4"/>
                         <path d="M0 98.4954L15.7507 98.424L31.4985 98.3972L63 98.3467L94.4985 98.3972L110.249 98.424L126 98.4954L110.249 98.5697L94.4985 98.5935L63 98.6441L31.4985 98.5935L15.7507 98.5668L0 98.4954Z" fill="#263238"/>
@@ -579,50 +577,54 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
+                            <div class="item_nonhalal bg-gray absolute flex items-center gap-x-1 p-1 pr-3 text-sm text-nonhalal font-semibold left-0 bottom-3 rounded-r-3xl">
+                                <img src="assets/nonhalal.png" width="22" height="26" alt="">
+                                <span>Non Halal</span>
+                            </div>
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -639,50 +641,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -699,50 +701,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -759,50 +761,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -819,50 +821,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -879,50 +881,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -939,50 +941,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -999,50 +1001,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -1059,50 +1061,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
@@ -1119,50 +1121,50 @@
             </div>
             <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>
                 <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[200/120] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" width="200" height="120" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail flex flex-col gap-y-2">
+                            <p class="item_title font-semibold lineclamp-2">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller block text-sm text-grey">@mamarenatakitchen</span>
+                            <span class="item_price block font-semibold">Rp 100.000</span>
                         </div>
                     </a>
                 </li>

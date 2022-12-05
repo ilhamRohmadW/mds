@@ -7,6 +7,7 @@ body {
   --color-copyright: #AAAAAA;
   --color-black: #333333;
   --color-grey: #4E4E4E;
+  --color-nonhalal: #543846;
   --bg-gray: #F8F8F8;
   --bg-footer: #3E3E3E;
   --bg-copyright: #4D4D4D;
@@ -55,6 +56,9 @@ body {
 }
 .text-grey {
   color: var(--color-grey);
+}
+.text-nonhalal {
+  color: var(--color-nonhalal);
 }
 
 .bg-gray {
@@ -173,7 +177,7 @@ body {
 }
 
 .categoryList_list {
-  flex: 0 0 80px;
+  flex: 0 0 100px;
 }
 
 .form_input {
@@ -187,4 +191,9 @@ body {
 }
 .form_input::placeholder {
   color: var(--color-primary);
+}
+
+.pagination_list_item.active, .pagination_list_item:hover {
+  background-color: var(--color-primary);
+  color: white;
 }

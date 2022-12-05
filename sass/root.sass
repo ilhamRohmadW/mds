@@ -5,6 +5,7 @@ body
     --color-copyright: #AAAAAA
     --color-black: #333333
     --color-grey: #4E4E4E
+    --color-nonhalal: #543846
     --bg-gray: #F8F8F8
     --bg-footer: #3E3E3E
     --bg-copyright: #4D4D4D
@@ -26,6 +27,8 @@ $grid: 5
         color: var(--color-primary)
     &-grey
         color: var(--color-grey)
+    &-nonhalal
+        color: var(--color-nonhalal)
 .bg
     &-gray
         background-color: var(--bg-gray)
@@ -121,7 +124,7 @@ $grid: 5
 
 .categoryList
     &_list
-        flex: 0 0 80px
+        flex: 0 0 100px
 .form
     &_input
         outline: 0
@@ -131,7 +134,13 @@ $grid: 5
             color: var(--color-primary)
         &::placeholder
             color: var(--color-primary)
-
+.pagination
+    &_list
+        &_item
+            &.active,
+            &:hover
+                background-color: var(--color-primary)
+                color: white
 // .overflow-x-auto
 //     /* width */
 //     &::-webkit-scrollbar

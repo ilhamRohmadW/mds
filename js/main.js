@@ -34,4 +34,11 @@ $(document).ready(function () {
         }, 300);
         e.preventDefault();
     });
+
+    $('.section--seller_detail_show').click(function (e) {
+        $('.section--seller_detail_text').removeClass('lineclamp-2')
+        $(this).remove()
+        e.preventDefault();
+    });
+    
 });

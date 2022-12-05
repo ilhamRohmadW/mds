@@ -165,21 +165,19 @@
         </div>
     </header>
     <main class="">
-        <section class="section section--index px-5 pt-2">
-            <form class="form relative z-10 mb-5" action="">
-                <div class="form">
-                    <div class="form_group flex items-center justify-between gap-x-2 bg-white shadow-md rounded-xl px-4 text-primary">
-                        <svg class="w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00028 2.00006C5.13417 2.00006 2.00006 5.13417 2.00006 9.00028C2.00006 12.8664 5.13417 16.0005 9.00028 16.0005C12.8664 16.0005 16.0005 12.8664 16.0005 9.00028C16.0005 5.13417 12.8664 2.00006 9.00028 2.00006ZM0 9.00028C0 4.02956 4.02956 0 9.00028 0C13.971 0 18.0006 4.02956 18.0006 9.00028C18.0006 13.971 13.971 18.0006 9.00028 18.0006C4.02956 18.0006 0 13.971 0 9.00028Z" fill="#AAAAAA"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9433 13.9433C14.3338 13.5528 14.967 13.5528 15.3576 13.9433L19.7077 18.2934C20.0982 18.684 20.0982 19.3171 19.7077 19.7077C19.3171 20.0982 18.684 20.0982 18.2934 19.7077L13.9433 15.3576C13.5528 14.967 13.5528 14.3338 13.9433 13.9433Z" fill="#AAAAAA"/>
-                        </svg>                            
-                        <input type="text" class="form_input w-11/12 text-sm h-10 outline-none" placeholder="Apa yang kamu cari, manis?">
-                    </div>
+        <section class="section section--index px-5 pt-2 mb-5">
+            <form class="form relative z-10" action="">
+                <div class="form_group flex items-center justify-between gap-x-2 bg-white shadow-xl rounded-xl px-4 text-primary">
+                    <svg class="w-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00028 2.00006C5.13417 2.00006 2.00006 5.13417 2.00006 9.00028C2.00006 12.8664 5.13417 16.0005 9.00028 16.0005C12.8664 16.0005 16.0005 12.8664 16.0005 9.00028C16.0005 5.13417 12.8664 2.00006 9.00028 2.00006ZM0 9.00028C0 4.02956 4.02956 0 9.00028 0C13.971 0 18.0006 4.02956 18.0006 9.00028C18.0006 13.971 13.971 18.0006 9.00028 18.0006C4.02956 18.0006 0 13.971 0 9.00028Z" fill="#AAAAAA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9433 13.9433C14.3338 13.5528 14.967 13.5528 15.3576 13.9433L19.7077 18.2934C20.0982 18.684 20.0982 19.3171 19.7077 19.7077C19.3171 20.0982 18.684 20.0982 18.2934 19.7077L13.9433 15.3576C13.5528 14.967 13.5528 14.3338 13.9433 13.9433Z" fill="#AAAAAA"/>
+                    </svg>                            
+                    <input type="text" class="form_input w-11/12 text-sm h-10 outline-none" placeholder="Apa yang kamu cari, manis?">
                 </div>
             </form>
         </section>
         <section class="section section--breadcrumb px-5">
-            <ul class="breadcrumb relative flex items-center gap-x-2 text-xs mb-4">
+            <ul class="breadcrumb relative flex items-center gap-x-2 text-xs mb-4 text-grey">
                 <li class="breadcrumb_list">
                     <a href="#" class="text-primary">Home</a>
                 </li>
@@ -206,33 +204,90 @@
                 </li>
                 <li class="categoryList_list snap-always snap-start pl-5 h-full">
                     <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
-                        
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/jepang.png" width="80" height="80" alt="">
+                        </figure>
                         <p class="text-sm">Masakan Japan</p>
                     </a>
                 </li>
                 <li class="categoryList_list snap-always snap-start pl-5 h-full">
                     <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
-                        
-                        <p class="text-sm">Masakan Japan</p>
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/lokal.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Masakan Indonesia</p>
                     </a>
                 </li>
 
                 <li class="categoryList_list snap-always snap-start pl-5 h-full">
                     <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
-                        
-                        <p class="text-sm">Masakan Japan</p>
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/sehat.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Menu Sehat</p>
                     </a>
                 </li>
                 <li class="categoryList_list snap-always snap-start pl-5 h-full">
                     <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
-                        <p class="text-sm">Masakan Japan</p>
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/frozen.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Frozen</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/oleh-oleh.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Oleh oleh</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/snack.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Snack</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/minuman.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Minuman</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/cake.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Kue dan roti</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/dessert.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Dessert</p>
+                    </a>
+                </li>
+                <li class="categoryList_list snap-always snap-start pl-5 h-full">
+                    <a href="#" class="categoryList_list_item flex flex-col items-center gap-y-4">
+                        <figure class="overflow-hidden aspect-square">
+                            <img class="w-full h-full object-contain" src="assets/category/hampers.png" width="80" height="80" alt="">
+                        </figure>
+                        <p class="text-sm">Hampers</p>
                     </a>
                 </li>
             </ul>
         </section>
-        <section class="section section--join px-5">
+        <section class="section section--join px-5 py-4 border-b-8">
             <div class="section--join_detail z-10 flex items-center justify-center gap-x-4">
-                <svg class="w-32" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-32 flex-none" width="126" height="121" viewBox="0 0 126 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_605_93148)">
                         <path d="M62.9988 120.239C95.5441 120.239 121.927 117.195 121.927 113.44C121.927 109.686 95.5441 106.642 62.9988 106.642C30.4535 106.642 4.07031 109.686 4.07031 113.44C4.07031 117.195 30.4535 120.239 62.9988 120.239Z" fill="#81D8A4"/>
                         <path d="M0 98.4954L15.7507 98.424L31.4985 98.3972L63 98.3467L94.4985 98.3972L110.249 98.424L126 98.4954L110.249 98.5697L94.4985 98.5935L63 98.6441L31.4985 98.5935L15.7507 98.5668L0 98.4954Z" fill="#263238"/>
@@ -438,63 +493,190 @@
             </div>
         </section>
 
-        <section class="section section--city px-5 pb-6 pt-8 border-b-8">
+        <section class="section section--city px-5 pb-6 pt-5">
             <div class="section_title flex justify-between items-center mb-5">
-                <h1 class="text-xl font-semibold text-primary">Open Order di Jakarta</h1>
-                <a href="#">
-                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 13L7 7L1 1" stroke="#008B29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
-                </a>
+                <h1 class="text-xl font-semibold">Semua yang di Jakarta</h1>
             </div>
-            <ul class="citySlide flex overflow-x-auto -mx-5 pr-5 snap-x snap-mandatory scroll-smooth">
-                <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+            <ul class="indexCity grid gap-x-4 gap-y-6 sm:grid-cols-2">
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                            <div class="item_nonhalal bg-gray absolute flex items-center gap-x-1 p-1 pr-3 text-sm text-nonhalal font-semibold left-0 bottom-3 rounded-r-3xl">
+                                <img src="assets/nonhalal.png" width="22" height="26" alt="">
+                                <span>Non Halal</span>
+                            </div>
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
                         </div>
                     </a>
                 </li>
-                <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
                         </div>
                     </a>
                 </li>
-                <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
                         </div>
                     </a>
                 </li>
-                <li class="citySlide_list snap-always snap-start pl-5">
-                    <a href="#" class="citySlide_list_item">
-                        <figure class="aspect-[200/120] rounded-lg overflow-hidden mb-2">
-                            <img class="w-full h-full object-cover" src="https://place-hold.it/200x120" alt="">
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
                         </figure>
-                        <div class="citySlide_list_item_detail flex flex-col gap-y-2">
-                            <p class="font-semibold">Bebek Peking Madu Boneless Boneless</p>
-                            <span class="block text-sm text-grey">@mamarenatakitchen</span>
-                            <span class="block font-semibold">Rp 100.000</span>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
                         </div>
                     </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                            <div class="item_nonhalal bg-gray absolute flex items-center gap-x-1 p-1 pr-3 text-sm text-nonhalal font-semibold left-0 bottom-3 rounded-r-3xl">
+                                <img src="assets/nonhalal.png" width="22" height="26" alt="">
+                                <span>Non Halal</span>
+                            </div>
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                            <div class="item_nonhalal bg-gray absolute flex items-center gap-x-1 p-1 pr-3 text-sm text-nonhalal font-semibold left-0 bottom-3 rounded-r-3xl">
+                                <img src="assets/nonhalal.png" width="22" height="26" alt="">
+                                <span>Non Halal</span>
+                            </div>
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="indexCity_list">
+                    <a href="#" class="item">
+                        <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">
+                            <img class="w-full h-full object-cover" src="https://place-hold.it/335x201" width="335" height="201" alt="">
+                        </figure>
+                        <div class="item_detail grid gap-y-2">
+                            <p class="item_title font-semibold">Bebek Peking Madu Boneless Boneless</p>
+                            <span class="item_seller text-sm text-grey">@mamarenatakitchen</span>
+                            <div class="item_detail_bottom flex justify-between items-center">
+                                <span class="item_price font-semibold">Rp 100.000</span>
+                                <span class="btn btn--primary bg-primary py-1 px-6 rounded-lg text-white text-sm font-medium">Order</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section section--pagination px-5 border-b-8 pb-6 mb-2">
+            <h2 class="text-grey mb-4">Halaman</h2>
+            <ul class="pagination flex gap-x-3 text-primary font-medium">
+                <li class="pagination_list">
+                    <a href="#" class="pagination_list_item flex justify-center items-center w-11 h-11 border border-primary rounded-xl bg-gray active">1</a>
+                </li>
+                <li class="pagination_list">
+                    <a href="#" class="pagination_list_item flex justify-center items-center w-11 h-11 border border-primary rounded-xl bg-gray">2</a>
+                </li>
+                <li class="pagination_list">
+                    <a href="#" class="pagination_list_item flex justify-center items-center w-11 h-11 border border-primary rounded-xl bg-gray">3</a>
+                </li>
+                <li class="pagination_list ml-auto">
+                    <a href="#" class="pagination_list_item flex justify-center items-center px-5 text-sm h-11 border border-primary rounded-xl active">Selanjutnya</a>
                 </li>
             </ul>
         </section>
