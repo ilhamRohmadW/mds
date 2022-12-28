@@ -2,13 +2,17 @@ html
     scroll-behavior: smooth
 body
     --color-primary: #20A647
-    --color-copyright: #AAAAAA
+    --color-grey-light: #AAAAAA
     --color-black: #333333
     --color-grey: #4E4E4E
     --color-nonhalal: #543846
+    --border-yellow:#FFE69C
+    --bg-yellow:#FFF3CD
     --bg-gray: #F8F8F8
     --bg-footer: #3E3E3E
     --bg-copyright: #4D4D4D
+    --border-green: #86DE8D
+    --bg-green: #EFFFF4
     --font-primary: 'Poppins', sans-serif
     --font-opensans: 'Open Sans', sans-serif
     font-family: var(--font-primary)
@@ -27,18 +31,32 @@ $grid: 5
         color: var(--color-primary)
     &-grey
         color: var(--color-grey)
+        &-light
+            color: var(--color-grey-light)
     &-nonhalal
         color: var(--color-nonhalal)
 .bg
     &-gray
         background-color: var(--bg-gray)
+    &-green
+        background-color: var(--bg-green)
     &-primary
         background-color: var(--color-primary)
+    &-yellow
+        background-color: var(--bg-yellow)
 .font-opensans
     font-family: var(--font-opensans)
 .border
     &-primary
         border-color: var(--color-primary)
+    &-green
+        border-color: var(--border-green)
+    &-yellow
+        border-color: var(--border-yellow)
+    &-grey
+        border-color: var(--color-grey)
+        &-light
+            border-color: var(--color-grey-light)
 .accordion
     z-index: 0
     &_content
@@ -89,7 +107,7 @@ $grid: 5
     background-color: var(--bg-footer)
     &_copyright
         background-color: var(--bg-copyright)
-        color: var(--color-copyright)
+        color: var(--color-grey-light)
 .backtotop
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
 .header
@@ -102,7 +120,7 @@ $grid: 5
             content: ''
             position: absolute
             left: 0
-            top: 0
+            top: -64px
             background: linear-gradient(297.17deg, #80FF95 3.18%, #22859B 130.61%)
             border-radius: 0px 0px 30px 0px
             height: 94px
@@ -112,7 +130,7 @@ $grid: 5
             content: ''
             position: absolute
             left: 0
-            top: 0
+            top: -64px
             background: linear-gradient(297.17deg, #80FF95 3.18%, #22859B 130.61%)
             border-radius: 0px 0px 30px 0px
             height: 200px
@@ -141,6 +159,16 @@ $grid: 5
             &:hover
                 background-color: var(--color-primary)
                 color: white
+.sellerFood
+    &.pointer-events-none.opacity-50
+        .item_detail_bottom
+            .btn--primary
+                background-color: var(--color-grey-light)
+.tagShow
+    &_list
+        input:checked
+            + label
+                border-color: var(--color-primary)
 // .overflow-x-auto
 //     /* width */
 //     &::-webkit-scrollbar

@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="sass/root.min.css">
     </head>
     <body id="main" class="max-w-screen-sm mx-auto relative shadow-xl min-h-screen primary flex flex-col justify-between overflow-x-hidden">
-        <header class="header flex items-center gap-x-1 py-2 px-5 shadow-md sticky top-0 bg-white z-50">
+        <header class="header flex items-center gap-x-1 py-4 px-5 shadow-md sticky top-0 bg-white z-50">
             <a href="#" class="header_logo flex-1">
                 <img src="assets/logo.png" width="197" height="36" alt="logo">
             </a>
@@ -46,7 +46,7 @@
                 </svg>
             </button>
             <div data-collapse="search" class="header_collapse header_collapse--search max-w-screen-sm mx-auto fixed inset-0 overflow-y-auto h-screen bg-white z-10">
-                <div class="header_collapse_nav flex justify-between items-center sticky top-0 left-0 right-0 bg-white py-2 mx-5">
+                <div class="header_collapse_nav flex justify-between items-center sticky top-0 left-0 right-0 bg-white py-4 mx-5">
                     <button class="header_close p-3 -ml-3" aria-label="Close">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.0003C0 9.4338 0.459195 8.97461 1.02564 8.97461H18.9744C19.5408 8.97461 20 9.4338 20 10.0003C20 10.5667 19.5408 11.0259 18.9744 11.0259H1.02564C0.459195 11.0259 0 10.5667 0 10.0003Z" fill="#AAAAAA"/>
@@ -1572,7 +1572,7 @@
                 </div>
             </div>
             <div data-collapse="menu" class="header_collapse header_collapse--menu max-w-screen-sm mx-auto fixed inset-0 overflow-y-auto h-screen bg-white z-10">
-                <div class="header_collapse_nav flex items-center justify-between sticky top-0 left-0 right-0 bg-white py-2 mx-5 border-b">
+                <div class="header_collapse_nav flex items-center justify-between sticky top-0 left-0 right-0 bg-white py-4 mx-5 border-b">
                     <a href="#" class="header_logo flex-1">
                         <img src="assets/logo.png" width="197" height="36" alt="logo">
                     </a>
@@ -1712,6 +1712,15 @@
                     <li class="breadcrumb_list">momsrenatta</li>
                 </ul>
             </section>
+            <section class="section section--close bg-yellow p-4 rounded-lg mx-5 mt-6 mb-4">
+                <div class="flex gap-x-3 items-center mb-2">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.62891 14.75C9.76172 14.75 11.7578 13.793 13.043 12.1797C13.8359 11.2227 12.9883 9.82812 11.7852 10.0469C9.54297 10.4844 7.46484 8.76172 7.46484 6.49219C7.46484 5.15234 8.17578 3.94922 9.29688 3.32031C10.3633 2.71875 10.0898 1.10547 8.88672 0.886719C8.55859 0.804688 7.98438 0.777344 7.62891 0.75C3.74609 0.75 0.628906 3.89453 0.628906 7.75C0.628906 11.6328 3.74609 14.75 7.62891 14.75ZM7.62891 2.0625C7.98438 2.0625 8.3125 2.11719 8.66797 2.17188C7.16406 3.01953 6.15234 4.63281 6.15234 6.49219C6.15234 9.58203 8.99609 11.9336 12.0312 11.332C10.9922 12.6172 9.40625 13.4375 7.62891 13.4375C4.48438 13.4375 1.94141 10.8945 1.94141 7.75C1.94141 4.63281 4.48438 2.0625 7.62891 2.0625Z" fill="black"/>
+                    </svg>             
+                    <h1 class="font-semibold">Warung Sedang Libur</h1>
+                </div>
+                <p>Warung buka <b>Kamis, 01/09/2022</b>. Chat penjual jika ada transaksi tertunda.</p>
+            </section>
             <section class="section section--seller pb-6 border-b-8 text-center">
                 <figure class="section--seller_banner overflow-hidden aspect-[375/190]">
                     <img class="w-full h-full object-cover" src="https://place-hold.it/375x190" width="375" height="190" alt="">
@@ -1752,7 +1761,7 @@
                 <div class="section_title flex justify-center items-center mb-8">
                     <h1 class="text-xl font-semibold">Ready Open Order</h1>
                 </div>
-                <ul class="sellerFood grid gap-x-4 gap-y-6 sm:grid-cols-2">
+                <ul class="sellerFood grid gap-x-4 gap-y-6 sm:grid-cols-2 pointer-events-none opacity-50">
                     <li class="sellerFood_list">
                         <a href="#" class="item">
                             <figure class="item_img aspect-[335/201] relative rounded-lg overflow-hidden mb-2">

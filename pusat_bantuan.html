@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="sass/root.min.css">
 </head>
 <body id="main" class="max-w-screen-sm mx-auto relative shadow-xl min-h-screen primary flex flex-col justify-between overflow-x-hidden">
-    <header class="header flex items-center gap-x-5 py-4 px-5 shadow-md sticky top-0 bg-white">
+    <header class="header flex items-center gap-x-5 py-4 px-5 shadow-md sticky top-0 bg-white z-50">
         <a href="#" class="header_logo flex-1">
             <img src="assets/logo.png" width="197" height="36" alt="logo">
         </a>
@@ -166,7 +166,7 @@
             </div>
         </div>
     </header>
-    <main class="">
+    <main class="relative">
         <section class="section section--breadcrumb px-5 pt-5">
             <ul class="breadcrumb flex items-center gap-x-2 text-xs mb-6">
                 <li class="breadcrumb_list">
@@ -184,11 +184,11 @@
             <h1 class="section_title font-semibold text-center mb-6 text-2xl">Pusat Bantuan</h1>
             <div class="tabs">
                 <div class="tabs_nav bg-gray py-2 px-3 rounded-xl text-center flex font-medium gap-x-6 text-sm max-w-sm mx-auto mb-6 sm:text-lg">
-                    <button class="tabs_nav_item w-full py-2 rounded-xl sm:py-1 bg-primary text-white" data-tab="1">Pembeli</button>
-                    <button class="tabs_nav_item w-full py-2 rounded-xl sm:py-1" data-tab="2">Penjual</button>
+                    <button class="tabs_nav_item w-full py-2 rounded-xl sm:py-1 bg-primary text-white" data-tab="tab1">Pembeli</button>
+                    <button class="tabs_nav_item w-full py-2 rounded-xl sm:py-1" data-tab="tab2">Penjual</button>
                 </div>
                 <div class="tabs_content">
-                    <div id="tab-1" class="tabs_content_item">
+                    <div class="tabs_content_item tabs_content_item--tab1">
                         <ul class="accordion">
                             <li class="accordion_list rounded-xl my-4 bg-gray">
                                 <a class="accordion_btn font-semibold flex justify-between items-center" href="javascript:void(0);">
@@ -273,7 +273,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="tab-2" class="tabs_content_item">
+                    <div class="tabs_content_item tabs_content_item--tab2">
                         <ul class="accordion">
                             <li class="accordion_list rounded-xl my-4 bg-gray">
                                 <a class="accordion_btn font-semibold flex justify-between items-center" href="javascript:void(0);">
