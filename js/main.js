@@ -131,15 +131,15 @@ $(document).ready(function () {
         tagShowChild[i].style.display = "none";
     }
     tagShowBtn.click(function() {
-        $(this).val()
+        console.log($(this).val())
         for (var i = tagShowLength; i < tagShowLength + tagShowAppear; i++) {
             if (tagShowChild[i]) {
                 tagShowChild[i].style.display = 'block';
             }
         }
-        tagShowLength += tagShowAppear;
-        if (tagShowLength >= tagShowChild.length) {
-            tagShowBtn.css('display','none');
-        }
+        // tagShowLength += tagShowAppear;
+        // if (tagShowLength >= tagShowChild.length) {
+        //     tagShowBtn.css('display','none');
+        // }
     });
 });

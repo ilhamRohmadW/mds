@@ -227,6 +227,6 @@ body {
   background-color: var(--color-grey-light);
 }
 
-.tagShow_list input:checked + label {
+.tagShow_btn input:checked + label {
   border-color: var(--color-primary);
 }
