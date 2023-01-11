@@ -10,6 +10,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 136px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .line-trough {
@@ -31,4 +33,11 @@
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.entry-bottom .entry-thumb {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
